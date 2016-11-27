@@ -11,7 +11,7 @@ public class HelloJava
 {
     public static void main( String[] args ) {
         JFrame frame = new JFrame( "HelloJava" );
-        frame.add( new com.company.HelloComponent() ); //com.company.HelloComponent() вызываем из своего пакета
+        frame.add( new HelloComponent() ); //com.company.HelloComponent() вызываем из своего пакета
         frame.setSize( 300, 300 );
         frame.setVisible( true );
     }
