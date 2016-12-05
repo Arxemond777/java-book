@@ -2,8 +2,18 @@ package testClassnameLink;
 
 
 import java.lang.Object;
+class A {
 
-public class ClassnameScope {
+    int a = 1, b;
+
+    public A (/*int b*/) {
+        b = b;
+    }
+}
+
+public class ClassnameScope extends A {
+
+    static final float fres = 1_2.0f;
 
     public static void main(String [] args) {
 
@@ -11,8 +21,33 @@ public class ClassnameScope {
         int result = bazz.foo1;
 
         System.out.println("foo = " + result);
+        System.out.println(ClassnameScope.fres);
+
+        ClassnameScope ClassnameScope = new ClassnameScope();
+        System.out.println(ClassnameScope.b);
+        //Xer xer = new Xer(Xer.x);
 
 
+        //System.out.print(x.b);
+    }
+
+    /*public shortg () {
+        System.out.println(super.a);
+    }*/
+
+    public enum x {a, b, c};
+
+
+    class Xer {
+        static final float x = 1_2.0f;
+        protected float e = 1f;
+        Xer (Xer c) {
+            c = c;
+        }
+
+        /*Xer getC() {
+            return c;
+        }*/
     }
 
 }
