@@ -10,7 +10,7 @@ package ch5;
         public int getFun() {
             return fun;
         }
-    };
+    }; //Weekdays.Sunday.getFun()
 
     enum Cat {
         X, Y, Z {

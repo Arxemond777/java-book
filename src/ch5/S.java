@@ -16,6 +16,7 @@ public class S {
         System.out.println("Before class loading");
         //Class.forName(C.class.getName());
         System.out.println(C.class.getClassLoader());
+        System.exit(1);
         System.out.println("After class loading");
     }
 }
