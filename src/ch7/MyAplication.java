@@ -25,7 +25,7 @@ class Midleware {
 //            System.out.println(outputDevice);
             TypeWriter device = (TypeWriter)newClass.newInstance();
 
-            System.out.println(device.getClass());
+            System.out.println(device);
         } catch (ClassNotFoundException e) {
             System.out.println(e);
         } catch (Exception e) {

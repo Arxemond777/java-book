@@ -7,7 +7,7 @@ public class ZipTest
 {
     public static void main( String[] args ) throws IOException
     {
-        // Construct the URI pointing to the ZIP archive
+        // ConstructAndArrayReflect the URI pointing to the ZIP archive
         URI fsURI = URI.create("jar:file:/Users/pat/tmp/MyArchive.zip");
 
         // Open or creat it and write a file

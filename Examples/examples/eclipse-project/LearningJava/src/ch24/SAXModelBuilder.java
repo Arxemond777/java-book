@@ -10,7 +10,7 @@ public class SAXModelBuilder extends DefaultHandler
     public void startElement(
         String namespace, String localname, String qname, Attributes atts ) throws SAXException
 	{
-        // Construct the new element and set any attributes on it
+        // ConstructAndArrayReflect the new element and set any attributes on it
 		Object element;
         try {
             String className = Character.toUpperCase( qname.charAt( 0 ) ) + qname.substring( 1 );
