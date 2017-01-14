@@ -22,7 +22,7 @@ public class StringList extends ArrayList<String> {
                 return null;
             };
 
-            Class clas = Class.forName(MyInterface);
+            //Class clas = Class.forName(MyInterface);
             /*@Override
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                 return null;
