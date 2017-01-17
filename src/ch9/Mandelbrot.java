@@ -1,14 +1,21 @@
-import java.awt.*;
+package ch9;
+
 import javax.swing.*;
-import java.awt.image.*;
-import java.util.concurrent.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.RecursiveAction;
 
 public class Mandelbrot extends JFrame {
+    volatile static Map<String, Float> tf = new HashMap<>();
     @Override
     public void paint(Graphics g) {
-        BufferedImage image = new BufferedImage(getWidth(),
-                getHeight(), BufferedImage.TYPE_INT_RGB);
-        ForkJoinPool pool = new ForkJoinPool(); // defaults thread per processor
+        BufferedImage image = new BufferedImage(getWidth(), getHeight(),
+                BufferedImage.TYPE_INT_RGB);
+        ForkJoinPool pool = new ForkJoinPool();
         pool.invoke(new MandelbrotTask(image, 0,
                 image.getWidth() - 1, 0, image.getHeight() - 1));
         g.drawImage(image, 0, 0, null);
@@ -16,8 +23,11 @@ public class Mandelbrot extends JFrame {
 
     public static void main(String[] args) {
         Mandelbrot mandy = new Mandelbrot();
+        mandy.setDefaultCloseOperation(Mandelbrot.EXIT_ON_CLOSE);
         mandy.setSize(768, 768);
         mandy.setVisible(true);
+
+        System.out.println(Mandelbrot.tf);
     }
 }
 
@@ -28,8 +38,9 @@ class MandelbrotTask extends RecursiveAction {
     private int xStart, xEnd, yStart, yEnd;
     private static int taskSplitThreshold = 1024;
 
-    MandelbrotTask(BufferedImage image, int xStart,
-                   int xEnd, int yStart, int yEnd) {
+    MandelbrotTask(
+            BufferedImage image, int xStart, int xEnd, int yStart, int yEnd
+    ) {
         this.image = image;
         this.xStart = xStart;
         this.xEnd = xEnd;
@@ -53,6 +64,7 @@ class MandelbrotTask extends RecursiveAction {
                     zr = nzr;
                     zi = nzi;
                 }
+                Mandelbrot.tf.put(Thread.currentThread().getName(), 0.5f * iter / maxIterations);
                 image.setRGB(x, y, Color.HSBtoRGB(0.5f * iter / maxIterations, 1.0f, 1.0f));
             }
         }
@@ -77,4 +89,3 @@ class MandelbrotTask extends RecursiveAction {
         }
     }
 }
-

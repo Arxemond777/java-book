@@ -51,9 +51,9 @@ class TinyHttpdConnection implements Runnable {
         try {
           FileInputStream fis = new FileInputStream ( request );
           byte [] data = new byte [ 64*1024 ];
-      for(int read; (read = fis.read( data )) > -1; )
-        out.write( data, 0, read );
-          out.flush();
+          for(int read; (read = fis.read( data )) > -1; )
+            out.write( data, 0, read );
+              out.flush();
         } catch ( FileNotFoundException e ) {
           pout.println( "404 Object Not Found" ); }
       } else

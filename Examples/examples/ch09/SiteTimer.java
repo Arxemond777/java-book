@@ -21,14 +21,14 @@ public class SiteTimer
 	static long timeConnect( String site )
 	{
 		long start = System.currentTimeMillis();
-		try { 
-			new URL( site ).openConnection().connect(); 
-		} catch ( IOException e ) { 
+		try {
+			new URL( site ).openConnection().connect();
+		} catch ( IOException e ) {
 			return -1;
 		}
 		return System.currentTimeMillis() - start;
 	}
-	
+
 	void showResults() {
 		Collections.sort( results );
 		for( Result result : results )

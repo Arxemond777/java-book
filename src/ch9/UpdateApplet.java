@@ -1,20 +1,22 @@
 package ch9;
+
+import java.security.AccessControlException;
+
 //shift+option держа курсор на строке двигать стрелками строку вверх/вниз
 public class UpdateApplet extends java.applet.Applet implements Runnable {
-    Thread thread;
+    public Thread thread;
     boolean running;
     int updateInterval = 1000;
 
     public void run() {
         while (running) {
             repaint();
-        }
-
-        try {
-            thread.sleep(this.updateInterval);
-        } catch (InterruptedException e) {
-            System.out.println("Interrupted...");
-            return;
+            try {
+                Thread.sleep(updateInterval);
+            } catch (InterruptedException e) {
+                System.out.println("interrupted...");
+                return;
+            }
         }
     }
 
