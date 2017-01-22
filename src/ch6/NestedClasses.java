@@ -55,6 +55,7 @@ class Abc {
     }
 
     class A {
+        //final Integer asd = 2;//ТАК МОЖНО
         //static int A = 1;//Так нельзя!! Внутренние классы не могут быть статик
         //enum B {B}// И перечислениями тож нельзя
 //        public interface Rrr {}//И так нельзя, ибо интерпитируется так public static interface Rrr {}, а статик незя

@@ -4,6 +4,9 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+/**
+ * Служит для расспарсивания
+ */
 public class StringTokenizerApp {
     String text = "4231, JAVA\nPROGRAMMING, 10,1f";
 

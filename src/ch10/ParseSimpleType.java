@@ -30,6 +30,9 @@ public class ParseSimpleType {
         System.out.println(d);
         /** _______ */
 
+        /** Флаг альтернативного варианта для вывода 8 или 16 чила */
+        System.out.printf("%1$x, %1$#x\n", 0xCAFE, 0xCAFE);//$#x для 16 с сдандартным префиксом 0x
+        System.out.printf("%1$o, %1$#o", 8, 8);//$#o для 8 с сдандартным префиксом 0 для 8-ого
 
     }
 }
