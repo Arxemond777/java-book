@@ -1,23 +1,23 @@
   187  vi bash
   188  bash bash
   189  ls
-  190  ls test1
+  190  ls ch6_relations_beetwen_classes.test1
   191  vi bash
-  192  rm rf test1/
-  193  rm -rf test1
+  192  rm rf ch6_relations_beetwen_classes.test1/
+  193  rm -rf ch6_relations_beetwen_classes.test1
   194  vi bash y
   195  bash bash y
   196  ls
   197  vi bash
   198  bash bash y
   199  vi bash
-  200  vi test/a.txt
+  200  vi ch6_relations_beetwen_classes.test/a.txt
   201  bash bash y
   202  vi bash
   203  bash bash y
   204  cd ..
   205  ls
-  206  rm -rf test/
+  206  rm -rf ch6_relations_beetwen_classes.test/
   207  сp node/img/nodejs.png meadowlark_travel/site/public/img/
   208  cp node/img/nodejs.png meadowlark_travel/site/public/img/
   209  ps aux | less
@@ -68,7 +68,7 @@
   254  ls
   255  git clone https://github.com/Arxemond777/workspace ./workspace
   256  cd workspace/
-  257  mkdir src app public test git_submodules 
+  257  mkdir src app public ch6_relations_beetwen_classes.test git_submodules
   258  mkdir node_modules
   259  cd app/
   260  mkdir service command routes config
@@ -89,7 +89,7 @@
   275  ls auth/
   276  ls auth/prod_auth/
   277  cd auth/prod_auth/
-  278  mkdir models controller -p resource/js -p resource/js -p resource/style -p resource/assets/img -p resource/assets/fonts test command
+  278  mkdir models controller -p resource/js -p resource/js -p resource/style -p resource/assets/img -p resource/assets/fonts ch6_relations_beetwen_classes.test command
   279  ls
   280  rm -rf -p
   281  ls
@@ -162,7 +162,7 @@
   348  git diff origin/master
   349  ls
   350  git add src/
-  351  git add src/ public/ test/ README.md LICENSE JSDoc/ git_submodules/ public/ 
+  351  git add src/ public/ ch6_relations_beetwen_classes.test/ README.md LICENSE JSDoc/ git_submodules/ public/
   352  git commit -m 'structure directory'
   353  git push origin master
   354  ls
@@ -178,7 +178,7 @@
   364  vi src/projects/auth/dev_auth/t
   365  git status
   366  vi app/t
-  367  vi test/t
+  367  vi ch6_relations_beetwen_classes.test/t
   368  vi public/t
   369  git add .
   370  git commit -m 'structure directory'
@@ -186,7 +186,7 @@
   372  vi src/t
   373  vi src/projects/auth/config/t
   374  vi src/projects/auth/dev_auth/command/t
-  375  vi src/projects/auth/dev_auth/test/t
+  375  vi src/projects/auth/dev_auth/ch6_relations_beetwen_classes.test/t
   376  vi src/projects/auth/dev_auth/routes/t
   377  vi src/projects/auth/dev_auth/resource/t
   378  vi src/projects/auth/dev_auth/models/t
@@ -200,7 +200,7 @@
   386  vi t
   387  bash t
   388  mv src/projects/template_for_new_adminka/dev_new_project/ vi src/projects/auth/prod_auth/command/t
-  389  vi src/projects/auth/prod_auth/test/t
+  389  vi src/projects/auth/prod_auth/ch6_relations_beetwen_classes.test/t
   390  mv src/projects/template_for_new_adminka/dev_auth/ src/projects/template_for_new_adminka/dev_new_project/
   391  ls src/projects/template_for_new_adminka/dev_new_project/
   392  ls src/projects/template_for_new_adminka/
@@ -259,8 +259,8 @@
   445  exit
   446  ping ya.ru
   447  ping biblio-globus.ru
-  448  vi /var/www/html/test.php
-  449  sudo chmod 777 /var/www/html/test.php 
+  448  vi /var/www/html/ch6_relations_beetwen_classes.test.php
+  449  sudo chmod 777 /var/www/html/ch6_relations_beetwen_classes.test.php
   450  cd ~/Downloads/
   451  brew install redis
   452  redis-server
@@ -318,51 +318,51 @@
   504  rm -rf security/
   505  cd HelloWorld/
   506  mkdir policy
-  507  ls /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/EvilEmpire.java 
-  508  javac -d src/ch3/ src/ch3/EvilEmpire.java 
-  509  java /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire
-  510  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ ch3.EvilEmpire
-  511  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ -Djava.security.manager ch3.EvilEmpire
+  507  ls /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/EvilEmpire.java
+  508  javac -d src/ch3_tools_for_works/ src/ch3_tools_for_works/EvilEmpire.java
+  509  java /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire
+  510  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ ch3_tools_for_works.EvilEmpire
+  511  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ -Djava.security.manager ch3_tools_for_works.EvilEmpire
   512  policytool
-  513  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ -Djava.security.manager ch3.EvilEmpire
-  514  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ -Djava.security.manager -Djava.security.policy=EvilEmpire.policy ch3.EvilEmpire
-  515  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ -Djava.security.manager -Djava.security.policy=EvilEmpire.policy ch3.EvilEmpire
-  516  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ -Djava.security.manager -Djava.security.policy=EvilEmpire.policy ch3.EvilEmpire
-  517  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ -Djava.security.manager -Djava.security.policy=EvilEmpire.policy ch3.EvilEmpire
-  518  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ -Djava.security.manager -Djava.security.policy=EvilEmpire.policy ch3.EvilEmpire
-  519  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ -Djava.security.manager -Djava.security.policy=src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  520  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  521  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpir
-  522  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  523  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  524  javap src/ch3/ch3/EvilEmpire.policy 
-  525  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  526  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  527  javac -d src/ch3/ src/ch3/EvilEmpire.java 
-  528  javac -d src/ch3/ src/ch3/EvilEmpire.java 
-  529  javac -d src/ch3/ src/ch3/EvilEmpire.java 
-  530  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  531  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  532  javac -d src/ch3/ src/ch3/EvilEmpire.java 
-  533  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  534  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  535  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  536  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  537  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  538  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy1 ch3.EvilEmpire
+  513  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ -Djava.security.manager ch3_tools_for_works.EvilEmpire
+  514  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  515  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  516  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  517  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  518  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  519  java -cp /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  520  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  521  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpir
+  522  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  523  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  524  javap src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy
+  525  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  526  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  527  javac -d src/ch3_tools_for_works/ src/ch3_tools_for_works/EvilEmpire.java
+  528  javac -d src/ch3_tools_for_works/ src/ch3_tools_for_works/EvilEmpire.java
+  529  javac -d src/ch3_tools_for_works/ src/ch3_tools_for_works/EvilEmpire.java
+  530  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  531  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  532  javac -d src/ch3_tools_for_works/ src/ch3_tools_for_works/EvilEmpire.java
+  533  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  534  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  535  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  536  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  537  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  538  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy1 ch3_tools_for_works.EvilEmpire
   539  javap -J-version
-  540  javap -J-Djava.security.manager -J-Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy 
-  541  javap -J-Djava.security.manager -J-Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  542  ls -la src/ch3/ch3/
-  543  sudo chmod 777 -R src/ch3/
-  544  sudo chmod 777 src/ch3/
-  545  sudo chmod 777 src/ch3/ -R
-  546  sudo chmod 777 src/ch3/*
-  547  sudo chmod 777 src/ch3/ch3/EvilEmpire.policy 
-  548  ls src/ch3/ch3/EvilEmpire.policy 
-  549  ls -la src/ch3/ch3/EvilEmpire.policy 
+  540  javap -J-Djava.security.manager -J-Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy
+  541  javap -J-Djava.security.manager -J-Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  542  ls -la src/ch3_tools_for_works/ch3_tools_for_works/
+  543  sudo chmod 777 -R src/ch3_tools_for_works/
+  544  sudo chmod 777 src/ch3_tools_for_works/
+  545  sudo chmod 777 src/ch3_tools_for_works/ -R
+  546  sudo chmod 777 src/ch3_tools_for_works/*
+  547  sudo chmod 777 src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy
+  548  ls src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy
+  549  ls -la src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy
   550  man javap
-  551  javap -classpath src/ch3/ch3/EvilEmpire.policy -J-Djava.security.manager -J-Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
+  551  javap -classpath src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy -J-Djava.security.manager -J-Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
   552  sudo chmod 777 -R src/
   553  sudo chmod 777 -r src/
   554  sudo src/ chmod 777 -R 
@@ -371,12 +371,12 @@
   557  sudo  chmod 777 -R src/
   558  sudo  chmod 777 -R /Users/urijglusenkov/InteliJ/HelloWorld/src/
   559  sudo  chmod 777  /Users/urijglusenkov/InteliJ/HelloWorld/src/
-  560  sudo chmod 777 /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/
-  561  sudo chmod 777 /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/ -R
+  560  sudo chmod 777 /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/
+  561  sudo chmod 777 /Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/ -R
   562  man chmod
   563  man chmod
   564  cd ..
-  565  mkdir test && cd test
+  565  mkdir ch6_relations_beetwen_classes.test && cd ch6_relations_beetwen_classes.test
   566  vim EvilEmpire.java 
   567  javap -d ./ EvilEmpire.java 
   568  javap -d ./ EvilEmpire
@@ -385,27 +385,27 @@
   571  javac -d ./ EvilEmpire
   572  javac -d ./ EvilEmpire.java 
   573  ls
-  574  /Users/urijglusenkov/InteliJ/test/
+  574  /Users/urijglusenkov/InteliJ/ch6_relations_beetwen_classes.test/
   575  policytool
   576  cd ../HelloWorld/
-  577  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
-  578  java -cp src/ch3/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3/ch3/EvilEmpire.policy ch3.EvilEmpire
+  577  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
+  578  java -cp src/ch3_tools_for_works/ -Djava.security.manager -Djava.security.policy=/Users/urijglusenkov/InteliJ/HelloWorld/src/ch3_tools_for_works/ch3_tools_for_works/EvilEmpire.policy ch3_tools_for_works.EvilEmpire
   579  cd ..
-  580  cd test/
+  580  cd ch6_relations_beetwen_classes.test/
   581  policytool
   582  ls
   583  java EvilEmpire
   584  java -Djava.security.manager EvilEmpire
   585  java -Djava.security.manager -Djava.security.policy=EvilEmpire.policy EvilEmpire
   586  cd ..
-  587  cp -R test/ ./HelloWorld/
+  587  cp -R ch6_relations_beetwen_classes.test/ ./HelloWorld/
   588  ls HelloWorld/
   589  cd HelloWorld/
   590  sudo rm EvilEmpire.class 
   591  mkdir policyFucinShiiit
   592  cd .
   593  cd ..
-  594  cp -R test/ ./HelloWorld/policyFucinShiiit/
+  594  cp -R ch6_relations_beetwen_classes.test/ ./HelloWorld/policyFucinShiiit/
   595  cd HelloWorld/policyFucinShiiit/
   596  java -Djava.security.manager -Djava,security.policy=EvilEmpire.policy EvilEmpire
   597  java -Djava.security.manager -Djava.security.policy=EvilEmpire.policy EvilEmpire
@@ -421,19 +421,19 @@
   607  date=$(date); git commit -m "$date"; git push origin master
   608  git status
   609  git push origin master
-  610  javap src/ch5/Weekday.java 
-  611  javap src/ch5.Weekday.java 
+  610  javap src/ch5_object_in_java/Weekday.java
+  611  javap src/ch5_object_in_java.Weekday.java
   612  javap 
-  613  javap -cp src/ ch5.Weekday
-  614  javap -cp src/ ch5.Weekday
+  613  javap -cp src/ ch5_object_in_java.Weekday
+  614  javap -cp src/ ch5_object_in_java.Weekday
   615  cd src/
-  616  javap ch5.Weekday
+  616  javap ch5_object_in_java.Weekday
   617  cd ..
-  618  javap -cp out/production/HelloWorld/ ch5.Weekday
-  619  javap -cp out/production/HelloWorld/ ch5.Weekday
-  620  javap -cp out/production/HelloWorld/ ch5.Weekday
-  621  javap -cp out/production/HelloWorld/ ch5.Weekday
-  622  javap -cp out/production/HelloWorld/ ch5.Weekday
+  618  javap -cp out/production/HelloWorld/ ch5_object_in_java.Weekday
+  619  javap -cp out/production/HelloWorld/ ch5_object_in_java.Weekday
+  620  javap -cp out/production/HelloWorld/ ch5_object_in_java.Weekday
+  621  javap -cp out/production/HelloWorld/ ch5_object_in_java.Weekday
+  622  javap -cp out/production/HelloWorld/ ch5_object_in_java.Weekday
   623  git add . 
   624  date=${date}
   625  $date
@@ -469,30 +469,30 @@
   655  javap -cp=out/production/HelloWorld/ch invoke
   656  javap --cp=out/production/HelloWorld/ch invoke
   657  javap -help
-  658  javap --cp src/ch7/ invoke
-  659  javap --cp src/ch7/Invoke.java 
-  660  javap --cp src/ch7/Invoke
-  661  javap --cp src/ch7/ Invoke
-  662  javap --cp src/ ch7.Invoke
-  663  javac --cp src/ ch7.Invoke
-  664  javac --cp src/ch7/Invoke.java 
-  665  javac src/ch7/Invoke.java 
-  666  javac --cp src/ ch7/Invoke.java 
+  658  javap --cp src/ch7_works_with_class/ invoke
+  659  javap --cp src/ch7_works_with_class/Invoke.java
+  660  javap --cp src/ch7_works_with_class/Invoke
+  661  javap --cp src/ch7_works_with_class/ Invoke
+  662  javap --cp src/ ch7_works_with_class.Invoke
+  663  javac --cp src/ ch7_works_with_class.Invoke
+  664  javac --cp src/ch7_works_with_class/Invoke.java
+  665  javac src/ch7_works_with_class/Invoke.java
+  666  javac --cp src/ ch7_works_with_class/Invoke.java
   667  javap -help
-  668  javac --cp src/ ch7.Invoke.java 
-  669  javac --cp src/ ch7.Invoke
-  670  javac -cp src/ ch7.Invoke
-  671  javac -cp src/ ch7/Invoke.java
-  672  javac -cp src ch7/Invoke.java
-  673  javac -cp src ch7.Invoke.java
-  674  javac -classpath src ch7.Invoke
-  675  javac -classpath src ch7.Reflection
-  676  javac -classpath src ch7.Invoke
-  677  javac -classpath src ch7.Invoke.java
-  678  javac -classpath src/ch7 Invoke.java
-  679  javac -classpath src/ch7 Invoke.java
-  680  javac -classpath src/ch7 Invoke
-  681  javac -classpath src ch7.Invoke
+  668  javac --cp src/ ch7_works_with_class.Invoke.java
+  669  javac --cp src/ ch7_works_with_class.Invoke
+  670  javac -cp src/ ch7_works_with_class.Invoke
+  671  javac -cp src/ ch7_works_with_class/Invoke.java
+  672  javac -cp src ch7_works_with_class/Invoke.java
+  673  javac -cp src ch7_works_with_class.Invoke.java
+  674  javac -classpath src ch7_works_with_class.Invoke
+  675  javac -classpath src ch7_works_with_class.Reflection
+  676  javac -classpath src ch7_works_with_class.Invoke
+  677  javac -classpath src ch7_works_with_class.Invoke.java
+  678  javac -classpath src/ch7_works_with_class Invoke.java
+  679  javac -classpath src/ch7_works_with_class Invoke.java
+  680  javac -classpath src/ch7_works_with_class Invoke
+  681  javac -classpath src ch7_works_with_class.Invoke
   682  history
   683  history | grep javac
   684  history | grep 'javac'

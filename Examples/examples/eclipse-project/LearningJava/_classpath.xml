@@ -5,9 +5,9 @@
 	<classpathentry kind="src" path="src/ch07"/>
 	<classpathentry kind="src" path="src/ch08"/>
 	<classpathentry kind="src" path="src/ch09"/>
-	<classpathentry kind="src" path="src/ch10"/>
-	<classpathentry kind="src" path="src/ch11"/>
-	<classpathentry kind="src" path="src/ch12"/>
+	<classpathentry kind="src" path="src/ch10_works_with_text"/>
+	<classpathentry kind="src" path="src/ch11_main_tools"/>
+	<classpathentry kind="src" path="src/ch12_IO_NIO"/>
 	<classpathentry kind="src" path="src/ch13"/>
 	<classpathentry kind="src" path="src/ch14"/>
 	<classpathentry kind="src" path="src/ch15/webapp-annotations"/>
