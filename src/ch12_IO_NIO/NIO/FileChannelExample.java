@@ -7,6 +7,8 @@ import java.nio.charset.Charset;
 import java.nio.file.FileSystem;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
+import java.nio.file.StandardOpenOption.*;
+import java.util.Date;
 
 
 //import static java.nio.file.AccessMode.WRITE;
@@ -20,7 +22,8 @@ public class FileChannelExample
 //        FileChannelExample.A();
 //        FileChannelExample.B();
 //        FileChannelExample.B1();
-        FileChannelExample.C();
+//        FileChannelExample.C();
+        FileChannelExample.D();
     }
 
     public static void A() {
@@ -111,5 +114,23 @@ public class FileChannelExample
             e.printStackTrace();
         }
 
+    }
+
+    public static void D()
+    {
+        FileSystem fs = FileSystems.getDefault();
+        Path fromFile = fs.getPath("/tmp/input_ch9.txt");
+        Path toFile = fs.getPath("/tmp/out_ch9.txt");
+
+        try (
+                FileChannel in = FileChannel.open(fromFile);
+                FileChannel out = FileChannel.open(toFile, CREATE, WRITE);
+                ) {
+            System.out.println("Start: " + new Date().toString());
+            in.transferTo(0, (int)in.size(), out);
+            System.out.println("End: " + new Date().toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

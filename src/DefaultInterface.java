@@ -17,8 +17,6 @@ public class DefaultInterface
 @RequestForEnhancement(id = 1, synopsis = "2")
 class SimpleCLass implements A //Но B нельзя без переобъявления
 {
-    int id;
-
     void b() {
         System.out.println(RequestForEnhancement.class.getAnnotatedInterfaces());
     }
