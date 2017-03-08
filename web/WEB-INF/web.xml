@@ -166,4 +166,18 @@
         <filter-name>defaultsfilter1</filter-name>
         <servlet-name>WaitServlet</servlet-name>
     </filter-mapping>
+
+    <filter>
+        <filter-name>linkfilter1</filter-name>
+        <filter-class>ch_15_web_programmin_server_side.LinkResponceFilter</filter-class>
+        <init-param>
+            <param-name>[Ss]ervlet</param-name>
+            <param-value>http://www.ora.com/catalog/learnjava</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>linkfilter1</filter-name>
+        <servlet-name>WaitServlet</servlet-name>
+    </filter-mapping>
+
 </web-app>
