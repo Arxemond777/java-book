@@ -1,14 +1,19 @@
 package amqp_my_test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 public class GenericWildcard
 {
     public static void main(String[] args) {
-        List<?> a = new ArrayList<Integer>();
+        List<?> a = new ArrayList<Integer>(){
+            {
+                add(1);
+            }
+        }; //Ток на get
+        System.out.println(a);
+        byte[] bytes = new byte[] {127, -128};
+        System.out.println(Arrays.toString(bytes));
+        System.out.println(Arrays.asList(a));
         GenericWildcard.Ggg b = new GenericWildcard().new Ggg();
 //        a.add(b);
 //        a.add(new Integer(1)); //Вообще сетерить незя, тк ? означает неопределенный тип
