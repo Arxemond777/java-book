@@ -1,6 +1,6 @@
 package com.company;
 
-import com.sun.tools.internal.xjc.api.ClassNameAllocator;
+//import com.sun.tools.internal.xjc.api.ClassNameAllocator;
 
 import java.util.Arrays;
 
