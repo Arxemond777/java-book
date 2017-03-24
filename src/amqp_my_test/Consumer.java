@@ -15,7 +15,8 @@ public class Consumer
         channel.queueDeclare(Producer.getQueueName(), false, false, false, null);
         System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
-        com.rabbitmq.client.Consumer consumer = new DefaultConsumer(channel) {
+        com.rabbitmq.client.Consumer consumer = new DefaultConsumer(channel)
+        {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body)
                     throws IOException {
