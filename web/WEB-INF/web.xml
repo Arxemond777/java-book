@@ -29,6 +29,15 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>GetXmlOrJson</servlet-name>
+        <servlet-class>ch_15_web_programmin_server_side.GenerateXmlOrJson</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetXmlOrJson</servlet-name>
+        <url-pattern>/get_xml_or_json</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Login</servlet-name>
         <servlet-class>ch_15_web_programmin_server_side.auth.Login</servlet-class>
     </servlet>
