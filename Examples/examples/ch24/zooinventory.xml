@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE inventory SYSTEM "zooinventory.dtd"-->
-<!--?xml-stylesheet type="text/xsl" href="zooinventory.xsl"?-->
 <inventory>
     <animal animalClass="mammal">
         <name>Song Fang</name>

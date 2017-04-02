@@ -9,8 +9,10 @@ import java.util.Map;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveAction;
 
-public class Mandelbrot extends JFrame {
+public class Mandelbrot extends JFrame
+{
     volatile static Map<String, Float> tf = new HashMap<>();
+
     @Override
     public void paint(Graphics g) {
         BufferedImage image = new BufferedImage(getWidth(), getHeight(),
@@ -31,7 +33,8 @@ public class Mandelbrot extends JFrame {
     }
 }
 
-class MandelbrotTask extends RecursiveAction {
+class MandelbrotTask extends RecursiveAction
+{
     private static double size = 3.0, offsetX = -0.7, thresholdSq = 100;
     private static int maxIterations = 30;
     private BufferedImage image;
