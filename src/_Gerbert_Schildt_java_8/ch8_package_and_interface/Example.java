@@ -20,6 +20,7 @@ interface Default
         return Math.random();
     }
 
+    @A(intVal = 3)
     static int def() {
         return 666;
     }
@@ -33,10 +34,6 @@ class Abc implements Default
     }
 }
 
-class Test
-{
-    void u() {
-        Abc abc = new Abc();
-        abc.i();
-    }
+@interface A {
+    int intVal();
 }
