@@ -5,6 +5,7 @@ import com.sun.istack.internal.NotNull;
 public class Example
 {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException {
+        System.exit(0);
         Abc abc = Abc.class.newInstance();
         System.out.println(
                 "Default method: " + abc.abc() + System.lineSeparator()
