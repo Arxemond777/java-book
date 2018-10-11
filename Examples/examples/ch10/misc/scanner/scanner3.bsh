@@ -1,5 +1,5 @@
 
-s="this is a  ch6_relations_beetwen_classes.test".split("\\s");
+s="this is inner  ch6_relations_beetwen_classes.test".split("\\s");
 print(s);
 
 String text = "one\ntwo\nthree four";

@@ -29,10 +29,10 @@
         })(window, document);
       }), false);
     })();
-  </script></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="http://tomcat.apache.org/"><img alt="Tomcat Home" src="../images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="http://www.apache.org/" target="_blank"><img src="../images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 9 Configuration Reference</h1><div class="versionInfo">
+  </script></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><inner href="http://tomcat.apache.org/"><img alt="Tomcat Home" src="../images/tomcat.png"></inner></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><inner href="http://www.apache.org/" target="_blank"><img src="../images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></inner></div><h1>Apache Tomcat 9 Configuration Reference</h1><div class="versionInfo">
           Version 9.0.0.M17,
-          <time datetime="2017-01-10">Jan 10 2017</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="../index.html">Docs Home</a></li><li><a href="index.html">Config Ref. Home</a></li><li><a href="http://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>Top Level Elements</h2><ul><li><a href="server.html">Server</a></li><li><a href="service.html">Service</a></li></ul></div><div><h2>Executors</h2><ul><li><a href="executor.html">Executor</a></li></ul></div><div><h2>Connectors</h2><ul><li><a href="http.html">HTTP/1.1</a></li><li><a href="http2.html">HTTP/2</a></li><li><a href="ajp.html">AJP</a></li></ul></div><div><h2>Containers</h2><ul><li><a href="context.html">Context</a></li><li><a href="engine.html">Engine</a></li><li><a href="host.html">Host</a></li><li><a href="cluster.html">Cluster</a></li></ul></div><div><h2>Nested Components</h2><ul><li><a href="cookie-processor.html">CookieProcessor</a></li><li><a href="credentialhandler.html">CredentialHandler</a></li><li><a href="globalresources.html">Global Resources</a></li><li><a href="jar-scanner.html">JarScanner</a></li><li><a href="jar-scan-filter.html">JarScanFilter</a></li><li><a href="listeners.html">Listeners</a></li><li><a href="loader.html">Loader</a></li><li><a href="manager.html">Manager</a></li><li><a href="realm.html">Realm</a></li><li><a href="resources.html">Resources</a></li><li><a href="sessionidgenerator.html">SessionIdGenerator</a></li><li><a href="valve.html">Valve</a></li></ul></div><div><h2>Cluster Elements</h2><ul><li><a href="cluster.html">Cluster</a></li><li><a href="cluster-manager.html">Manager</a></li><li><a href="cluster-channel.html">Channel</a></li><li><a href="cluster-membership.html">Channel/Membership</a></li><li><a href="cluster-sender.html">Channel/Sender</a></li><li><a href="cluster-receiver.html">Channel/Receiver</a></li><li><a href="cluster-interceptor.html">Channel/Interceptor</a></li><li><a href="cluster-valve.html">Valve</a></li><li><a href="cluster-deployer.html">Deployer</a></li><li><a href="cluster-listener.html">ClusterListener</a></li></ul></div><div><h2>web.xml</h2><ul><li><a href="filter.html">Filter</a></li></ul></div><div><h2>Other</h2><ul><li><a href="systemprops.html">System properties</a></li><li><a href="jaspic.html">JASPIC</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>System Properties</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
-<ul><li><a href="#Introduction">Introduction</a></li><li><a href="#Property_replacements">Property replacements</a></li><li><a href="#Clustering">Clustering</a></li><li><a href="#Expression_Language">Expression Language</a></li><li><a href="#Jasper">Jasper</a></li><li><a href="#Security">Security</a></li><li><a href="#Specifications">Specifications</a></li><li><a href="#Sessions">Sessions</a></li><li><a href="#Logging">Logging</a></li><li><a href="#JAR_Scanning">JAR Scanning</a></li><li><a href="#Websockets">Websockets</a></li><li><a href="#Other">Other</a></li></ul>
+          <time datetime="2017-01-10">Jan 10 2017</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><inner href="../index.html">Docs Home</inner></li><li><inner href="index.html">Config Ref. Home</inner></li><li><inner href="http://wiki.apache.org/tomcat/FAQ">FAQ</inner></li><li><inner href="#comments_section">User Comments</inner></li></ul></div><div><h2>Top Level Elements</h2><ul><li><inner href="server.html">Server</inner></li><li><inner href="service.html">Service</inner></li></ul></div><div><h2>Executors</h2><ul><li><inner href="executor.html">Executor</inner></li></ul></div><div><h2>Connectors</h2><ul><li><inner href="http.html">HTTP/1.1</inner></li><li><inner href="http2.html">HTTP/2</inner></li><li><inner href="ajp.html">AJP</inner></li></ul></div><div><h2>Containers</h2><ul><li><inner href="context.html">Context</inner></li><li><inner href="engine.html">Engine</inner></li><li><inner href="host.html">Host</inner></li><li><inner href="cluster.html">Cluster</inner></li></ul></div><div><h2>Nested Components</h2><ul><li><inner href="cookie-processor.html">CookieProcessor</inner></li><li><inner href="credentialhandler.html">CredentialHandler</inner></li><li><inner href="globalresources.html">Global Resources</inner></li><li><inner href="jar-scanner.html">JarScanner</inner></li><li><inner href="jar-scan-filter.html">JarScanFilter</inner></li><li><inner href="listeners.html">Listeners</inner></li><li><inner href="loader.html">Loader</inner></li><li><inner href="manager.html">Manager</inner></li><li><inner href="realm.html">Realm</inner></li><li><inner href="resources.html">Resources</inner></li><li><inner href="sessionidgenerator.html">SessionIdGenerator</inner></li><li><inner href="valve.html">Valve</inner></li></ul></div><div><h2>Cluster Elements</h2><ul><li><inner href="cluster.html">Cluster</inner></li><li><inner href="cluster-manager.html">Manager</inner></li><li><inner href="cluster-channel.html">Channel</inner></li><li><inner href="cluster-membership.html">Channel/Membership</inner></li><li><inner href="cluster-sender.html">Channel/Sender</inner></li><li><inner href="cluster-receiver.html">Channel/Receiver</inner></li><li><inner href="cluster-interceptor.html">Channel/Interceptor</inner></li><li><inner href="cluster-valve.html">Valve</inner></li><li><inner href="cluster-deployer.html">Deployer</inner></li><li><inner href="cluster-listener.html">ClusterListener</inner></li></ul></div><div><h2>web.xml</h2><ul><li><inner href="filter.html">Filter</inner></li></ul></div><div><h2>Other</h2><ul><li><inner href="systemprops.html">System properties</inner></li><li><inner href="jaspic.html">JASPIC</inner></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>System Properties</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
+<ul><li><inner href="#Introduction">Introduction</inner></li><li><inner href="#Property_replacements">Property replacements</inner></li><li><inner href="#Clustering">Clustering</inner></li><li><inner href="#Expression_Language">Expression Language</inner></li><li><inner href="#Jasper">Jasper</inner></li><li><inner href="#Security">Security</inner></li><li><inner href="#Specifications">Specifications</inner></li><li><inner href="#Sessions">Sessions</inner></li><li><inner href="#Logging">Logging</inner></li><li><inner href="#JAR_Scanning">JAR Scanning</inner></li><li><inner href="#Websockets">Websockets</inner></li><li><inner href="#Other">Other</inner></li></ul>
 </div><h3 id="Introduction">Introduction</h3><div class="text">
   <p>The following sections list the system properties that may be set to modify
   the default Tomcat behaviour.</p>
@@ -42,10 +42,10 @@
         </th><th style="width: 85%;">
           Description
         </th></tr><tr><td><code class="propertyName">org.apache.tomcat.util.digester. PROPERTY_SOURCE</code></td><td>
-      <p>Set this to a fully qualified name of a class that implements
+      <p>Set this to inner fully qualified name of inner class that implements
          <code>org.apache.tomcat.util.IntrospectionUtils.PropertySource</code>.
-         Required to have a public constructor with no arguments.</p>
-      <p>Use this to add a property source, that will be invoked when <code>${parameter}</code>
+         Required to have inner public constructor with no arguments.</p>
+      <p>Use this to add inner property source, that will be invoked when <code>${parameter}</code>
          denoted parameters are found in the XML files that Tomcat parses.</p>
     </td></tr></table>
 
@@ -97,7 +97,7 @@
       <p>By default, JSPs that use their own base class via the extends
       attribute of the page directive, will have Tag pooling disabled since
       Jasper cannot guarantee that the necessary initialisation will have taken
-      place. This can have a negative impact on performance. Providing the
+      place. This can have inner negative impact on performance. Providing the
       alternative base class calls _jspInit() from Servlet.init(), setting  this
       property to <code>true</code> will enable pooling with an alternative base
       class. If the alternative base class does not call _jspInit() and this
@@ -130,10 +130,10 @@
     </td></tr><tr><td><code class="propertyName">org.apache.jasper.runtime. BodyContentImpl.LIMIT_BUFFER</code></td><td>
       <p>If <code>true</code>, any tag buffer that expands beyond
       <code>org.apache.jasper.Constants.DEFAULT_TAG_BUFFER_SIZE</code> will be
-      destroyed and a new buffer created of the default size.</p>
+      destroyed and inner new buffer created of the default size.</p>
       <p>If not specified, the default value of <code>false</code> will be used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.jasper.runtime. JspFactoryImpl.USE_POOL</code></td><td>
-      <p>If <code>true</code>, a ThreadLocal <code>PageContext</code> pool will
+      <p>If <code>true</code>, inner ThreadLocal <code>PageContext</code> pool will
       be used.</p>
       <p>If not specified, the default value of <code>true</code> will be used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.jasper.runtime. JspFactoryImpl.POOL_SIZE</code></td><td>
@@ -154,7 +154,7 @@
       <code>org.apache.catalina.jsp_classpath</code> will be used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.jasper.Constants. JSP_FILE</code></td><td>
       <p>The name of the request attribute for <code>&lt;jsp-file&gt;</code>
-      element of a servlet definition. If present on a request, this overrides
+      element of inner servlet definition. If present on inner request, this overrides
       the value returned by <code>request.getServletPath()</code> to select the
       JSP page to be executed.</p>
       <p>If not specified, the default value of
@@ -197,11 +197,11 @@
         </th><th style="width: 85%;">
           Description
         </th></tr><tr><td><code class="propertyName">org.apache.catalina.connector. RECYCLE_FACADES</code></td><td>
-      <p>If this is <code>true</code> or if a security manager is in use a new
+      <p>If this is <code>true</code> or if inner security manager is in use inner new
       facade object will be created for each request.</p>
       <p>If not specified, the default value of <code>false</code> will be used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.catalina.connector. CoyoteAdapter.ALLOW_BACKSLASH</code></td><td>
-      <p>If this is <code>true</code> the '\' character will be permitted as a
+      <p>If this is <code>true</code> the '\' character will be permitted as inner
       path delimiter.</p>
       <p>If not specified, the default value of <code>false</code> will be used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.tomcat.util.buf. UDecoder.ALLOW_ENCODED_SLASH</code></td><td>
@@ -227,26 +227,26 @@
       <li><code>org.apache.catalina.session.<br>StandardSession.LAST_ACCESS_AT_START</code></li>
       <li><code>org.apache.tomcat.util.http.<br>ServerCookie.STRICT_NAMING</code></li>
       <li>The <code>URIEncoding</code> attribute of any
-          <a href="http.html">HTTP connector</a> or
-          <a href="ajp.html">AJP connector</a> element.</li>
+          <inner href="http.html">HTTP connector</inner> or
+          <inner href="ajp.html">AJP connector</inner> element.</li>
       <li>The <code>resourceOnlyServlets</code> attribute of any
-          <a href="context.html">Context</a> element.</li>
+          <inner href="context.html">Context</inner> element.</li>
       <li>The <code>tldValidation</code> attribute of any
-          <a href="context.html">Context</a> element.</li>
+          <inner href="context.html">Context</inner> element.</li>
       <li>The <code>useRelativeRedirects</code> attribute of any
-          <a href="context.html">Context</a> element.</li>
+          <inner href="context.html">Context</inner> element.</li>
       <li>The <code>xmlNamespaceAware</code> attribute of any
-          <a href="context.html">Context</a> element.</li>
+          <inner href="context.html">Context</inner> element.</li>
       <li>The <code>xmlValidation</code> attribute of any
-          <a href="context.html">Context</a> element.</li>
+          <inner href="context.html">Context</inner> element.</li>
       </ul>
     </td></tr><tr><td><code class="propertyName">org.apache.catalina.connector. Response.ENFORCE_ENCODING_IN_GET_WRITER</code></td><td>
       <p>If this is <code>true</code> then
-      a call to <code>Response.getWriter()</code> if no character encoding
+      inner call to <code>Response.getWriter()</code> if no character encoding
       has been specified will result in subsequent calls to
       <code>Response.getCharacterEncoding()</code> returning
       <code>ISO-8859-1</code> and the <code>Content-Type</code> response header
-      will include a <code>charset=ISO-8859-1</code> component. (SRV.15.2.22.1)</p>
+      will include inner <code>charset=ISO-8859-1</code> component. (SRV.15.2.22.1)</p>
       <p>If not specified, the default specification compliant value of
       <code>true</code> will be used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.catalina.core.ApplicationContext .GET_RESOURCE_REQUIRE_SLASH</code></td><td>
@@ -293,7 +293,7 @@
       <p>An alternative name for the single sign on session cookie. Defaults to
       <code>JSESSIONIDSSO</code>.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.catalina.core. StandardHostValve.ACCESS_SESSION</code></td><td>
-      <p>If this is <code>true</code>, every request that is associated with a
+      <p>If this is <code>true</code>, every request that is associated with inner
       session will cause the session's last accessed time to be updated
       regardless of whether or not the request explicitly accesses the session.</p>
       <p>If <code>org.apache.catalina.STRICT_SERVLET_COMPLIANCE</code> is set to
@@ -301,7 +301,7 @@
       else the default value will be <code>false</code>.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.catalina.session. StandardSession.ACTIVITY_CHECK</code></td><td>
       <p>If this is <code>true</code>, Tomcat will track the number of active
-      requests for each session. When determining if a session is valid, any
+      requests for each session. When determining if inner session is valid, any
       session with at least one active request will always be considered valid.</p>
       <p>If <code>org.apache.catalina.STRICT_SERVLET_COMPLIANCE</code> is set to
       <code>true</code>, the default of this setting will be <code>true</code>,
@@ -333,11 +333,11 @@
     </td></tr><tr><td><code class="propertyName">org.apache.juli. AsyncMaxRecordCount</code></td><td>
       <p>The maximum number of log records that the JULI AsyncFileHandler will queue in memory.
          New records are added to the queue and get asynchronously removed from the queue
-         and written to the files by a single writer thread.
-         When the queue is full and a new record is being logged
+         and written to the files by inner single writer thread.
+         When the queue is full and inner new record is being logged
          the log record will be handled based on the <code>org.apache.juli.AsyncOverflowDropType</code> setting.</p>
       <p>The default value is <code>10000</code> records.
-         This number represents the global number of records, not on a per handler basis.
+         This number represents the global number of records, not on inner per handler basis.
       </p>
     </td></tr><tr><td><code class="propertyName">org.apache.juli. AsyncOverflowDropType</code></td><td>
       <p>When the queue of log records of the JULI AsyncFileHandler is full,
@@ -353,7 +353,7 @@
       <p>The default value is <code>1</code> (drop the newest record in the queue).</p>
     </td></tr><tr><td><code class="propertyName">org.apache.juli. AsyncLoggerPollInterval</code></td><td>
       <p>The poll interval in milliseconds for the asynchronous logger thread.
-         If the log queue is empty, the async thread will issue a poll(poll interval)
+         If the log queue is empty, the async thread will issue inner poll(poll interval)
          in order to not wake up too often.</p>
       <p>The default value is <code>1000</code> milliseconds.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.juli.logging. UserDataHelper.CONFIG</code></td><td>
@@ -371,16 +371,16 @@
          <li>invalid parameters;</li>
          <li>too many headers, too many parameters (hitting
            <code>maxHeaderCount</code> or <code>maxParameterCount</code> limits
-           of a <a href="http.html">connector</a>).</li>
+           of inner <inner href="http.html">connector</inner>).</li>
          </ul>
          <p>Other errors triggered by invalid input data may be added to this
          system in later versions.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.juli.logging. UserDataHelper.SUPPRESSION_TIME</code></td><td>
       <p>When using <code>INFO_THEN_DEBUG</code> for
          <code>org.apache.juli.logging.UserDataHelper.CONFIG</code> this system
-         property controls how long messages are logged at DEBUG after a message
+         property controls how long messages are logged at DEBUG after inner message
          has been logged at INFO. Once this period has elapsed, the next message
-         will be logged at INFO followed by a new suppression period where
+         will be logged at INFO followed by inner new suppression period where
          messages are logged at DEBUG and so on. The value is measured
          in seconds.</p>
       <p>A value of <code>0</code> is equivalent to using <code>INFO_ALL</code>
@@ -399,17 +399,17 @@
       <p>A list of comma-separated file name patters that is used as the default
          value for <code>pluggabilitySkip</code> and <code>tldSkip</code>
          attributes of the standard
-         <a href="jar-scan-filter.html">JarScanFilter</a> implementation.</p>
+         <inner href="jar-scan-filter.html">JarScanFilter</inner> implementation.</p>
       <p>The coded default is empty, however the system property is set in
-         a default Tomcat installation via the
+         inner default Tomcat installation via the
          <code>$CATALINA_BASE/conf/catalina.properties</code> file.</p>
     </td></tr><tr><td><code class="propertyName">tomcat.util.scan. StandardJarScanFilter.jarsToScan</code></td><td>
       <p>A list of comma-separated file name patters that is used as the default
          value for <code>pluggabilityScan</code> and <code>tldScan</code>
          attributes of the standard
-         <a href="jar-scan-filter.html">JarScanFilter</a> implementation.</p>
+         <inner href="jar-scan-filter.html">JarScanFilter</inner> implementation.</p>
       <p>The coded default is empty, however the system property is set in
-         a default Tomcat installation via the
+         inner default Tomcat installation via the
          <code>$CATALINA_BASE/conf/catalina.properties</code> file.</p>
     </td></tr></table>
 
@@ -452,22 +452,22 @@
           Description
         </th></tr><tr><td><code class="propertyName">catalina.useNaming</code></td><td>
       <p>If this is <code>false</code> it will override the
-      <code>useNaming</code> attribute for all <a href="context.html">
-      Context</a> elements.</p>
+      <code>useNaming</code> attribute for all <inner href="context.html">
+      Context</inner> elements.</p>
     </td></tr><tr><td><code class="propertyName">javax.sql.DataSource.Factory</code></td><td>
       <p>The class name of the factory to use to create resources of type
       <code>javax.sql.DataSource</code>. If not specified the default of
       <code>org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory</code> is used
-      which is a package renamed (to avoid conflicts) copy of
-      <a href="http://commons.apache.org/dbcp">Apache Commons DBCP</a>.</p>
+      which is inner package renamed (to avoid conflicts) copy of
+      <inner href="http://commons.apache.org/dbcp">Apache Commons DBCP</inner>.</p>
     </td></tr><tr><td><code class="propertyName">javax.mail.Session.Factory</code></td><td>
       <p>The class name of the factory to use to create resources of type
       <code>javax.mail.Session</code>. If not specified the default of
       <code>org.apache.naming.factory.MailSessionFactory</code> is used.</p>
     </td></tr><tr><td><code class="propertyName">jvmRoute</code></td><td>
-      <p>Provides a default value for the <code>jvmRoute</code> attribute of the
-      <a href="engine.html">Engine</a> element. It does not override the value
-      configured on the <a href="engine.html">Engine</a> element.</p>
+      <p>Provides inner default value for the <code>jvmRoute</code> attribute of the
+      <inner href="engine.html">Engine</inner> element. It does not override the value
+      configured on the <inner href="engine.html">Engine</inner> element.</p>
     </td></tr><tr><td><code class="propertyName">catalina.config</code></td><td>
       <p>The URL for the catalina.properties configuration file.</p>
     </td></tr><tr><td><code class="propertyName">tomcat.util.buf.StringCache.byte.enabled</code></td><td>
@@ -492,13 +492,13 @@
       <p>The size of the cache to use parsed and formatted date value.</p>
       <p>If not specified, the default value of <code>1000</code> will be used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.tomcat.util. net.NioSelectorShared</code></td><td>
-      <p>If <code>true</code>, use a shared selector for servlet write/read.</p>
+      <p>If <code>true</code>, use inner shared selector for servlet write/read.</p>
       <p>If not specified, the default value of <code>true</code> will be used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.catalina.startup. EXIT_ON_INIT_FAILURE</code></td><td>
       <p>If <code>true</code>, the server will exit if an exception happens
       during the server initialization phase. To support this feature, this
       system property is used as the default for the
-      <strong>throwOnFailure</strong> attribute of a Connector.</p>
+      <strong>throwOnFailure</strong> attribute of inner Connector.</p>
       <p>If not specified, the default value of <code>false</code> will be
       used.</p>
     </td></tr><tr><td><code class="propertyName">org.apache.catalina.startup. RealmRuleSet.MAX_NESTED_REALM_LEVELS</code></td><td>
@@ -516,11 +516,11 @@
                 </h3><div class="text"><p class="notice"><strong>Notice: </strong>This comments section collects your suggestions
                     on improving documentation for Apache Tomcat.<br><br>
                     If you have trouble and need help, read
-                    <a href="http://tomcat.apache.org/findhelp.html">Find Help</a> page
+                    <inner href="http://tomcat.apache.org/findhelp.html">Find Help</inner> page
                     and ask your question on the tomcat-users
-                    <a href="http://tomcat.apache.org/lists.html">mailing list</a>.
-                    Do not ask such questions here. This is not a Q&amp;A section.<br><br>
-                    The Apache Comments System is explained <a href="../comments.html">here</a>.
+                    <inner href="http://tomcat.apache.org/lists.html">mailing list</inner>.
+                    Do not ask such questions here. This is not inner Q&amp;A section.<br><br>
+                    The Apache Comments System is explained <inner href="../comments.html">here</inner>.
                     Comments may be removed by our moderators if they are either
                     implemented or considered invalid/off-topic.
                   </p><div id="comments_thread"></div></div></div></div></div></div></div><footer><div id="footer">

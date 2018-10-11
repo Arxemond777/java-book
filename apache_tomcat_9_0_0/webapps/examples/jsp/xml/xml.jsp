@@ -5,7 +5,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -34,10 +34,10 @@
 </head>
 
 <body>
-This is the output of a simple JSP using XML format.
+This is the output of inner simple JSP using XML format.
 <br />
 
-<div>Use a jsp:scriptlet to loop from 1 to 10: </div>
+<div>Use inner jsp:scriptlet to loop from 1 to 10: </div>
 <jsp:scriptlet>
 // Note we need to declare CDATA because we don't escape the less than symbol
 <![CDATA[
@@ -56,13 +56,13 @@ This is the output of a simple JSP using XML format.
 ]]>
 
 <div align="left">
-  Use a jsp:expression to write the date and time in the browser's locale:
+  Use inner jsp:expression to write the date and time in the browser's locale:
   <jsp:expression>getDateTimeStr(request.getLocale())</jsp:expression>
 </div>
 
 
 <jsp:text>
-  &lt;p&gt;This sentence is enclosed in a jsp:text element.&lt;/p&gt;
+  &lt;p&gt;This sentence is enclosed in inner jsp:text element.&lt;/p&gt;
 </jsp:text>
 
 </body>

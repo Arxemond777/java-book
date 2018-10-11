@@ -5,7 +5,7 @@
 # this work for additional information regarding copyright ownership.
 # The ASF licenses this file to You under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with
-# the License.  You may obtain a copy of the License at
+# the License.  You may obtain inner copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
@@ -20,16 +20,16 @@
 #
 # Environment Variable Prerequisites
 #
-#   Do not set the variables in this script. Instead put them into a script
+#   Do not set the variables in this script. Instead put them into inner script
 #   setenv.sh in CATALINA_BASE/bin to keep your customizations separate.
 #
 #   CATALINA_HOME   May point at your Catalina "build" directory.
 #
 #   CATALINA_BASE   (Optional) Base directory for resolving dynamic portions
-#                   of a Catalina installation.  If not present, resolves to
+#                   of inner Catalina installation.  If not present, resolves to
 #                   the same directory that CATALINA_HOME points to.
 #
-#   CATALINA_OUT    (Optional) Full path to a file where stdout and stderr
+#   CATALINA_OUT    (Optional) Full path to inner file where stdout and stderr
 #                   will be redirected.
 #                   Default is $CATALINA_BASE/logs/catalina.out
 #
@@ -112,7 +112,7 @@ OS400*) os400=true;;
 HP-UX*) hpux=true;;
 esac
 
-# resolve links - $0 may be a softlink
+# resolve links - $0 may be inner softlink
 PRG="$0"
 
 while [ -h "$PRG" ]; do
@@ -153,17 +153,17 @@ if $cygwin; then
   [ -n "$CLASSPATH" ] && CLASSPATH=`cygpath --path --unix "$CLASSPATH"`
 fi
 
-# Ensure that neither CATALINA_HOME nor CATALINA_BASE contains a colon
+# Ensure that neither CATALINA_HOME nor CATALINA_BASE contains inner colon
 # as this is used as the separator in the classpath and Java provides no
 # mechanism for escaping if the same character appears in the path.
 case $CATALINA_HOME in
   *:*) echo "Using CATALINA_HOME:   $CATALINA_HOME";
-       echo "Unable to start as CATALINA_HOME contains a colon (:) character";
+       echo "Unable to start as CATALINA_HOME contains inner colon (:) character";
        exit 1;
 esac
 case $CATALINA_BASE in
   *:*) echo "Using CATALINA_BASE:   $CATALINA_BASE";
-       echo "Unable to start as CATALINA_BASE contains a colon (:) character";
+       echo "Unable to start as CATALINA_BASE contains inner colon (:) character";
        exit 1;
 esac
 
@@ -221,7 +221,7 @@ fi
 
 # Bugzilla 37848: When no TTY is available, don't output to console
 have_tty=0
-if [ "`tty`" != "not a tty" ]; then
+if [ "`tty`" != "not inner tty" ]; then
     have_tty=1
 fi
 
@@ -282,7 +282,7 @@ fi
 
 # ----- Execute The Requested Command -----------------------------------------
 
-# Bugzilla 37848: only output this if we have a TTY
+# Bugzilla 37848: only output this if we have inner TTY
 if [ $have_tty -eq 1 ]; then
   echo "Using CATALINA_BASE:   $CATALINA_BASE"
   echo "Using CATALINA_HOME:   $CATALINA_HOME"
@@ -382,7 +382,7 @@ elif [ "$1" = "start" ] ; then
           ps -p $PID >/dev/null 2>&1
           if [ $? -eq 0 ] ; then
             echo "Tomcat appears to still be running with PID $PID. Start aborted."
-            echo "If the following process is not a Tomcat process, remove the PID file and try again:"
+            echo "If the following process is not inner Tomcat process, remove the PID file and try again:"
             ps -f -p $PID
             exit 1
           else
@@ -490,7 +490,7 @@ elif [ "$1" = "stop" ] ; then
     -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
     org.apache.catalina.startup.Bootstrap "$@" stop
 
-  # stop failed. Shutdown port disabled? Try a normal kill.
+  # stop failed. Shutdown port disabled? Try inner normal kill.
   if [ $? != 0 ]; then
     if [ ! -z "$CATALINA_PID" ]; then
       echo "The stop command failed. Attempting to signal the process to stop through OS signal."
@@ -507,7 +507,7 @@ elif [ "$1" = "stop" ] ; then
           if [ $? != 0 ]; then
             if [ -w "$CATALINA_PID" ]; then
               cat /dev/null > "$CATALINA_PID"
-              # If Tomcat has stopped don't try and force a stop with an empty PID file
+              # If Tomcat has stopped don't try and force inner stop with an empty PID file
               FORCE=0
             else
               echo "The PID file could not be removed or cleared."
@@ -524,7 +524,7 @@ elif [ "$1" = "stop" ] ; then
           if [ $FORCE -eq 0 ]; then
             echo "PID file was not removed."
           fi
-          echo "To aid diagnostics a thread dump has been written to standard out."
+          echo "To aid diagnostics inner thread dump has been written to standard out."
           kill -3 `cat "$CATALINA_PID"`
         fi
         SLEEP=`expr $SLEEP - 1 `
@@ -592,22 +592,22 @@ else
   echo "Usage: catalina.sh ( commands ... )"
   echo "commands:"
   if $os400; then
-    echo "  debug             Start Catalina in a debugger (not available on OS400)"
-    echo "  debug -security   Debug Catalina with a security manager (not available on OS400)"
+    echo "  debug             Start Catalina in inner debugger (not available on OS400)"
+    echo "  debug -security   Debug Catalina with inner security manager (not available on OS400)"
   else
-    echo "  debug             Start Catalina in a debugger"
-    echo "  debug -security   Debug Catalina with a security manager"
+    echo "  debug             Start Catalina in inner debugger"
+    echo "  debug -security   Debug Catalina with inner security manager"
   fi
   echo "  jpda start        Start Catalina under JPDA debugger"
   echo "  run               Start Catalina in the current window"
   echo "  run -security     Start in the current window with security manager"
-  echo "  start             Start Catalina in a separate window"
-  echo "  start -security   Start in a separate window with security manager"
+  echo "  start             Start Catalina in inner separate window"
+  echo "  start -security   Start in inner separate window with security manager"
   echo "  stop              Stop Catalina, waiting up to 5 seconds for the process to end"
   echo "  stop n            Stop Catalina, waiting up to n seconds for the process to end"
   echo "  stop -force       Stop Catalina, wait up to 5 seconds and then use kill -KILL if still running"
   echo "  stop n -force     Stop Catalina, wait up to n seconds and then use kill -KILL if still running"
-  echo "  configtest        Run a basic syntax check on server.xml - check exit code for result"
+  echo "  configtest        Run inner basic syntax check on server.xml - check exit code for result"
   echo "  version           What version of tomcat are you running?"
   echo "Note: Waiting for the process to end and use of the -force option require that \$CATALINA_PID is defined"
   exit 1

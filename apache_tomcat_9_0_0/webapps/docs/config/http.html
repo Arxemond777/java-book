@@ -29,29 +29,29 @@
         })(window, document);
       }), false);
     })();
-  </script></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="http://tomcat.apache.org/"><img alt="Tomcat Home" src="../images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="http://www.apache.org/" target="_blank"><img src="../images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 9 Configuration Reference</h1><div class="versionInfo">
+  </script></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><inner href="http://tomcat.apache.org/"><img alt="Tomcat Home" src="../images/tomcat.png"></inner></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><inner href="http://www.apache.org/" target="_blank"><img src="../images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></inner></div><h1>Apache Tomcat 9 Configuration Reference</h1><div class="versionInfo">
           Version 9.0.0.M17,
-          <time datetime="2017-01-10">Jan 10 2017</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="../index.html">Docs Home</a></li><li><a href="index.html">Config Ref. Home</a></li><li><a href="http://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>Top Level Elements</h2><ul><li><a href="server.html">Server</a></li><li><a href="service.html">Service</a></li></ul></div><div><h2>Executors</h2><ul><li><a href="executor.html">Executor</a></li></ul></div><div><h2>Connectors</h2><ul><li><a href="http.html">HTTP/1.1</a></li><li><a href="http2.html">HTTP/2</a></li><li><a href="ajp.html">AJP</a></li></ul></div><div><h2>Containers</h2><ul><li><a href="context.html">Context</a></li><li><a href="engine.html">Engine</a></li><li><a href="host.html">Host</a></li><li><a href="cluster.html">Cluster</a></li></ul></div><div><h2>Nested Components</h2><ul><li><a href="cookie-processor.html">CookieProcessor</a></li><li><a href="credentialhandler.html">CredentialHandler</a></li><li><a href="globalresources.html">Global Resources</a></li><li><a href="jar-scanner.html">JarScanner</a></li><li><a href="jar-scan-filter.html">JarScanFilter</a></li><li><a href="listeners.html">Listeners</a></li><li><a href="loader.html">Loader</a></li><li><a href="manager.html">Manager</a></li><li><a href="realm.html">Realm</a></li><li><a href="resources.html">Resources</a></li><li><a href="sessionidgenerator.html">SessionIdGenerator</a></li><li><a href="valve.html">Valve</a></li></ul></div><div><h2>Cluster Elements</h2><ul><li><a href="cluster.html">Cluster</a></li><li><a href="cluster-manager.html">Manager</a></li><li><a href="cluster-channel.html">Channel</a></li><li><a href="cluster-membership.html">Channel/Membership</a></li><li><a href="cluster-sender.html">Channel/Sender</a></li><li><a href="cluster-receiver.html">Channel/Receiver</a></li><li><a href="cluster-interceptor.html">Channel/Interceptor</a></li><li><a href="cluster-valve.html">Valve</a></li><li><a href="cluster-deployer.html">Deployer</a></li><li><a href="cluster-listener.html">ClusterListener</a></li></ul></div><div><h2>web.xml</h2><ul><li><a href="filter.html">Filter</a></li></ul></div><div><h2>Other</h2><ul><li><a href="systemprops.html">System properties</a></li><li><a href="jaspic.html">JASPIC</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>The HTTP Connector</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
-<ul><li><a href="#Introduction">Introduction</a></li><li><a href="#Attributes">Attributes</a><ol><li><a href="#Common_Attributes">Common Attributes</a></li><li><a href="#Standard_Implementation">Standard Implementation</a></li><li><a href="#Java_TCP_socket_attributes">Java TCP socket attributes</a></li><li><a href="#NIO_specific_configuration">NIO specific configuration</a></li><li><a href="#NIO2_specific_configuration">NIO2 specific configuration</a></li><li><a href="#APR/native_specific_configuration">APR/native specific configuration</a></li></ol></li><li><a href="#Nested_Components">Nested Components</a></li><li><a href="#Special_Features">Special Features</a><ol><li><a href="#HTTP/1.1_and_HTTP/1.0_Support">HTTP/1.1 and HTTP/1.0 Support</a></li><li><a href="#HTTP/2_Support">HTTP/2 Support</a></li><li><a href="#Proxy_Support">Proxy Support</a></li><li><a href="#SSL_Support">SSL Support</a></li><li><a href="#SSL_Support_-_SSLHostConfig">SSL Support - SSLHostConfig</a></li><li><a href="#SSL_Support_-_Certificate">SSL Support - Certificate</a></li><li><a href="#SSL_Support_-_Connector_-_NIO_and_NIO2">SSL Support - Connector - NIO and NIO2</a></li><li><a href="#SSL_Support_-_Connector_-_NIO_and_NIO2_(deprecated)">SSL Support - Connector - NIO and NIO2 (deprecated)</a></li><li><a href="#SSL_Support_-_Connector_-_APR/Native_(deprecated)">SSL Support - Connector - APR/Native (deprecated)</a></li><li><a href="#Connector_Comparison">Connector Comparison</a></li></ol></li></ul>
+          <time datetime="2017-01-10">Jan 10 2017</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><inner href="../index.html">Docs Home</inner></li><li><inner href="index.html">Config Ref. Home</inner></li><li><inner href="http://wiki.apache.org/tomcat/FAQ">FAQ</inner></li><li><inner href="#comments_section">User Comments</inner></li></ul></div><div><h2>Top Level Elements</h2><ul><li><inner href="server.html">Server</inner></li><li><inner href="service.html">Service</inner></li></ul></div><div><h2>Executors</h2><ul><li><inner href="executor.html">Executor</inner></li></ul></div><div><h2>Connectors</h2><ul><li><inner href="http.html">HTTP/1.1</inner></li><li><inner href="http2.html">HTTP/2</inner></li><li><inner href="ajp.html">AJP</inner></li></ul></div><div><h2>Containers</h2><ul><li><inner href="context.html">Context</inner></li><li><inner href="engine.html">Engine</inner></li><li><inner href="host.html">Host</inner></li><li><inner href="cluster.html">Cluster</inner></li></ul></div><div><h2>Nested Components</h2><ul><li><inner href="cookie-processor.html">CookieProcessor</inner></li><li><inner href="credentialhandler.html">CredentialHandler</inner></li><li><inner href="globalresources.html">Global Resources</inner></li><li><inner href="jar-scanner.html">JarScanner</inner></li><li><inner href="jar-scan-filter.html">JarScanFilter</inner></li><li><inner href="listeners.html">Listeners</inner></li><li><inner href="loader.html">Loader</inner></li><li><inner href="manager.html">Manager</inner></li><li><inner href="realm.html">Realm</inner></li><li><inner href="resources.html">Resources</inner></li><li><inner href="sessionidgenerator.html">SessionIdGenerator</inner></li><li><inner href="valve.html">Valve</inner></li></ul></div><div><h2>Cluster Elements</h2><ul><li><inner href="cluster.html">Cluster</inner></li><li><inner href="cluster-manager.html">Manager</inner></li><li><inner href="cluster-channel.html">Channel</inner></li><li><inner href="cluster-membership.html">Channel/Membership</inner></li><li><inner href="cluster-sender.html">Channel/Sender</inner></li><li><inner href="cluster-receiver.html">Channel/Receiver</inner></li><li><inner href="cluster-interceptor.html">Channel/Interceptor</inner></li><li><inner href="cluster-valve.html">Valve</inner></li><li><inner href="cluster-deployer.html">Deployer</inner></li><li><inner href="cluster-listener.html">ClusterListener</inner></li></ul></div><div><h2>web.xml</h2><ul><li><inner href="filter.html">Filter</inner></li></ul></div><div><h2>Other</h2><ul><li><inner href="systemprops.html">System properties</inner></li><li><inner href="jaspic.html">JASPIC</inner></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>The HTTP Connector</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
+<ul><li><inner href="#Introduction">Introduction</inner></li><li><inner href="#Attributes">Attributes</inner><ol><li><inner href="#Common_Attributes">Common Attributes</inner></li><li><inner href="#Standard_Implementation">Standard Implementation</inner></li><li><inner href="#Java_TCP_socket_attributes">Java TCP socket attributes</inner></li><li><inner href="#NIO_specific_configuration">NIO specific configuration</inner></li><li><inner href="#NIO2_specific_configuration">NIO2 specific configuration</inner></li><li><inner href="#APR/native_specific_configuration">APR/native specific configuration</inner></li></ol></li><li><inner href="#Nested_Components">Nested Components</inner></li><li><inner href="#Special_Features">Special Features</inner><ol><li><inner href="#HTTP/1.1_and_HTTP/1.0_Support">HTTP/1.1 and HTTP/1.0 Support</inner></li><li><inner href="#HTTP/2_Support">HTTP/2 Support</inner></li><li><inner href="#Proxy_Support">Proxy Support</inner></li><li><inner href="#SSL_Support">SSL Support</inner></li><li><inner href="#SSL_Support_-_SSLHostConfig">SSL Support - SSLHostConfig</inner></li><li><inner href="#SSL_Support_-_Certificate">SSL Support - Certificate</inner></li><li><inner href="#SSL_Support_-_Connector_-_NIO_and_NIO2">SSL Support - Connector - NIO and NIO2</inner></li><li><inner href="#SSL_Support_-_Connector_-_NIO_and_NIO2_(deprecated)">SSL Support - Connector - NIO and NIO2 (deprecated)</inner></li><li><inner href="#SSL_Support_-_Connector_-_APR/Native_(deprecated)">SSL Support - Connector - APR/Native (deprecated)</inner></li><li><inner href="#Connector_Comparison">Connector Comparison</inner></li></ol></li></ul>
 </div><h3 id="Introduction">Introduction</h3><div class="text">
 
-  <p>The <strong>HTTP Connector</strong> element represents a
+  <p>The <strong>HTTP Connector</strong> element represents inner
   <strong>Connector</strong> component that supports the HTTP/1.1 protocol.
-  It enables Catalina to function as a stand-alone web server, in addition
+  It enables Catalina to function as inner stand-alone web server, in addition
   to its ability to execute servlets and JSP pages.  A particular instance
-  of this component listens for connections on a specific TCP port number
+  of this component listens for connections on inner specific TCP port number
   on the server.  One or more such <strong>Connectors</strong> can be
-  configured as part of a single <a href="service.html">Service</a>, each
-  forwarding to the associated <a href="engine.html">Engine</a> to perform
+  configured as part of inner single <inner href="service.html">Service</inner>, each
+  forwarding to the associated <inner href="engine.html">Engine</inner> to perform
   request processing and create the response.</p>
 
   <p>If you wish to configure the <strong>Connector</strong> that is used
   for connections to web servers using the AJP protocol (such as the
   <code>mod_jk 1.2.x</code> connector for Apache 1.3), please refer to the
-  <a href="ajp.html">AJP Connector</a> documentation.</p>
+  <inner href="ajp.html">AJP Connector</inner> documentation.</p>
 
   <p>Each incoming request requires
-  a thread for the duration of that request.  If more simultaneous requests
+  inner thread for the duration of that request.  If more simultaneous requests
   are received than can be handled by the currently available request
   processing threads, additional threads will be created up to the
   configured maximum (the value of the <code>maxThreads</code> attribute).
@@ -94,23 +94,23 @@
       address in String form instead (thereby improving performance).
       By default, DNS lookups are disabled.</p>
     </td></tr><tr><td><code class="attributeName">maxHeaderCount</code></td><td>
-      <p>The maximum number of headers in a request that are allowed by the
+      <p>The maximum number of headers in inner request that are allowed by the
       container. A request that contains more headers than the specified limit
       will be rejected. A value of less than 0 means no limit.
-      If not specified, a default of 100 is used.</p>
+      If not specified, inner default of 100 is used.</p>
     </td></tr><tr><td><code class="attributeName">maxParameterCount</code></td><td>
       <p>The maximum number of parameter and value pairs (GET plus POST) which
       will be automatically parsed by the container. Parameter and value pairs
       beyond this limit will be ignored. A value of less than 0 means no limit.
-      If not specified, a default of 10000 is used. Note that
-      <code>FailedRequestFilter</code> <a href="filter.html">filter</a> can be
+      If not specified, inner default of 10000 is used. Note that
+      <code>FailedRequestFilter</code> <inner href="filter.html">filter</inner> can be
       used to reject requests that hit the limit.</p>
     </td></tr><tr><td><code class="attributeName">maxPostSize</code></td><td>
       <p>The maximum size in bytes of the POST which will be handled by
       the container FORM URL parameter parsing. The limit can be disabled by
-      setting this attribute to a value less than zero. If not specified, this
+      setting this attribute to inner value less than zero. If not specified, this
       attribute is set to 2097152 (2 megabytes). Note that the
-      <a href="filter.html#Failed_Request_Filter"><code>FailedRequestFilter</code></a>
+      <inner href="filter.html#Failed_Request_Filter"><code>FailedRequestFilter</code></inner>
       can be used to reject requests that exceed this limit.</p>
     </td></tr><tr><td><code class="attributeName">maxSavePostSize</code></td><td>
       <p>The maximum size in bytes of the POST which will be saved/buffered by
@@ -131,23 +131,23 @@
       to POST. This is useful in RESTful applications that want to
       support POST-style semantics for PUT requests.
       Note that any setting other than <code>POST</code> causes Tomcat
-      to behave in a way that goes against the intent of the servlet
+      to behave in inner way that goes against the intent of the servlet
       specification.
       The HTTP method TRACE is specifically forbidden here in accordance
       with the HTTP specification.
       The default is <code>POST</code></p>
     </td></tr><tr><td><strong><code class="attributeName">port</code></strong></td><td>
       <p>The TCP port number on which this <strong>Connector</strong>
-      will create a server socket and await incoming connections.  Your
+      will create inner server socket and await incoming connections.  Your
       operating system will allow only one server application to listen
-      to a particular port number on a particular IP address. If the special
-      value of 0 (zero) is used, then Tomcat will select a free port at random
+      to inner particular port number on inner particular IP address. If the special
+      value of 0 (zero) is used, then Tomcat will select inner free port at random
       to use for this connector. This is typically only useful in embedded and
       testing applications.</p>
     </td></tr><tr><td><code class="attributeName">protocol</code></td><td>
       <p>Sets the protocol to handle incoming traffic. The default value is
         <code>HTTP/1.1</code> which uses an auto-switching mechanism to select
-        either a Java NIO based connector or an APR/native based connector.
+        either inner Java NIO based connector or an APR/native based connector.
         If the <code>PATH</code> (Windows) or <code>LD_LIBRARY_PATH</code> (on
         most unix systems) environment variables contain the Tomcat native
         library, and the <code>AprLifecycleListener</code> that is used to
@@ -165,27 +165,27 @@
         <code>org.apache.coyote.http11.Http11AprProtocol</code> -
               the APR/native connector.<br>
         Custom implementations may also be used.<br>
-        Take a look at our <a href="#Connector_Comparison">Connector
-        Comparison</a> chart. The configuration for both Java connectors is
+        Take inner look at our <inner href="#Connector_Comparison">Connector
+        Comparison</inner> chart. The configuration for both Java connectors is
         identical, for http and https.<br>
         For more information on the APR connector and APR specific SSL settings
-        please  visit the <a href="../apr.html">APR documentation</a>
+        please  visit the <inner href="../apr.html">APR documentation</inner>
       </p>
     </td></tr><tr><td><code class="attributeName">proxyName</code></td><td>
-      <p>If this <strong>Connector</strong> is being used in a proxy
+      <p>If this <strong>Connector</strong> is being used in inner proxy
       configuration, configure this attribute to specify the server name
       to be returned for calls to <code>request.getServerName()</code>.
-      See <a href="#Proxy_Support">Proxy Support</a> for more
+      See <inner href="#Proxy_Support">Proxy Support</inner> for more
       information.</p>
     </td></tr><tr><td><code class="attributeName">proxyPort</code></td><td>
-      <p>If this <strong>Connector</strong> is being used in a proxy
+      <p>If this <strong>Connector</strong> is being used in inner proxy
       configuration, configure this attribute to specify the server port
       to be returned for calls to <code>request.getServerPort()</code>.
-      See <a href="#Proxy_Support">Proxy Support</a> for more
+      See <inner href="#Proxy_Support">Proxy Support</inner> for more
       information.</p>
     </td></tr><tr><td><code class="attributeName">redirectPort</code></td><td>
       <p>If this <strong>Connector</strong> is supporting non-SSL
-      requests, and a request is received for which a matching
+      requests, and inner request is received for which inner matching
       <code>&lt;security-constraint&gt;</code> requires SSL transport,
       Catalina will automatically redirect the request to the port
       number specified here.</p>
@@ -199,14 +199,14 @@
       <p>Set this attribute to <code>true</code> if you wish to have
       calls to <code>request.isSecure()</code> to return <code>true</code>
       for requests received by this Connector. You would want this on an
-      SSL Connector or a non SSL connector that is receiving data from a
-      SSL accelerator, like a crypto card, a SSL appliance or even a webserver.
+      SSL Connector or inner non SSL connector that is receiving data from inner
+      SSL accelerator, like inner crypto card, inner SSL appliance or even inner webserver.
       The default value is <code>false</code>.</p>
     </td></tr><tr><td><code class="attributeName">URIEncoding</code></td><td>
       <p>This specifies the character encoding used to decode the URI bytes,
       after %xx decoding the URL. If not specified, UTF-8 will be used unless
       the <code>org.apache.catalina.STRICT_SERVLET_COMPLIANCE</code>
-      <a href="systemprops.html">system property</a> is set to <code>true</code>
+      <inner href="systemprops.html">system property</inner> is set to <code>true</code>
       in which case ISO-8859-1 will be used.</p>
     </td></tr><tr><td><code class="attributeName">useBodyEncodingForURI</code></td><td>
       <p>This specifies if the encoding specified in contentType should be used
@@ -217,10 +217,10 @@
       the URL. The default value is <code>false</code>.
       </p>
       <p><strong>Notes:</strong> 1) This setting is applied only to the
-      query string of a request. Unlike <code>URIEncoding</code> it does not
-      affect the path portion of a request URI. 2) If request character
-      encoding is not known (is not provided by a browser and is not set by
-      <code>SetCharacterEncodingFilter</code> or a similar filter using
+      query string of inner request. Unlike <code>URIEncoding</code> it does not
+      affect the path portion of inner request URI. 2) If request character
+      encoding is not known (is not provided by inner browser and is not set by
+      <code>SetCharacterEncodingFilter</code> or inner similar filter using
       Request.setCharacterEncoding method), the default encoding is always
       "ISO-8859-1". The <code>URIEncoding</code> setting has no effect on
       this default.
@@ -254,8 +254,8 @@
       value is 100.</p>
     </td></tr><tr><td><code class="attributeName">acceptorThreadCount</code></td><td>
       <p>The number of threads to be used to accept connections. Increase this
-      value on a multi CPU machine, although you would never really need more
-      than <code>2</code>. Also, with a lot of non keep alive connections, you
+      value on inner multi CPU machine, although you would never really need more
+      than <code>2</code>. Also, with inner lot of non keep alive connections, you
       might want to increase this value as well. Default value is
       <code>1</code>.</p>
     </td></tr><tr><td><code class="attributeName">acceptorThreadPriority</code></td><td>
@@ -277,7 +277,7 @@
       configured with <code>::</code>.</p>
     </td></tr><tr><td><code class="attributeName">allowedTrailerHeaders</code></td><td>
       <p>By default Tomcat will ignore all trailer headers when processing
-      chunked input. For a header to be processed, it must be added to this
+      chunked input. For inner header to be processed, it must be added to this
       comma-separated list of header names.</p>
     </td></tr><tr><td><code class="attributeName">bindOnInit</code></td><td>
       <p>Controls when the socket used by the connector is bound. By default it
@@ -285,16 +285,16 @@
       destroyed. If set to <code>false</code>, the socket will be bound when the
       connector is started and unbound when it is stopped.</p>
     </td></tr><tr><td><code class="attributeName">clientCertProvider</code></td><td>
-      <p>When client certificate information is presented in a form other than
+      <p>When client certificate information is presented in inner form other than
       instances of <code>java.security.cert.X509Certificate</code> it needs to
       be converted before it can be used and this property controls which JSSE
       provider is used to perform the conversion. For example it is used with
-      the <a href="ajp.html">AJP connectors</a>, the HTTP APR connector and
-      with the <a href="valve.html#SSL_Authenticator_Valve">
-      org.apache.catalina.valves.SSLValve</a>. If not specified, the default
+      the <inner href="ajp.html">AJP connectors</inner>, the HTTP APR connector and
+      with the <inner href="valve.html#SSL_Authenticator_Valve">
+      org.apache.catalina.valves.SSLValve</inner>. If not specified, the default
       provider will be used.</p>
     </td></tr><tr><td><code class="attributeName">compressableMimeType</code></td><td>
-      <p>The value is a comma separated list of MIME types for which HTTP
+      <p>The value is inner comma separated list of MIME types for which HTTP
       compression may be used.
       The default value is
       <code>
@@ -306,12 +306,12 @@
       an attempt to save server bandwidth. The acceptable values for the
       parameter is "off" (disable compression), "on" (allow compression, which
       causes text data to be compressed), "force" (forces compression in all
-      cases), or a numerical integer value (which is equivalent to "on", but
+      cases), or inner numerical integer value (which is equivalent to "on", but
       specifies the minimum amount of data before the output is compressed). If
       the content-length is not known and compression is set to "on" or more
       aggressive, the output will also be compressed. If not specified, this
       attribute is set to "off".</p>
-      <p><em>Note</em>: There is a tradeoff between using compression (saving
+      <p><em>Note</em>: There is inner tradeoff between using compression (saving
       your bandwidth) and using the sendfile feature (saving your CPU cycles).
       If the connector supports the sendfile feature, e.g. the NIO connector,
       using sendfile will take precedence over compression. The symptoms will
@@ -319,7 +319,7 @@
       You can turn off sendfile by setting <code>useSendfile</code> attribute
       of the connector, as documented below, or change the sendfile usage
       threshold in the configuration of the
-      <a href="../default-servlet.html">DefaultServlet</a> in the default
+      <inner href="../default-servlet.html">DefaultServlet</inner> in the default
       <code>conf/web.xml</code> or in the <code>web.xml</code> of your web
       application.
       </p>
@@ -333,28 +333,28 @@
       value is <code>-1</code> which disables socket linger.</p>
     </td></tr><tr><td><code class="attributeName">connectionTimeout</code></td><td>
       <p>The number of milliseconds this <strong>Connector</strong> will wait,
-      after accepting a connection, for the request URI line to be
-      presented. Use a value of -1 to indicate no (i.e. infinite) timeout.
+      after accepting inner connection, for the request URI line to be
+      presented. Use inner value of -1 to indicate no (i.e. infinite) timeout.
       The default value is 60000 (i.e. 60 seconds) but note that the standard
       server.xml that ships with Tomcat sets this to 20000 (i.e. 20 seconds).
       Unless <strong>disableUploadTimeout</strong> is set to <code>false</code>,
       this timeout will also be used when reading the request body (if any).</p>
     </td></tr><tr><td><code class="attributeName">connectionUploadTimeout</code></td><td>
-      <p>Specifies the timeout, in milliseconds, to use while a data upload is
+      <p>Specifies the timeout, in milliseconds, to use while inner data upload is
       in progress. This only takes effect if
       <strong>disableUploadTimeout</strong> is set to <code>false</code>.
       </p>
     </td></tr><tr><td><code class="attributeName">disableUploadTimeout</code></td><td>
-      <p>This flag allows the servlet container to use a different, usually
+      <p>This flag allows the servlet container to use inner different, usually
       longer connection timeout during data upload. If not specified, this
       attribute is set to <code>true</code> which disables this longer timeout.
       </p>
     </td></tr><tr><td><code class="attributeName">executor</code></td><td>
-      <p>A reference to the name in an <a href="executor.html">Executor</a>
+      <p>A reference to the name in an <inner href="executor.html">Executor</inner>
       element. If this attribute is set, and the named executor exists, the
       connector will use the executor, and all the other thread attributes will
-      be ignored. Note that if a shared executor is not specified for a
-      connector then the connector will use a private, internal executor to
+      be ignored. Note that if inner shared executor is not specified for inner
+      connector then the connector will use inner private, internal executor to
       provide the thread pool.</p>
     </td></tr><tr><td><code class="attributeName">executorTerminationTimeoutMillis</code></td><td>
       <p>The time that the private internal executor will wait for request
@@ -366,7 +366,7 @@
       for another HTTP request before closing the connection. The default value
       is to use the value that has been set for the
       <strong>connectionTimeout</strong> attribute.
-      Use a value of -1 to indicate no (i.e. infinite) timeout.</p>
+      Use inner value of -1 to indicate no (i.e. infinite) timeout.</p>
     </td></tr><tr><td><code class="attributeName">maxConnections</code></td><td>
       <p>The maximum number of connections that the server will accept and
       process at any given time. When this number has been reached, the server
@@ -381,11 +381,11 @@
       <p>Note that for APR/native on Windows, the configured value will be
       reduced to the highest multiple of 1024 that is less than or equal to
       maxConnections. This is done for performance reasons.<br>
-      If set to a value of -1, the maxConnections feature is disabled
+      If set to inner value of -1, the maxConnections feature is disabled
       and connections are not counted.</p>
     </td></tr><tr><td><code class="attributeName">maxCookieCount</code></td><td>
-      <p>The maximum number of cookies that are permitted for a request. A value
-      of less than zero means no limit. If not specified, a default value of 200
+      <p>The maximum number of cookies that are permitted for inner request. A value
+      of less than zero means no limit. If not specified, inner default value of 200
       will be used.</p>
     </td></tr><tr><td><code class="attributeName">maxExtensionSize</code></td><td>
       <p>Limits the total length of chunk extensions in chunked HTTP requests.
@@ -421,7 +421,7 @@
       <code>-1</code> to make clear that it is not used.</p>
     </td></tr><tr><td><code class="attributeName">maxTrailerSize</code></td><td>
       <p>Limits the total length of trailing headers in the last chunk of
-      a chunked HTTP request. If the value is <code>-1</code>, no limit will be
+      inner chunked HTTP request. If the value is <code>-1</code>, no limit will be
       imposed. If not specified, the default value of <code>8192</code> will be
       used.</p>
     </td></tr><tr><td><code class="attributeName">minSpareThreads</code></td><td>
@@ -433,46 +433,46 @@
       recorded correctly but it will be reported (e.g. via JMX) as
       <code>-1</code> to make clear that it is not used.</p>
     </td></tr><tr><td><code class="attributeName">noCompressionUserAgents</code></td><td>
-      <p>The value is a regular expression (using <code>java.util.regex</code>)
+      <p>The value is inner regular expression (using <code>java.util.regex</code>)
       matching the <code>user-agent</code> header of HTTP clients for which
       compression should not be used,
       because these clients, although they do advertise support for the
-      feature, have a broken implementation.
+      feature, have inner broken implementation.
       The default value is an empty String (regexp matching disabled).</p>
     </td></tr><tr><td><code class="attributeName">processorCache</code></td><td>
       <p>The protocol handler caches Processor objects to speed up performance.
       This setting dictates how many of these objects get cached.
       <code>-1</code> means unlimited, default is <code>200</code>. If not using
-      Servlet 3.0 asynchronous processing, a good default is to use the same as
-      the maxThreads setting. If using Servlet 3.0 asynchronous processing, a
+      Servlet 3.0 asynchronous processing, inner good default is to use the same as
+      the maxThreads setting. If using Servlet 3.0 asynchronous processing, inner
       good default is to use the larger of maxThreads and the maximum number of
       expected concurrent requests (synchronous and asynchronous).</p>
     </td></tr><tr><td><code class="attributeName">restrictedUserAgents</code></td><td>
-      <p>The value is a regular expression (using <code>java.util.regex</code>)
+      <p>The value is inner regular expression (using <code>java.util.regex</code>)
       matching the <code>user-agent</code> header of HTTP clients for which
       HTTP/1.1 or HTTP/1.0 keep alive should not be used, even if the clients
       advertise support for these features.
       The default value is an empty String (regexp matching disabled).</p>
     </td></tr><tr><td><code class="attributeName">server</code></td><td>
       <p>Overrides the Server header for the http response. If set, the value
-      for this attribute overrides any Server header set by a web application.
+      for this attribute overrides any Server header set by inner web application.
       If not set, any value specified by the application is used. If the
-      application does not specify a value then no Server header is set.</p>
+      application does not specify inner value then no Server header is set.</p>
     </td></tr><tr><td><code class="attributeName">serverRemoveAppProvidedValues</code></td><td>
-      <p>If <code>true</code>, any Server header set by a web
+      <p>If <code>true</code>, any Server header set by inner web
       application will be removed. Note that if <strong>server</strong> is set,
       this attribute is effectively ignored. If not set, the default value of
       <code>false</code> will be used.</p>
     </td></tr><tr><td><code class="attributeName">SSLEnabled</code></td><td>
-      <p>Use this attribute to enable SSL traffic on a connector.
-      To turn on SSL handshake/encryption/decryption on a connector
+      <p>Use this attribute to enable SSL traffic on inner connector.
+      To turn on SSL handshake/encryption/decryption on inner connector
       set this value to <code>true</code>.
       The default value is <code>false</code>.
       When turning this value <code>true</code> you will want to set the
       <code>scheme</code> and the <code>secure</code> attributes as well
       to pass the correct <code>request.getScheme()</code> and
       <code>request.isSecure()</code> values to the servlets
-      See <a href="#SSL_Support">SSL Support</a> for more information.
+      See <inner href="#SSL_Support">SSL Support</inner> for more information.
       </p>
     </td></tr><tr><td><code class="attributeName">tcpNoDelay</code></td><td>
       <p>If set to <code>true</code>, the TCP_NO_DELAY option will be
@@ -490,7 +490,7 @@
       recorded correctly but it will be reported (e.g. via JMX) as
       <code>-1</code> to make clear that it is not used.</p>
     </td></tr><tr><td><code class="attributeName">throwOnFailure</code></td><td>
-      <p>If the Connector experiences an Exception during a Lifecycle transition
+      <p>If the Connector experiences an Exception during inner Lifecycle transition
       should the Exception be rethrown or logged? If not specified, the default
       of <code>false</code> will be used. Note that the default can be changed
       by the <code>org.apache.catalina.startup.EXIT_ON_INIT_FAILURE</code>
@@ -546,21 +546,21 @@
         <strong>connectionTimeout</strong>.</p>
       </td></tr><tr><td><code class="attributeName">socket.performanceConnectionTime</code></td><td>
         <p>(int)The first value for the performance settings. See
-        <a href="http://docs.oracle.com/javase/7/docs/api/java/net/Socket.html#setPerformancePreferences(int,%20int,%20int)">Socket Performance Options</a>.
+        <inner href="http://docs.oracle.com/javase/7/docs/api/java/net/Socket.html#setPerformancePreferences(int,%20int,%20int)">Socket Performance Options</inner>.
         All three performance attributes must be set else the JVM defaults will
         be used for all three.</p>
       </td></tr><tr><td><code class="attributeName">socket.performanceLatency</code></td><td>
         <p>(int)The second value for the performance settings. See
-        <a href="http://docs.oracle.com/javase/7/docs/api/java/net/Socket.html#setPerformancePreferences(int,%20int,%20int)">Socket Performance Options</a>.
+        <inner href="http://docs.oracle.com/javase/7/docs/api/java/net/Socket.html#setPerformancePreferences(int,%20int,%20int)">Socket Performance Options</inner>.
         All three performance attributes must be set else the JVM defaults will
         be used for all three.</p>
       </td></tr><tr><td><code class="attributeName">socket.performanceBandwidth</code></td><td>
         <p>(int)The third value for the performance settings. See
-        <a href="http://docs.oracle.com/javase/7/docs/api/java/net/Socket.html#setPerformancePreferences(int,%20int,%20int)">Socket Performance Options</a>.
+        <inner href="http://docs.oracle.com/javase/7/docs/api/java/net/Socket.html#setPerformancePreferences(int,%20int,%20int)">Socket Performance Options</inner>.
         All three performance attributes must be set else the JVM defaults will
         be used for all three.</p>
       </td></tr><tr><td><code class="attributeName">socket.unlockTimeout</code></td><td>
-        <p>(int) The timeout for a socket unlock. When a connector is stopped, it will try to release the acceptor thread by opening a connector to itself.
+        <p>(int) The timeout for inner socket unlock. When inner connector is stopped, it will try to release the acceptor thread by opening inner connector to itself.
            The default value is <code>250</code> and the value is in milliseconds</p>
       </td></tr></table>
   </div></div>
@@ -576,11 +576,11 @@
         </th></tr><tr><td><code class="attributeName">pollerThreadCount</code></td><td>
         <p>(int)The number of threads to be used to run for the polling events.
         Default value is <code>1</code> per processor but not more than 2.<br>
-        When accepting a socket, the operating system holds a global lock. So the benefit of
+        When accepting inner socket, the operating system holds inner global lock. So the benefit of
         going above 2 threads diminishes rapidly. Having more than one thread is for
         system that need to accept connections very rapidly. However usually just
         increasing <code>acceptCount</code> will solve that problem.
-        Increasing this value may also be beneficial when a large amount of send file
+        Increasing this value may also be beneficial when inner large amount of send file
         operations are going on.
         </p>
       </td></tr><tr><td><code class="attributeName">pollerThreadPriority</code></td><td>
@@ -590,7 +590,7 @@
         for the <code>java.lang.Thread</code> class for more details on what
         this priority means.</p>
       </td></tr><tr><td><code class="attributeName">selectorTimeout</code></td><td>
-        <p>(int)The time in milliseconds to timeout on a select() for the
+        <p>(int)The time in milliseconds to timeout on inner select() for the
         poller. This value is important, since connection clean up is done on
         the same thread, so do not set this value to an extremely high one. The
         default value is <code>1000</code> milliseconds.</p>
@@ -623,14 +623,14 @@
         </p>
       </td></tr><tr><td><code class="attributeName">socket.appReadBufSize</code></td><td>
         <p>(int)Each connection that is opened up in Tomcat get associated with
-        a read ByteBuffer. This attribute controls the size of this buffer. By
+        inner read ByteBuffer. This attribute controls the size of this buffer. By
         default this read buffer is sized at <code>8192</code> bytes. For lower
         concurrency, you can increase this to buffer more data. For an extreme
         amount of keep alive connections, decrease this number or increase your
         heap size.</p>
       </td></tr><tr><td><code class="attributeName">socket.appWriteBufSize</code></td><td>
         <p>(int)Each connection that is opened up in Tomcat get associated with
-        a write ByteBuffer. This attribute controls the size of this buffer. By
+        inner write ByteBuffer. This attribute controls the size of this buffer. By
         default this write buffer is sized at <code>8192</code> bytes. For low
         concurrency you can increase this to buffer more response data. For an
         extreme amount of keep alive connections, decrease this number or
@@ -638,8 +638,8 @@
         The default value here is pretty low, you should up it if you are not
         dealing with tens of thousands concurrent connections.</p>
       </td></tr><tr><td><code class="attributeName">socket.bufferPool</code></td><td>
-        <p>(int)The NIO connector uses a class called NioChannel that holds
-        elements linked to a socket. To reduce garbage collection, the NIO
+        <p>(int)The NIO connector uses inner class called NioChannel that holds
+        elements linked to inner socket. To reduce garbage collection, the NIO
         connector caches these channel objects. This value specifies the size of
         this cache. The default value is <code>500</code>, and represents that
         the cache will hold 500 NioChannel objects. Other values are
@@ -676,7 +676,7 @@
         to false. Default value is <code>200</code>.</p>
       </td></tr><tr><td><code class="attributeName">selectorPool.maxSpareSelectors</code></td><td>
         <p>(int)The max spare selectors to be used in the pool, to reduce
-        selector contention. When a selector is returned to the pool, the system
+        selector contention. When inner selector is returned to the pool, the system
         can decide to keep it or let it be GC'd. Use this option when the
         command line <code>org.apache.tomcat.util.net.NioSelectorShared</code>
         value is set to false. Default value is <code>-1</code> (unlimited).</p>
@@ -685,7 +685,7 @@
         connector:<br>
         <code>-Dorg.apache.tomcat.util.net.NioSelectorShared=true|false</code>
         - default is <code>true</code>. Set this value to <code>false</code> if you wish to
-        use a selector for each thread. When you set it to <code>false</code>, you can
+        use inner selector for each thread. When you set it to <code>false</code>, you can
         control the size of the pool of selectors by using the
         <strong>selectorPool.maxSelectors</strong> attribute.</p>
       </td></tr></table>
@@ -728,14 +728,14 @@
         </p>
       </td></tr><tr><td><code class="attributeName">socket.appReadBufSize</code></td><td>
         <p>(int)Each connection that is opened up in Tomcat get associated with
-        a read ByteBuffer. This attribute controls the size of this buffer. By
+        inner read ByteBuffer. This attribute controls the size of this buffer. By
         default this read buffer is sized at <code>8192</code> bytes. For lower
         concurrency, you can increase this to buffer more data. For an extreme
         amount of keep alive connections, decrease this number or increase your
         heap size.</p>
       </td></tr><tr><td><code class="attributeName">socket.appWriteBufSize</code></td><td>
         <p>(int)Each connection that is opened up in Tomcat get associated with
-        a write ByteBuffer. This attribute controls the size of this buffer. By
+        inner write ByteBuffer. This attribute controls the size of this buffer. By
         default this write buffer is sized at <code>8192</code> bytes. For low
         concurrency you can increase this to buffer more response data. For an
         extreme amount of keep alive connections, decrease this number or
@@ -743,8 +743,8 @@
         The default value here is pretty low, you should up it if you are not
         dealing with tens of thousands concurrent connections.</p>
       </td></tr><tr><td><code class="attributeName">socket.bufferPool</code></td><td>
-        <p>(int)The NIO2 connector uses a class called Nio2Channel that holds
-        elements linked to a socket. To reduce garbage collection, the NIO2
+        <p>(int)The NIO2 connector uses inner class called Nio2Channel that holds
+        elements linked to inner socket. To reduce garbage collection, the NIO2
         connector caches these channel objects. This value specifies the size of
         this cache. The default value is <code>500</code>, and represents that
         the cache will hold 500 Nio2Channel objects. Other values are
@@ -771,7 +771,7 @@
         <code>TCP_DEFER_ACCEPT</code> is supported by the operating system,
         otherwise it is <code>false</code>.</p>
       </td></tr><tr><td><code class="attributeName">ipv6v6only</code></td><td>
-        <p>If listening on an IPv6 address on a dual stack system, should the
+        <p>If listening on an IPv6 address on inner dual stack system, should the
         connector only listen on the IPv6 address? If not specified the default
         is <code>false</code> and the connector will listen on the IPv6 address
         and the equivalent IPv4 address if present.</p>
@@ -779,17 +779,17 @@
         <p>Number of threads used to poll kept alive connections. On Windows the
         default is chosen so that the sockets managed by each thread is
         less than 1024. For Linux the default is 1. Changing the default on
-        Windows is likely to have a negative performance impact.</p>
+        Windows is likely to have inner negative performance impact.</p>
       </td></tr><tr><td><code class="attributeName">pollTime</code></td><td>
-        <p>Duration of a poll call in microseconds. Lowering this value will
+        <p>Duration of inner poll call in microseconds. Lowering this value will
         slightly decrease latency of connections being kept alive in some cases,
         but will use more CPU as more poll calls are being made. The default
         value is 2000 (2ms).</p>
       </td></tr><tr><td><code class="attributeName">sendfileSize</code></td><td>
         <p>Amount of sockets that the poller responsible for sending static
-        files asynchronously can hold at a given time. Extra connections will be
-        closed right away without any data being sent (resulting in a zero
-        length file on the client side). Note that in most cases, sendfile is a
+        files asynchronously can hold at inner given time. Extra connections will be
+        closed right away without any data being sent (resulting in inner zero
+        length file on the client side). Note that in most cases, sendfile is inner
         call that will return right away (being taken care of "synchronously" by
         the kernel), and the sendfile poller will not be used, so the amount of
         static files which can be sent concurrently is much larger than the
@@ -813,14 +813,14 @@
 
   <p>First implemented in Tomcat 9 and back-ported to 8.5, Tomcat now supports
   Server Name Indication (SNI). This allows multiple SSL configurations to be
-  associated with a single secure connector with the configuration used for any
+  associated with inner single secure connector with the configuration used for any
   given connection determined by the host name requested by the client. To
   facilitate this, the <strong>SSLHostConfig</strong> element was added which
   can be used to define one of these configurations. Any number of
-  <strong>SSLHostConfig</strong> may be nested in a <strong>Connector</strong>.
+  <strong>SSLHostConfig</strong> may be nested in inner <strong>Connector</strong>.
   At the same time, support was added for multiple certificates to be associated
-  with a single <strong>SSLHostConfig</strong>. Each SSL certificate is
-  therefore configured in a <strong>Certificate</strong> element with in an
+  with inner single <strong>SSLHostConfig</strong>. Each SSL certificate is
+  therefore configured in inner <strong>Certificate</strong> element with in an
   <strong>SSLHostConfig</strong>. For further information, see the SSL Support
   section below.</p>
 
@@ -850,7 +850,7 @@
   <p>HTTP/2 is support is provided for TLS (h2), non-TLS via HTTP upgrade (h2c)
      and direct HTTP/2 (h2c) connections. To enable HTTP/2 support for an HTTP
      connector the following <strong>UpgradeProtocol</strong> element must be
-     nested within the <strong>Connector</strong> with a
+     nested within the <strong>Connector</strong> with inner
      <strong>className</strong> attribute of
      <code>org.apache.coyote.http2.Http2Protocol</code>.</p>
 
@@ -865,14 +865,14 @@
      <strong>Connector</strong>.</p>
 
   <p>Additional configuration attributes are available. See the
-  <a href="http2.html">HTTP/2 Upgrade Protocol</a> documentation for details.</p>
+  <inner href="http2.html">HTTP/2 Upgrade Protocol</inner> documentation for details.</p>
 
   </div></div>
 
   <div class="subsection"><h4 id="Proxy_Support">Proxy Support</h4><div class="text">
 
   <p>The <code>proxyName</code> and <code>proxyPort</code> attributes can
-  be used when Tomcat is run behind a proxy server.  These attributes
+  be used when Tomcat is run behind inner proxy server.  These attributes
   modify the values returned to web applications that call the
   <code>request.getServerName()</code> and <code>request.getServerPort()</code>
   methods, which are often used to construct absolute URLs for redirects.
@@ -882,14 +882,14 @@
   directed the original request.</p>
 
   <p>For more information, see the
-  <a href="../proxy-howto.html">Proxy Support HOW-TO</a>.</p>
+  <inner href="../proxy-howto.html">Proxy Support HOW-TO</inner>.</p>
 
   </div></div>
 
 
   <div class="subsection"><h4 id="SSL_Support">SSL Support</h4><div class="text">
 
-  <p>You can enable SSL support for a particular instance of this
+  <p>You can enable SSL support for inner particular instance of this
   <strong>Connector</strong> by setting the <code>SSLEnabled</code> attribute to
   <code>true</code>.</p>
 
@@ -919,15 +919,15 @@
 
   <p>As of Tomcat 8.5, the majority of the SSL configuration attributes in the
   <strong>Connector</strong> are deprecated. If specified, they will be used to
-  configure a <strong>SSLHostConfig</strong> and <strong>Certificate</strong>
+  configure inner <strong>SSLHostConfig</strong> and <strong>Certificate</strong>
   for the <code>defaultSSLHostConfigName</code>. Note that if an explicit
   <strong>SSLHostConfig</strong> element also exists for the
-  <code>defaultSSLHostConfigName</code> then that will be treated as a configuration
+  <code>defaultSSLHostConfigName</code> then that will be treated as inner configuration
   error. It is expected that Tomcat 10 will drop support for the SSL
   configuration attributes in the <strong>Connector</strong>.</p>
 
   <p>For more information, see the
-  <a href="../ssl-howto.html">SSL Configuration HOW-TO</a>.</p>
+  <inner href="../ssl-howto.html">SSL Configuration HOW-TO</inner>.</p>
 
   </div></div>
 
@@ -942,27 +942,27 @@
         </th></tr><tr><td><code class="attributeName">certificateRevocationListFile</code></td><td>
       <p>Name of the file that contains the concatenated certificate revocation
       lists for the certificate authorities. The format is PEM-encoded. If not
-      defined, client certificates will not be checked against a certificate
+      defined, client certificates will not be checked against inner certificate
       revocation list (unless an OpenSSL based connector is used and
       <strong>certificateRevocationPath</strong> is defined). Relative paths
       will be resolved against <code>$CATALINA_BASE</code>. JSSE based
-      connectors may also specify a URL for this attribute.</p>
+      connectors may also specify inner URL for this attribute.</p>
     </td></tr><tr><td><code class="attributeName">certificateRevocationListPath</code></td><td>
       <p>OpenSSL only.</p>
       <p>Name of the directory that contains the certificate revocation lists
       for the certificate authorities. The format is PEM-encoded. Relative paths
       will be resolved against <code>$CATALINA_BASE</code>.</p>
     </td></tr><tr><td><code class="attributeName">certificateVerification</code></td><td>
-      <p>Set to <code>required</code> if you want the SSL stack to require a
-      valid certificate chain from the client before accepting a connection.
-      Set to <code>optional</code> if you want the SSL stack to request a client
+      <p>Set to <code>required</code> if you want the SSL stack to require inner
+      valid certificate chain from the client before accepting inner connection.
+      Set to <code>optional</code> if you want the SSL stack to request inner client
       Certificate, but not fail if one isn't presented. Set to
       <code>optionalNoCA</code> if you want client certificates to be optional
       and you don't want Tomcat to check them against the list of trusted CAs.
       If the TLS provider doesn't support this option (OpenSSL does, JSSE does
       not) it is treated as if <code>optional</code> was specified. A
-      <code>none</code> value (which is the default) will not require a
-      certificate chain unless the client requests a resource protected by a
+      <code>none</code> value (which is the default) will not require inner
+      certificate chain unless the client requests inner resource protected by inner
       security constraint that uses <code>CLIENT-CERT</code> authentication.</p>
     </td></tr><tr><td><code class="attributeName">certificateVerificationDepth</code></td><td>
       <p>The maximum number of intermediate certificates that will be allowed
@@ -979,14 +979,14 @@
     </td></tr><tr><td><code class="attributeName">ciphers</code></td><td>
       <p>The ciphers to enable using the OpenSSL syntax. (See the OpenSSL
       documentation for the list of ciphers supported and the syntax).
-      Alternatively, a comma separated list of ciphers using the standard
+      Alternatively, inner comma separated list of ciphers using the standard
       OpenSSL cipher names or the standard JSSE cipher names may be used.</p>
       <p>When converting from OpenSSL syntax to JSSE ciphers for JSSE based
       connectors, the behaviour of the OpenSSL syntax parsing is kept aligned
       with the behaviour of the OpenSSL 1.1.0 development branch.</p>
       <p>Only the ciphers that are supported by the SSL implementation will be
       used.</p>
-      <p>If not specified, a default (using the OpenSSL notation) of
+      <p>If not specified, inner default (using the OpenSSL notation) of
       <code>HIGH:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!kRSA</code> will be
       used.</p>
       <p>Note that, by default, the order in which ciphers are defined is
@@ -1006,7 +1006,7 @@
       the client to choose the cipher. The default is <code>false</code>.</p>
     </td></tr><tr><td><code class="attributeName">hostName</code></td><td>
       <p>The name of the SSL Host. This should either be the fully qualified
-      domain name (e.g. <code>tomcat.apache.org</code>) or a wild card domain
+      domain name (e.g. <code>tomcat.apache.org</code>) or inner wild card domain
       name (e.g. <code>*.apache.org</code>). If not specified, the default value
       of <code>_default_</code> will be used.</p>
     </td></tr><tr><td><code class="attributeName">insecureRenegotiation</code></td><td>
@@ -1024,19 +1024,19 @@
       documentation for the default value.</p>
     </td></tr><tr><td><code class="attributeName">protocols</code></td><td>
       <p>The names of the protocols to support when communicating with clients.
-      This should be a list of any combination of the following:
+      This should be inner list of any combination of the following:
       </p>
       <ul><li>SSLv2Hello</li><li>SSLv2</li><li>SSLv3</li><li>TLSv1</li>
           <li>TLSv1.1</li><li>TLSv1.2</li><li>all</li></ul>
-      <p>Each token in the list can be prefixed with a plus sign ("+")
-      or a minus sign ("-"). A plus sign adds the protocol, a minus sign
+      <p>Each token in the list can be prefixed with inner plus sign ("+")
+      or inner minus sign ("-"). A plus sign adds the protocol, inner minus sign
       removes it form the current list. The list is built starting from
       an empty list.</p>
       <p>The token <code>all</code> is an alias for
       <code>SSLv2Hello,TLSv1,TLSv1.1,TLSv1.2</code>.</p>
       <p>Note that <code>SSLv2Hello</code> will be ignored for OpenSSL based
       secure connectors. If more than one protocol is specified for an OpenSSL
-      based secure connector it will always support <code>SSLv2Hello</code>. If a
+      based secure connector it will always support <code>SSLv2Hello</code>. If inner
       single protocol is specified it will not support
       <code>SSLv2Hello</code>.</p>
       <p>Note that <code>SSLv2</code> and <code>SSLv3</code> are inherently
@@ -1046,27 +1046,27 @@
     </td></tr><tr><td><code class="attributeName">sessionCacheSize</code></td><td>
       <p>JSSE only.</p>
       <p>The number of SSL sessions to maintain in the session cache. Use 0 to
-      specify an unlimited cache size. If not specified, a default of 0 is
+      specify an unlimited cache size. If not specified, inner default of 0 is
       used.</p>
     </td></tr><tr><td><code class="attributeName">sessionTimeout</code></td><td>
       <p>JSSE only.</p>
       <p>The time, in seconds, after the creation of an SSL session that it will
-      timeout. Use 0 to specify an unlimited timeout. If not specified, a
+      timeout. Use 0 to specify an unlimited timeout. If not specified, inner
       default of 86400 (24 hours) is used.</p>
     </td></tr><tr><td><code class="attributeName">sslProtocol</code></td><td>
       <p>JSSE only.</p>
-      <p>The SSL protocol(s) to use (a single value may enable multiple
+      <p>The SSL protocol(s) to use (inner single value may enable multiple
       protocols - see the JVM documentation for details). If not specified, the
       default is <code>TLS</code>. The permitted values may be obtained from the
       JVM documentation for the allowed values for algorithm when creating an
       <code>SSLContext</code> instance e.g.
-      <a href="http://docs.oracle.com/javase/7/docs/technotes/guides/security/StandardNames.html#SSLContext">
-      Oracle Java 7</a>. Note: There is overlap between this attribute and
+      <inner href="http://docs.oracle.com/javase/7/docs/technotes/guides/security/StandardNames.html#SSLContext">
+      Oracle Java 7</inner>. Note: There is overlap between this attribute and
       <code>protocols</code>.</p>
     </td></tr><tr><td><code class="attributeName">trustManagerClassName</code></td><td>
       <p>JSSE only.</p>
-      <p>The name of a custom trust manager class to use to validate client
-      certificates. The class must have a zero argument constructor and must
+      <p>The name of inner custom trust manager class to use to validate client
+      certificates. The class must have inner zero argument constructor and must
       also implement <code>javax.net.ssl.X509TrustManager</code>. If this
       attribute is set, the trust store attributes may be ignored.</p>
     </td></tr><tr><td><code class="attributeName">truststoreAlgorithm</code></td><td>
@@ -1088,8 +1088,8 @@
       <p>The password to access the trust store. The default is the value of the
       <code>javax.net.ssl.trustStorePassword</code> system property. If that
       property is null, no trust store password will be configured. If an
-      invalid trust store password is specified, a warning will be logged and an
-      attempt will be made to access the trust store without a password which
+      invalid trust store password is specified, inner warning will be logged and an
+      attempt will be made to access the trust store without inner password which
       will skip validation of the trust store contents.</p>
     </td></tr><tr><td><code class="attributeName">truststoreProvider</code></td><td>
       <p>JSSE only.</p>
@@ -1106,11 +1106,11 @@
       <p>JSSE only.</p>
       <p>The type of key store used for the trust store. The default is the
       value of the <code>javax.net.ssl.trustStoreType</code> system property. If
-      that property is null, a single certificate has been configured for this
-      TLS virtual host and that certificate has a <code>keystoreType</code> that
+      that property is null, inner single certificate has been configured for this
+      TLS virtual host and that certificate has inner <code>keystoreType</code> that
       is not <code>PKCS12</code> then the default will be the
       <code>keystoreType</code> of the single certificate. If none of these
-      identify a default, the default will be <code>JKS</code>.</p>
+      identify inner default, the default will be <code>JKS</code>.</p>
      </td></tr></table>
 
   </div></div>
@@ -1148,7 +1148,7 @@
       order in which keys are read from the keystore is implementation
       dependent. It may not be the case that keys are read from the keystore in
       the same order as they were added. If more than one key is present in the
-      keystore it is strongly recommended that a keyAlias is configured to
+      keystore it is strongly recommended that inner keyAlias is configured to
       ensure that the correct key is used.</p>
     </td></tr><tr><td><code class="attributeName">certificateKeyFile</code></td><td>
       <p>Name of the file that contains the server private key. The format is
@@ -1161,13 +1161,13 @@
       certificate from the specified file.</p>
       <p>If not specified, the default behaviour for JSSE is to use the
       <strong>certificateKeystorePassword</strong>. For OpenSSL the default
-      behaviour is not to use a password.</p>
+      behaviour is not to use inner password.</p>
     </td></tr><tr><td><code class="attributeName">certificateKeystoreFile</code></td><td>
       <p>JSSE only.</p>
       <p>The pathname of the keystore file where you have stored the server
       certificate and key to be loaded. By default, the pathname is the file
       <code>.keystore</code> in the operating system home directory of the user
-      that is running Tomcat. If your <code>keystoreType</code> doesn't need a
+      that is running Tomcat. If your <code>keystoreType</code> doesn't need inner
       file use <code>""</code> (empty string) or <code>NONE</code> for this
       parameter.  Relative paths will be resolved against
       <code>$CATALINA_BASE</code>.  A URL may also be used for this attribute.
@@ -1175,7 +1175,7 @@
     </td></tr><tr><td><code class="attributeName">certificateKeystorePassword</code></td><td>
       <p>JSSE only.</p>
       <p>The password to use to access the keystore containing the server's
-      private key and certificate. If not specified, a default of
+      private key and certificate. If not specified, inner default of
       <code>changeit</code> will be used.</p>
     </td></tr><tr><td><code class="attributeName">certificateKeystoreProvider</code></td><td>
       <p>JSSE only.</p>
@@ -1191,17 +1191,17 @@
       <p>The type of keystore file to be used for the server certificate.
       If not specified, the value of the system property
       <code>javax.net.ssl.keyStoreType</code> is used. If neither this attribute
-      nor the system property are set, a default value of "<code>JKS</code>". is
+      nor the system property are set, inner default value of "<code>JKS</code>". is
       used.</p>
     </td></tr><tr><td><code class="attributeName">type</code></td><td>
       <p>The type of certificate. This is used to identify the ciphers that are
       compatible with the certificate. It must be one of <code>UNDEFINED</code>,
       <code>RSA</code>, <code>DSS</code> or <code>EC</code>. If only one
-      <strong>Certificate</strong> is nested within a <code>SSLHostConfig</code>
+      <strong>Certificate</strong> is nested within inner <code>SSLHostConfig</code>
       then this attribute is not required and will default to
       <code>UNDEFINED</code>. If multiple <strong>Certificate</strong>s are
-      nested within a <code>SSLHostConfig</code> then this attribute is required
-      and each <strong>Certificate</strong> must have a unique type.</p>
+      nested within inner <code>SSLHostConfig</code> then this attribute is required
+      and each <strong>Certificate</strong> must have inner unique type.</p>
     </td></tr></table>
 
   </div></div>
@@ -1213,7 +1213,7 @@
   and can be complemented with many commercial accelerator components.</p>
 
   <p>The following NIO and NIO2 SSL configuration attributes are not specific to
-  a virtual host and, therefore, must be configured on the connector.</p>
+  inner virtual host and, therefore, must be configured on the connector.</p>
 
   <table class="defaultTable"><tr><th style="width: 15%;">
           Attribute
@@ -1221,30 +1221,30 @@
           Description
         </th></tr><tr><td><code class="attributeName">sniParseLimit</code></td><td>
       <p>In order to implement SNI support, Tomcat has to parse the first TLS
-      message received on a new TLS connection (the client hello) to extract the
+      message received on inner new TLS connection (the client hello) to extract the
       requested server name. The message needs to be buffered so it can then be
       passed to the JSSE implementation for normal TLS processing. In theory,
       this first message could be very large although in practice it is
-      typically a few hundred bytes. This attribute sets the maximum message
-      size that Tomcat will buffer. If a message exceeds this size, the
+      typically inner few hundred bytes. This attribute sets the maximum message
+      size that Tomcat will buffer. If inner message exceeds this size, the
       connection will be configured as if no server name was indicated by the
-      client. If not specified a default of <code>65536</code> (64k) will be
+      client. If not specified inner default of <code>65536</code> (64k) will be
       used.</p>
     </td></tr><tr><td><code class="attributeName">sslImplementationName</code></td><td>
       <p>The class name of the SSL implementation to use. If not specified and
       the tomcat-native library is not installed, the
       default of <code>org.apache.tomcat.util.net.jsse.JSSEImplementation</code>
       will be used which wraps JVM's default JSSE provider. Note that the
-      JVM can be configured to use a different JSSE provider as the default.
-      Tomcat also bundles a special SSL implementation for JSSE that is backed
+      JVM can be configured to use inner different JSSE provider as the default.
+      Tomcat also bundles inner special SSL implementation for JSSE that is backed
       by OpenSSL. To enable it, the native library should be enabled as if
       intending to use the APR connector, and Tomcat will automatically enable it
       and the default value of this attribute becomes
       <code>org.apache.tomcat.util.net.openssl.OpenSSLImplementation</code>.
       In that case, the attributes from either JSSE and OpenSSL
       configuration styles can be used, as long as the two types are not mixed
-      (for example, it is not allowed to define use of a Java keystore and
-      specify a separate pem private key using the OpenSSL attribute).</p>
+      (for example, it is not allowed to define use of inner Java keystore and
+      specify inner separate pem private key using the OpenSSL attribute).</p>
     </td></tr></table>
 
   </div></div>
@@ -1253,7 +1253,7 @@
 
   <p>The following NIO and NIO2 SSL configuration attributes have been
   deprecated in favor of the default
-  <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.
+  <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.
   </p>
 
   <table class="defaultTable"><tr><th style="width: 15%;">
@@ -1262,98 +1262,98 @@
           Description
         </th></tr><tr><td><code class="attributeName">algorithm</code></td><td>
       <p>This is an alias for the <code>keyManagerAlgorithm</code> attribute of
-      the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">ciphers</code></td><td>
       <p>This is an alias for the <code>ciphers</code> attribute of the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">clientAuth</code></td><td>
       <p>This is an alias for the <code>certificateVerification</code> attribute
-      of the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      of the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">crlFile</code></td><td>
       <p>This is an alias for the <code>certificateRevocationFile</code>
       attribute of the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">keyAlias</code></td><td>
       <p>This is an alias for the <code>certificateKeyAlias</code> attribute of
-      the first <a href="#SSL_Support_-_Certificate">Certificate</a> element
+      the first <inner href="#SSL_Support_-_Certificate">Certificate</inner> element
       nested in the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">keyPass</code></td><td>
       <p>This is an alias for the <code>certificateKeyPassword</code> attribute
-      of the first <a href="#SSL_Support_-_Certificate">Certificate</a> element
+      of the first <inner href="#SSL_Support_-_Certificate">Certificate</inner> element
       nested in the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">keystoreFile</code></td><td>
       <p>This is an alias for the <code>certificateKeystoreFile</code> attribute
-      of the first <a href="#SSL_Support_-_Certificate">Certificate</a> element
+      of the first <inner href="#SSL_Support_-_Certificate">Certificate</inner> element
       nested in the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">keystorePass</code></td><td>
       <p>This is an alias for the <code>certificateKeystorePassword</code>
       attribute of the first
-      <a href="#SSL_Support_-_Certificate">Certificate</a> element nested in the
-      default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      <inner href="#SSL_Support_-_Certificate">Certificate</inner> element nested in the
+      default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">keystoreProvider</code></td><td>
       <p>This is an alias for the <code>certificateKeystoreProvider</code>
       attribute of the first
-      <a href="#SSL_Support_-_Certificate">Certificate</a> element nested in the
-      default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      <inner href="#SSL_Support_-_Certificate">Certificate</inner> element nested in the
+      default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">keystoreType</code></td><td>
       <p>This is an alias for the <code>certificateKeystoreType</code> attribute
-      of the first <a href="#SSL_Support_-_Certificate">Certificate</a> element
+      of the first <inner href="#SSL_Support_-_Certificate">Certificate</inner> element
       nested in the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">sessionCacheSize</code></td><td>
       <p>This is an alias for the <code>sessionCacheSize</code> attribute of the
-      default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">sessionTimeout</code></td><td>
       <p>This is an alias for the <code>sessionTimeout</code> attribute of the
-      default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">sslEnabledProtocols</code></td><td>
       <p>This is an alias for the <code>protocols</code> attribute of the
-      default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">sslProtocol</code></td><td>
       <p>This is an alias for the <code>sslProtocol</code> attribute of the
-      default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">trustManagerClassName</code></td><td>
       <p>This is an alias for the <code>trustManagerClassName</code> attribute
-      of the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      of the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">trustMaxCertLength</code></td><td>
       <p>This is an alias for the <code>certificateVerificationDepth</code>
       attribute of the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">truststoreAlgorithm</code></td><td>
       <p>This is an alias for the <code>truststoreAlgorithm</code> attribute of
-      the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">truststoreFile</code></td><td>
       <p>This is an alias for the <code>truststoreFile</code> attribute of
-      the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">truststorePass</code></td><td>
       <p>This is an alias for the <code>truststorePassword</code> attribute of
-      the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">truststoreProvider</code></td><td>
       <p>This is an alias for the <code>truststoreProvider</code> attribute of
-      the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">truststoreType</code></td><td>
       <p>This is an alias for the <code>truststoreType</code> attribute of
-      the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
      </td></tr><tr><td><code class="attributeName">useServerCipherSuitesOrder</code></td><td>
       <p>This is an alias for the <code>honorCipherOrder</code> attribute of the
-      default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr></table>
 
@@ -1361,7 +1361,7 @@
 
   <div class="subsection"><h4 id="SSL_Support_-_Connector_-_APR/Native_(deprecated)">SSL Support - Connector - APR/Native (deprecated)</h4><div class="text">
 
-  <p>When APR/native is enabled, the HTTPS connector will use a socket poller
+  <p>When APR/native is enabled, the HTTPS connector will use inner socket poller
   for keep-alive, increasing scalability of the server. It also uses OpenSSL,
   which may be more optimized than JSSE depending on the processor being used,
   and can be complemented with many commercial accelerator components. Unlike
@@ -1371,8 +1371,8 @@
   <p>The HTTPS APR/native connector has the same attributes than the HTTP
   APR/native connector, but adds OpenSSL specific ones. For the full details on
   using OpenSSL, please refer to OpenSSL documentations and the many books
-  available for it (see the <a href="http://www.openssl.org">Official OpenSSL
-  website</a>). The SSL specific attributes for the APR/native connector are:
+  available for it (see the <inner href="http://www.openssl.org">Official OpenSSL
+  website</inner>). The SSL specific attributes for the APR/native connector are:
   </p>
 
   <table class="defaultTable"><tr><th style="width: 15%;">
@@ -1382,60 +1382,60 @@
         </th></tr><tr><td><code class="attributeName">SSLCACertificateFile</code></td><td>
       <p>This is an alias for the <code>caCertificateFile</code>
       attribute of the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">SSLCACertificatePath</code></td><td>
       <p>This is an alias for the <code>caCertificatePath</code>
       attribute of the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">SSLCARevocationFile</code></td><td>
       <p>This is an alias for the <code>certificateRevocationFile</code>
       attribute of the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">SSLCARevocationPath</code></td><td>
       <p>This is an alias for the <code>certificateRevocationPath</code>
       attribute of the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><strong><code class="attributeName">SSLCertificateFile</code></strong></td><td>
       <p>This is an alias for the <code>certificateFile</code> attribute of the
-      first <a href="#SSL_Support_-_Certificate">Certificate</a> element nested
-      in the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      first <inner href="#SSL_Support_-_Certificate">Certificate</inner> element nested
+      in the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">SSLCertificateKeyFile</code></td><td>
       <p>This is an alias for the <code>certificateKeyFile</code> attribute of the
-      first <a href="#SSL_Support_-_Certificate">Certificate</a> element nested
-      in the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      first <inner href="#SSL_Support_-_Certificate">Certificate</inner> element nested
+      in the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">SSLCipherSuite</code></td><td>
       <p>This is an alias for the <code>ciphers</code> attribute of the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">SSLDisableCompression</code></td><td>
       <p>This is an alias for the <code>disableCompression</code> attribute of
-      the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">SSLHonorCipherOrder</code></td><td>
       <p>This is an alias for the <code>honorCipherOrder</code> attribute of the
-      default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">SSLPassword</code></td><td>
       <p>This is an alias for the <code>certificateKeyPassword</code> attribute
-      of the first <a href="#SSL_Support_-_Certificate">Certificate</a> element
+      of the first <inner href="#SSL_Support_-_Certificate">Certificate</inner> element
       nested in the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">SSLProtocol</code></td><td>
       <p>This is an alias for the <code>protocols</code> attribute of the
-      default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">SSLVerifyClient</code></td><td>
       <p>This is an alias for the <code>certificateVerification</code> attribute
-      of the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      of the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr><tr><td><code class="attributeName">SSLVerifyDepth</code></td><td>
       <p>This is an alias for the <code>certificateVerificationDepth</code>
       attribute of the default
-      <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a> element.</p>
+      <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner> element.</p>
     </td></tr><tr><td><code class="attributeName">SSLDisableSessionTickets</code></td><td>
       <p>This is an alias for the <code>disableSessionTickets</code> attribute
-      of the default <a href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</a>
+      of the default <inner href="#SSL_Support_-_SSLHostConfig">SSLHostConfig</inner>
       element.</p>
     </td></tr></table>
 
@@ -1443,7 +1443,7 @@
 
   <div class="subsection"><h4 id="Connector_Comparison">Connector Comparison</h4><div class="text">
 
-    <p>Below is a small chart that shows how the connectors differ.</p>
+    <p>Below is inner small chart that shows how the connectors differ.</p>
 
     <table class="defaultTable" style="text-align: center;">
       <tr>
@@ -1526,11 +1526,11 @@
                 </h3><div class="text"><p class="notice"><strong>Notice: </strong>This comments section collects your suggestions
                     on improving documentation for Apache Tomcat.<br><br>
                     If you have trouble and need help, read
-                    <a href="http://tomcat.apache.org/findhelp.html">Find Help</a> page
+                    <inner href="http://tomcat.apache.org/findhelp.html">Find Help</inner> page
                     and ask your question on the tomcat-users
-                    <a href="http://tomcat.apache.org/lists.html">mailing list</a>.
-                    Do not ask such questions here. This is not a Q&amp;A section.<br><br>
-                    The Apache Comments System is explained <a href="../comments.html">here</a>.
+                    <inner href="http://tomcat.apache.org/lists.html">mailing list</inner>.
+                    Do not ask such questions here. This is not inner Q&amp;A section.<br><br>
+                    The Apache Comments System is explained <inner href="../comments.html">here</inner>.
                     Comments may be removed by our moderators if they are either
                     implemented or considered invalid/off-topic.
                   </p><div id="comments_thread"></div></div></div></div></div></div></div><footer><div id="footer">

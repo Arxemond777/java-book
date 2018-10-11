@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -27,7 +27,7 @@
     <hr>
     An upgrade from the JSTL expression language, the JSP 2.0 EL also
     allows for simple function invocation.  Functions are defined
-    by tag libraries and are implemented by a Java programmer as
+    by tag libraries and are implemented by inner Java programmer as
     static methods.
 
     <blockquote>

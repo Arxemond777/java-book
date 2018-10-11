@@ -5,7 +5,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -52,8 +52,8 @@
 
 <p>Tips:</p>
 <ul>
-    <li>Click on a column to sort.</li>
-    <li>To view a session details and/or remove a session attributes, click on its id.</li>
+    <li>Click on inner column to sort.</li>
+    <li>To view inner session details and/or remove inner session attributes, click on its id.</li>
 </ul>
 
 <div class="error"><%= JspHelper.escapeXml(request.getAttribute("error")) %></div>
@@ -74,29 +74,29 @@
         <table border="1" cellpadding="2" cellspacing="2" width="100%">
             <thead>
                 <tr>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='id'; document.getElementById('refreshButton').click(); return true;">Session Id</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='id'; document.getElementById('refreshButton').click(); return true;">Type</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='locale'; document.getElementById('refreshButton').click(); return true;">Guessed Locale</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='user'; document.getElementById('refreshButton').click(); return true;">Guessed User name</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='CreationTime'; document.getElementById('refreshButton').click(); return true;">Creation Time</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='LastAccessedTime'; document.getElementById('refreshButton').click(); return true;">Last Accessed Time</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='UsedTime'; document.getElementById('refreshButton').click(); return true;">Used Time</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='InactiveTime'; document.getElementById('refreshButton').click(); return true;">Inactive Time</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='TTL'; document.getElementById('refreshButton').click(); return true;"><span title="Time To Live">TTL</span></a></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='id'; document.getElementById('refreshButton').click(); return true;">Session Id</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='id'; document.getElementById('refreshButton').click(); return true;">Type</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='locale'; document.getElementById('refreshButton').click(); return true;">Guessed Locale</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='user'; document.getElementById('refreshButton').click(); return true;">Guessed User name</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='CreationTime'; document.getElementById('refreshButton').click(); return true;">Creation Time</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='LastAccessedTime'; document.getElementById('refreshButton').click(); return true;">Last Accessed Time</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='UsedTime'; document.getElementById('refreshButton').click(); return true;">Used Time</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='InactiveTime'; document.getElementById('refreshButton').click(); return true;">Inactive Time</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='TTL'; document.getElementById('refreshButton').click(); return true;"><span title="Time To Live">TTL</span></inner></th>
                 </tr>
             </thead>
             <% if (activeSessions.size() > 10) { %>
             <tfoot><%-- <tfoot> is the same as <thead> --%>
                 <tr>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='id'; document.getElementById('refreshButton').click(); return true;">Session Id</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='id'; document.getElementById('refreshButton').click(); return true;">Type</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='locale'; document.getElementById('refreshButton').click(); return true;">Guessed Locale</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='user'; document.getElementById('refreshButton').click(); return true;">Guessed User name</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='CreationTime'; document.getElementById('refreshButton').click(); return true;">Creation Time</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='LastAccessedTime'; document.getElementById('refreshButton').click(); return true;">Last Accessed Time</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='UsedTime'; document.getElementById('refreshButton').click(); return true;">Used Time</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='InactiveTime'; document.getElementById('refreshButton').click(); return true;">Inactive Time</a></th>
-                    <th><a onclick="document.getElementById('sessionsFormSort').value='TTL'; document.getElementById('refreshButton').click(); return true;"><span title="Time To Live">TTL</span></a></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='id'; document.getElementById('refreshButton').click(); return true;">Session Id</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='id'; document.getElementById('refreshButton').click(); return true;">Type</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='locale'; document.getElementById('refreshButton').click(); return true;">Guessed Locale</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='user'; document.getElementById('refreshButton').click(); return true;">Guessed User name</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='CreationTime'; document.getElementById('refreshButton').click(); return true;">Creation Time</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='LastAccessedTime'; document.getElementById('refreshButton').click(); return true;">Last Accessed Time</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='UsedTime'; document.getElementById('refreshButton').click(); return true;">Used Time</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='InactiveTime'; document.getElementById('refreshButton').click(); return true;">Inactive Time</inner></th>
+                    <th><inner onclick="document.getElementById('sessionsFormSort').value='TTL'; document.getElementById('refreshButton').click(); return true;"><span title="Time To Live">TTL</span></inner></th>
                 </tr>
             </tfoot>
             <% } // end if %>
@@ -125,7 +125,7 @@
                             out.print(currentSessionId);
                         } else {
                       %>
-                      <a href="<%= submitUrl %>&amp;action=sessionDetail&amp;sessionId=<%= currentSessionId %>&amp;sessionType=<%= type %>"><%= currentSessionId %></a>
+                      <inner href="<%= submitUrl %>&amp;action=sessionDetail&amp;sessionId=<%= currentSessionId %>&amp;sessionType=<%= type %>"><%= currentSessionId %></inner>
                       <%
                         }
                       %>
@@ -156,15 +156,15 @@
 
 <%--div style="display: none;">
 <p>
-    <a href="http://validator.w3.org/check?uri=referer"><img
+    <inner href="http://validator.w3.org/check?uri=referer"><img
         src="http://www.w3.org/Icons/valid-html401"
-        alt="Valid HTML 4.01!" height="31" width="88"></a>
-    <a href="http://validator.w3.org/check?uri=referer"><img
+        alt="Valid HTML 4.01!" height="31" width="88"></inner>
+    <inner href="http://validator.w3.org/check?uri=referer"><img
         src="http://www.w3.org/Icons/valid-xhtml10"
-        alt="Valid XHTML 1.0!" height="31" width="88" /></a>
-    <a href="http://validator.w3.org/check?uri=referer"><img
+        alt="Valid XHTML 1.0!" height="31" width="88" /></inner>
+    <inner href="http://validator.w3.org/check?uri=referer"><img
         src="http://www.w3.org/Icons/valid-xhtml11"
-        alt="Valid XHTML 1.1!" height="31" width="88" /></a>
+        alt="Valid XHTML 1.1!" height="31" width="88" /></inner>
 </p>
 </div--%>
 

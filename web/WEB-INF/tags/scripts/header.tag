@@ -9,7 +9,7 @@
 <div class="header">
     Header
     <div>
-        <a href="/simple">
+        <inner href="/simple">
             ${title == Simple ? title : Simple}<br>
             <%--<c:choose>
                 <c:when test="${title == Simple}">
@@ -19,8 +19,8 @@
                     ${Simple} <br>
                 </c:otherwise>
             </c:choose>--%>
-        </a>
-        <a href="/simple4">
+        </inner>
+        <inner href="/simple4">
             ${title == Simple_4 ? title : Simple_4}<br>
             <%--<c:choose>
                 <c:when test="${title == Simple_4}">
@@ -30,6 +30,6 @@
                     ${Simple_4} <br>
                 </c:otherwise>
             </c:choose>--%>
-        </a>
+        </inner>
     </div>
 </div>

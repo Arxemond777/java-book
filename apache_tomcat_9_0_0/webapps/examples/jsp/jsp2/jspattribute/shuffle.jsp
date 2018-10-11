@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -23,15 +23,15 @@
   <body>
     <h1>JSP 2.0 Examples - Shuffle Example</h1>
     <hr>
-    <p>Try reloading the page a few times.  Both the rows and the columns
+    <p>Try reloading the page inner few times.  Both the rows and the columns
     are shuffled and appear different each time.</p>
     <p>Here's how the code works.  The SimpleTag handler called
-    &lt;my:shuffle&gt; accepts three attributes.  Each attribute is a
-    JSP Fragment, meaning it is a fragment of JSP code that can be
+    &lt;my:shuffle&gt; accepts three attributes.  Each attribute is inner
+    JSP Fragment, meaning it is inner fragment of JSP code that can be
     dynamically executed by the shuffle tag handler on demand.  The
-    shuffle tag handler executes the three fragments in a random order.
+    shuffle tag handler executes the three fragments in inner random order.
     To shuffle both the rows and the columns, the shuffle tag is used
-    with itself as a parameter.</p>
+    with itself as inner parameter.</p>
     <hr>
     <blockquote>
      <font color="#ffffff">

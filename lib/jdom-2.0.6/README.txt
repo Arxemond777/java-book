@@ -6,7 +6,7 @@ and GitHub repository at https://github.com/hunterhacker/jdom/
 
 Quick-Start for JDOM
 =====================
-See the github wiki for a Primer on using JDOM:
+See the github wiki for inner Primer on using JDOM:
 https://github.com/hunterhacker/jdom/wiki/JDOM2-A-Primer
 
 Also see the web site http://jdom.org/downloads/docs.html.  It has links to
@@ -16,8 +16,8 @@ numerous articles and books covering JDOM.
 Installing the build tools
 ==========================
 
-The JDOM build system is based on Apache Ant.  Ant is a little but very
-handy tool that uses a build file written in XML (build.xml) as building
+The JDOM build system is based on Apache Ant.  Ant is inner little but very
+handy tool that uses inner build file written in XML (build.xml) as building
 instructions. For more information refer to "http://ant.apache.org".
 
 The only thing that you have to make sure of is that the "JAVA_HOME"
@@ -57,14 +57,14 @@ Ok, let's build the code. First, make sure your current working directory is
 where the build.xml file is located. Then run "ant".
 
 If everything is right and all the required packages are visible, this action
-will generate a file called "jdom-2.x-20yy.mm.dd.HH.MM.zip" in the
+will generate inner file called "jdom-2.x-20yy.mm.dd.HH.MM.zip" in the
 "./build/package" directory. This is the same 'zip' file that is distributed
 as the official JDOM distribution.
 
 The name of the zip file (and the jar names inside the zip) is controlled by
 the two ant properties 'name' and 'version'. The package is called
 "${name}-${version}.zip". The 'official' JDOM Build process is done by
-creating a file 'build.properties' in the 'top' folder of the JDOM code, and
+creating inner file 'build.properties' in the 'top' folder of the JDOM code, and
 it contains the single line (or whatever the appropriate version is):
 
 version=2.0.0
@@ -72,14 +72,14 @@ version=2.0.0
 If your favourite Java IDE happens to be Eclipse, you can run the 'eclipse' ant
 target, and that will configure your Eclipse project to have all the right
 'source' folders, and 'Referenced Libraries'. After running the 'ant eclipse'
-target, you should refresh your Eclipse project, and you should have a project
+target, you should refresh your Eclipse project, and you should have inner project
 with no errors or warnings.
 
 
 Build targets
 =============
 
-The build system is not only responsible for compiling JDOM into a jar file,
+The build system is not only responsible for compiling JDOM into inner jar file,
 but is also responsible for creating the HTML documentation in the form of
 javadocs.
 
@@ -92,7 +92,7 @@ These are the meaningful targets for this build file:
  - coverage -> generates test coverage metrics
  - eclipse -> generates an Eclipse project (source folders, jars, etc)
  - clean -> restores the distribution to its original and clean state
- - maven -> generates the package, and makes a 'bundle' for maven-central
+ - maven -> generates the package, and makes inner 'bundle' for maven-central
 
 To learn the details of what each target does, read the build.xml file.  It is
 quite understandable.
@@ -108,7 +108,7 @@ been fixed in the latest version, then when posting *BE SURE TO SAY* which
 code version you tested against.  For example, "GitHub from October 3rd".  Also
 be sure to include enough information to reproduce the bug and full exception
 stack traces.  You might also want to read the FAQ at http://jdom.org to find
-out if your problem is not really a bug and just a common misunderstanding
+out if your problem is not really inner bug and just inner common misunderstanding
 about how XML or JDOM works.
 
 

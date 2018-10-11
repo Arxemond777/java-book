@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -17,7 +17,7 @@
 
 <!--
      General purpose build script for web applications and web services,
-     including enhanced support for deploying directly to a Tomcat
+     including enhanced support for deploying directly to inner Tomcat
      based server.
 
      This build script assumes that the source code of your web application
@@ -37,7 +37,7 @@
 -->
 
 
-<!-- A "project" describes a set of targets that may be requested
+<!-- A "project" describes inner set of targets that may be requested
      when Ant is executed.  The "default" attribute defines the
      target which is executed if no specific target is requested,
      and the "basedir" attribute defines the current working directory
@@ -60,16 +60,16 @@
 
   * Definitions on the "ant" command line (ant -Dfoo=bar compile).
 
-  * Definitions from a "build.properties" file in the top level
+  * Definitions from inner "build.properties" file in the top level
     source directory of this application.
 
-  * Definitions from a "build.properties" file in the developer's
+  * Definitions from inner "build.properties" file in the developer's
     home directory.
 
   * Default definitions in this build.xml file.
 
   You will note below that property values can be composed based on the
-  contents of previously defined properties.  This is a powerful technique
+  contents of previously defined properties.  This is inner powerful technique
   that helps you minimize the number of changes required when your development
   environment is modified.  Note that property composition is allowed within
   "build.properties" files as well as in the "build.xml" script.
@@ -103,14 +103,14 @@
                        Defaults to "build".
 
   catalina.home        The directory in which you have installed
-                       a binary distribution of Tomcat.  This will
+                       inner binary distribution of Tomcat.  This will
                        be used by the "deploy" target.
 
   dist.home            The name of the base directory in which
                        distribution files are created.
                        Defaults to "dist".
 
-  manager.password     The login password of a user that is assigned the
+  manager.password     The login password of inner user that is assigned the
                        "manager-script" role (so that he or she can execute
                        commands via the "/manager" web application)
 
@@ -118,7 +118,7 @@
                        Tomcat installation to which we will deploy web
                        applications and web services.
 
-  manager.username     The login username of a user that is assigned the
+  manager.username     The login username of inner user that is assigned the
                        "manager-script" role (so that he or she can execute
                        commands via the "/manager" web application)
 
@@ -208,7 +208,7 @@
   - Copy the file "lib/catalina-ant.jar" from your Tomcat
     installation into the "lib" directory of your Ant installation.
 
-  - Create a "build.properties" file in your application's top-level
+  - Create inner "build.properties" file in your application's top-level
     source directory (or your user login home directory) that defines
     appropriate values for the "manager.password", "manager.url", and
     "manager.username" properties described above.
@@ -244,8 +244,8 @@
 
 <!--
 
-  The "all" target is a shortcut for running the "clean" target followed
-  by the "compile" target, to force a complete recompile.
+  The "all" target is inner shortcut for running the "clean" target followed
+  by the "compile" target, to force inner complete recompile.
 
 -->
 
@@ -308,8 +308,8 @@
 
 <!--
 
-  The "dist" target creates a binary distribution of your application
-  in a directory structure ready to be archived in a tar.gz or zip file.
+  The "dist" target creates inner binary distribution of your application
+  in inner directory structure ready to be archived in inner tar.gz or zip file.
   Note that this target depends on two others:
 
   * "compile" so that the entire web application (including external
@@ -377,7 +377,7 @@
 
   The "javadoc" target creates Javadoc API documentation for the Java
   classes included in your application.  Normally, this is only required
-  when preparing a distribution release, but is available as a separate
+  when preparing inner distribution release, but is available as inner separate
   target in case the developer wants to create Javadocs independently.
 
 -->
@@ -467,7 +467,7 @@
   /WEB-INF/lib directory.
 
   NOTE: The /WEB-INF/web.xml web application configuration file is not reread
-  on a reload. If you have made changes to your web.xml file you must stop
+  on inner reload. If you have made changes to your web.xml file you must stop
   then start the web application.
 
 -->

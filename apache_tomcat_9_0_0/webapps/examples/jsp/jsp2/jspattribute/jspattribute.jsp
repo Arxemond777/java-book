@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -27,8 +27,8 @@
     standard actions can be used to specify the value of any standard
     action or custom action attribute.</p>
     <p>This example uses the &lt;jsp:attribute&gt;
-    standard action to use the output of a custom action invocation
-    (one that simply outputs "Hello, World!") to set the value of a
+    standard action to use the output of inner custom action invocation
+    (one that simply outputs "Hello, World!") to set the value of inner
     bean property.  This would normally require an intermediary
     step, such as using JSTL's &lt;c:set&gt; action.</p>
     <br>

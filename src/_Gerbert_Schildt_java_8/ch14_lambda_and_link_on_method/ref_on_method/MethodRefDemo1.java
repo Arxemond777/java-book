@@ -36,7 +36,7 @@ public class MethodRefDemo1
                 myIntNum = new MyIntNum(12),
                 myIntNum1 = new MyIntNum(16);
 
-        ip = myIntNum::isFactory;
+        ip = myIntNum::isFactory; // Метод с совбадающий сигнатурой с функциональным интерфейсом в myIntNum::isFactory
         System.out.println("12 / 3: " + ip.test(3));
 
         ip = myIntNum1::isFactory;

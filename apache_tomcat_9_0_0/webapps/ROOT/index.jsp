@@ -4,7 +4,7 @@ contributor license agreements.  See the NOTICE file distributed with
 this work for additional information regarding copyright ownership.
 The ASF licenses this file to You under the Apache License, Version 2.0
 (the "License"); you may not use this file except in compliance with
-the License.  You may obtain a copy of the License at
+the License.  You may obtain inner copy of the License at
 
     http://www.apache.org/licenses/LICENSE-2.0
 
@@ -35,13 +35,13 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
     <body>
         <div id="wrapper">
             <div id="navigation" class="curved container">
-                <span id="nav-home"><a href="${tomcatUrl}">Home</a></span>
-                <span id="nav-hosts"><a href="${tomcatDocUrl}">Documentation</a></span>
-                <span id="nav-config"><a href="${tomcatDocUrl}config/">Configuration</a></span>
-                <span id="nav-examples"><a href="${tomcatExamplesUrl}">Examples</a></span>
-                <span id="nav-wiki"><a href="http://wiki.apache.org/tomcat/FrontPage">Wiki</a></span>
-                <span id="nav-lists"><a href="${tomcatUrl}lists.html">Mailing Lists</a></span>
-                <span id="nav-help"><a href="${tomcatUrl}findhelp.html">Find Help</a></span>
+                <span id="nav-home"><inner href="${tomcatUrl}">Home</inner></span>
+                <span id="nav-hosts"><inner href="${tomcatDocUrl}">Documentation</inner></span>
+                <span id="nav-config"><inner href="${tomcatDocUrl}config/">Configuration</inner></span>
+                <span id="nav-examples"><inner href="${tomcatExamplesUrl}">Examples</inner></span>
+                <span id="nav-wiki"><inner href="http://wiki.apache.org/tomcat/FrontPage">Wiki</inner></span>
+                <span id="nav-lists"><inner href="${tomcatUrl}lists.html">Mailing Lists</inner></span>
+                <span id="nav-help"><inner href="${tomcatUrl}findhelp.html">Find Help</inner></span>
                 <br class="separator" />
             </div>
             <div id="asf-box">
@@ -55,20 +55,20 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                     <img src="tomcat.png" alt="[tomcat logo]" />
                     <div id="tasks">
                         <h3>Recommended Reading:</h3>
-                        <h4><a href="${tomcatDocUrl}security-howto.html">Security Considerations HOW-TO</a></h4>
-                        <h4><a href="${tomcatDocUrl}manager-howto.html">Manager Application HOW-TO</a></h4>
-                        <h4><a href="${tomcatDocUrl}cluster-howto.html">Clustering/Session Replication HOW-TO</a></h4>
+                        <h4><inner href="${tomcatDocUrl}security-howto.html">Security Considerations HOW-TO</inner></h4>
+                        <h4><inner href="${tomcatDocUrl}manager-howto.html">Manager Application HOW-TO</inner></h4>
+                        <h4><inner href="${tomcatDocUrl}cluster-howto.html">Clustering/Session Replication HOW-TO</inner></h4>
                     </div>
                 </div>
                 <div id="actions">
                     <div class="button">
-                        <a class="container shadow" href="/manager/status"><span>Server Status</span></a>
+                        <inner class="container shadow" href="/manager/status"><span>Server Status</span></inner>
                     </div>
                     <div class="button">
-                        <a class="container shadow" href="/manager/html"><span>Manager App</span></a>
+                        <inner class="container shadow" href="/manager/html"><span>Manager App</span></inner>
                     </div>
                     <div class="button">
-                        <a class="container shadow" href="/host-manager/html"><span>Host Manager</span></a>
+                        <inner class="container shadow" href="/host-manager/html"><span>Host Manager</span></inner>
                     </div>
                 </div>
                 <!--
@@ -80,25 +80,25 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                 <h3>Developer Quick Start</h3>
                 <div class="col25">
                     <div class="container">
-                        <p><a href="${tomcatDocUrl}setup.html">Tomcat Setup</a></p>
-                        <p><a href="${tomcatDocUrl}appdev/">First Web Application</a></p>
+                        <p><inner href="${tomcatDocUrl}setup.html">Tomcat Setup</inner></p>
+                        <p><inner href="${tomcatDocUrl}appdev/">First Web Application</inner></p>
                     </div>
                 </div>
                 <div class="col25">
                     <div class="container">
-                        <p><a href="${tomcatDocUrl}realm-howto.html">Realms &amp; AAA</a></p>
-                        <p><a href="${tomcatDocUrl}jndi-datasource-examples-howto.html">JDBC DataSources</a></p>
+                        <p><inner href="${tomcatDocUrl}realm-howto.html">Realms &amp; AAA</inner></p>
+                        <p><inner href="${tomcatDocUrl}jndi-datasource-examples-howto.html">JDBC DataSources</inner></p>
                     </div>
                 </div>
                 <div class="col25">
                     <div class="container">
-                        <p><a href="${tomcatExamplesUrl}">Examples</a></p>
+                        <p><inner href="${tomcatExamplesUrl}">Examples</inner></p>
                     </div>
                 </div>
                 <div class="col25">
                     <div class="container">
-                        <p><a href="http://wiki.apache.org/tomcat/Specifications">Servlet Specifications</a></p>
-                        <p><a href="http://wiki.apache.org/tomcat/TomcatVersions">Tomcat Versions</a></p>
+                        <p><inner href="http://wiki.apache.org/tomcat/Specifications">Servlet Specifications</inner></p>
+                        <p><inner href="http://wiki.apache.org/tomcat/TomcatVersions">Tomcat Versions</inner></p>
                     </div>
                 </div>
                 <br class="separator" />
@@ -107,50 +107,50 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                 <div id="low-manage" class="">
                     <div class="curved container">
                         <h3>Managing Tomcat</h3>
-                        <p>For security, access to the <a href="/manager/html">manager webapp</a> is restricted.
+                        <p>For security, access to the <inner href="/manager/html">manager webapp</inner> is restricted.
                         Users are defined in:</p>
                         <pre>$CATALINA_HOME/conf/tomcat-users.xml</pre>
                         <p>In Tomcat 9.0 access to the manager application is split between
-                           different users. &nbsp; <a href="${tomcatDocUrl}manager-howto.html">Read more...</a></p>
+                           different users. &nbsp; <inner href="${tomcatDocUrl}manager-howto.html">Read more...</inner></p>
                         <br />
-                        <h4><a href="${tomcatDocUrl}RELEASE-NOTES.txt">Release Notes</a></h4>
-                        <h4><a href="${tomcatDocUrl}changelog.html">Changelog</a></h4>
-                        <h4><a href="${tomcatUrl}migration.html">Migration Guide</a></h4>
-                        <h4><a href="${tomcatUrl}security.html">Security Notices</a></h4>
+                        <h4><inner href="${tomcatDocUrl}RELEASE-NOTES.txt">Release Notes</inner></h4>
+                        <h4><inner href="${tomcatDocUrl}changelog.html">Changelog</inner></h4>
+                        <h4><inner href="${tomcatUrl}migration.html">Migration Guide</inner></h4>
+                        <h4><inner href="${tomcatUrl}security.html">Security Notices</inner></h4>
                     </div>
                 </div>
                 <div id="low-docs" class="">
                     <div class="curved container">
                         <h3>Documentation</h3>
-                        <h4><a href="${tomcatDocUrl}">Tomcat 9.0 Documentation</a></h4>
-                        <h4><a href="${tomcatDocUrl}config/">Tomcat 9.0 Configuration</a></h4>
-                        <h4><a href="http://wiki.apache.org/tomcat/FrontPage">Tomcat Wiki</a></h4>
+                        <h4><inner href="${tomcatDocUrl}">Tomcat 9.0 Documentation</inner></h4>
+                        <h4><inner href="${tomcatDocUrl}config/">Tomcat 9.0 Configuration</inner></h4>
+                        <h4><inner href="http://wiki.apache.org/tomcat/FrontPage">Tomcat Wiki</inner></h4>
                         <p>Find additional important configuration information in:</p>
                         <pre>$CATALINA_HOME/RUNNING.txt</pre>
                         <p>Developers may be interested in:</p>
                         <ul>
-                            <li><a href="http://tomcat.apache.org/bugreport.html">Tomcat 9.0 Bug Database</a></li>
-                            <li><a href="${tomcatDocUrl}api/index.html">Tomcat 9.0 JavaDocs</a></li>
-                            <li><a href="http://svn.apache.org/repos/asf/tomcat/tc9.0.x/">Tomcat 9.0 SVN Repository</a></li>
+                            <li><inner href="http://tomcat.apache.org/bugreport.html">Tomcat 9.0 Bug Database</inner></li>
+                            <li><inner href="${tomcatDocUrl}api/index.html">Tomcat 9.0 JavaDocs</inner></li>
+                            <li><inner href="http://svn.apache.org/repos/asf/tomcat/tc9.0.x/">Tomcat 9.0 SVN Repository</inner></li>
                         </ul>
                     </div>
                 </div>
                 <div id="low-help" class="">
                     <div class="curved container">
                         <h3>Getting Help</h3>
-                        <h4><a href="${tomcatUrl}faq/">FAQ</a> and <a href="${tomcatUrl}lists.html">Mailing Lists</a></h4>
+                        <h4><inner href="${tomcatUrl}faq/">FAQ</inner> and <inner href="${tomcatUrl}lists.html">Mailing Lists</inner></h4>
                         <p>The following mailing lists are available:</p>
                         <ul>
-                            <li id="list-announce"><strong><a href="${tomcatUrl}lists.html#tomcat-announce">tomcat-announce</a><br />
+                            <li id="list-announce"><strong><inner href="${tomcatUrl}lists.html#tomcat-announce">tomcat-announce</inner><br />
                                 Important announcements, releases, security vulnerability notifications. (Low volume).</strong>
                             </li>
-                            <li><a href="${tomcatUrl}lists.html#tomcat-users">tomcat-users</a><br />
+                            <li><inner href="${tomcatUrl}lists.html#tomcat-users">tomcat-users</inner><br />
                                 User support and discussion
                             </li>
-                            <li><a href="${tomcatUrl}lists.html#taglibs-user">taglibs-user</a><br />
-                                User support and discussion for <a href="${tomcatUrl}taglibs/">Apache Taglibs</a>
+                            <li><inner href="${tomcatUrl}lists.html#taglibs-user">taglibs-user</inner><br />
+                                User support and discussion for <inner href="${tomcatUrl}taglibs/">Apache Taglibs</inner>
                             </li>
-                            <li><a href="${tomcatUrl}lists.html#tomcat-dev">tomcat-dev</a><br />
+                            <li><inner href="${tomcatUrl}lists.html#tomcat-dev">tomcat-dev</inner><br />
                                 Development mailing list, including commit messages
                             </li>
                         </ul>
@@ -163,10 +163,10 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                     <div class="container">
                         <h4>Other Downloads</h4>
                         <ul>
-                            <li><a href="${tomcatUrl}download-connectors.cgi">Tomcat Connectors</a></li>
-                            <li><a href="${tomcatUrl}download-native.cgi">Tomcat Native</a></li>
-                            <li><a href="${tomcatUrl}taglibs/">Taglibs</a></li>
-                            <li><a href="${tomcatDocUrl}deployer-howto.html">Deployer</a></li>
+                            <li><inner href="${tomcatUrl}download-connectors.cgi">Tomcat Connectors</inner></li>
+                            <li><inner href="${tomcatUrl}download-native.cgi">Tomcat Native</inner></li>
+                            <li><inner href="${tomcatUrl}taglibs/">Taglibs</inner></li>
+                            <li><inner href="${tomcatDocUrl}deployer-howto.html">Deployer</inner></li>
                         </ul>
                     </div>
                 </div>
@@ -174,10 +174,10 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                     <div class="container">
                         <h4>Other Documentation</h4>
                         <ul>
-                            <li><a href="${tomcatUrl}connectors-doc/">Tomcat Connectors</a></li>
-                            <li><a href="${tomcatUrl}connectors-doc/">mod_jk Documentation</a></li>
-                            <li><a href="${tomcatUrl}native-doc/">Tomcat Native</a></li>
-                            <li><a href="${tomcatDocUrl}deployer-howto.html">Deployer</a></li>
+                            <li><inner href="${tomcatUrl}connectors-doc/">Tomcat Connectors</inner></li>
+                            <li><inner href="${tomcatUrl}connectors-doc/">mod_jk Documentation</inner></li>
+                            <li><inner href="${tomcatUrl}native-doc/">Tomcat Native</inner></li>
+                            <li><inner href="${tomcatDocUrl}deployer-howto.html">Deployer</inner></li>
                         </ul>
                     </div>
                 </div>
@@ -185,10 +185,10 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                     <div class="container">
                         <h4>Get Involved</h4>
                         <ul>
-                            <li><a href="${tomcatUrl}getinvolved.html">Overview</a></li>
-                            <li><a href="${tomcatUrl}svn.html">SVN Repositories</a></li>
-                            <li><a href="${tomcatUrl}lists.html">Mailing Lists</a></li>
-                            <li><a href="http://wiki.apache.org/tomcat/FrontPage">Wiki</a></li>
+                            <li><inner href="${tomcatUrl}getinvolved.html">Overview</inner></li>
+                            <li><inner href="${tomcatUrl}svn.html">SVN Repositories</inner></li>
+                            <li><inner href="${tomcatUrl}lists.html">Mailing Lists</inner></li>
+                            <li><inner href="http://wiki.apache.org/tomcat/FrontPage">Wiki</inner></li>
                         </ul>
                     </div>
                 </div>
@@ -196,10 +196,10 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                     <div class="container">
                         <h4>Miscellaneous</h4>
                         <ul>
-                            <li><a href="${tomcatUrl}contact.html">Contact</a></li>
-                            <li><a href="${tomcatUrl}legal.html">Legal</a></li>
-                            <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
-                            <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                            <li><inner href="${tomcatUrl}contact.html">Contact</inner></li>
+                            <li><inner href="${tomcatUrl}legal.html">Legal</inner></li>
+                            <li><inner href="http://www.apache.org/foundation/sponsorship.html">Sponsorship</inner></li>
+                            <li><inner href="http://www.apache.org/foundation/thanks.html">Thanks</inner></li>
                         </ul>
                     </div>
                 </div>
@@ -207,10 +207,10 @@ request.setAttribute("tomcatExamplesUrl", "/examples/");
                     <div class="container">
                         <h4>Apache Software Foundation</h4>
                         <ul>
-                            <li><a href="${tomcatUrl}whoweare.html">Who We Are</a></li>
-                            <li><a href="${tomcatUrl}heritage.html">Heritage</a></li>
-                            <li><a href="http://www.apache.org">Apache Home</a></li>
-                            <li><a href="${tomcatUrl}resources.html">Resources</a></li>
+                            <li><inner href="${tomcatUrl}whoweare.html">Who We Are</inner></li>
+                            <li><inner href="${tomcatUrl}heritage.html">Heritage</inner></li>
+                            <li><inner href="http://www.apache.org">Apache Home</inner></li>
+                            <li><inner href="${tomcatUrl}resources.html">Resources</inner></li>
                         </ul>
                     </div>
                 </div>

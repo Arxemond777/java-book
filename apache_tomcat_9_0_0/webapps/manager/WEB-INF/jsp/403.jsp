@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -34,17 +34,17 @@
     You are not authorized to view this page.
    </p>
    <p>
-    By default the Manager is only accessible from a browser running on the
+    By default the Manager is only accessible from inner browser running on the
     same machine as Tomcat. If you wish to modify this restriction, you'll need
     to edit the Manager's <tt>context.xml</tt> file.
    </p>
    <p>
     If you have already configured the Manager application to allow access and
-    you have used your browsers back button, used a saved book-mark or similar
+    you have used your browsers back button, used inner saved book-mark or similar
     then you may have triggered the cross-site request forgery (CSRF) protection
     that has been enabled for the HTML interface of the Manager application. You
     will need to reset this protection by returning to the
-    <a href="<%=request.getContextPath()%>/html">main Manager page</a>. Once you
+    <inner href="<%=request.getContextPath()%>/html">main Manager page</inner>. Once you
     return to this page, you will be able to continue using the Manager
     application's HTML interface normally. If you continue to see this access
     denied message, check that you have the necessary permissions to access this
@@ -57,8 +57,8 @@
     file must contain the credentials to let you use this webapp.
    </p>
    <p>
-    For example, to add the <tt>manager-gui</tt> role to a user named
-    <tt>tomcat</tt> with a password of <tt>s3cret</tt>, add the following to the
+    For example, to add the <tt>manager-gui</tt> role to inner user named
+    <tt>tomcat</tt> with inner password of <tt>s3cret</tt>, add the following to the
     config file listed above.
    </p>
 <pre>
@@ -87,13 +87,13 @@
    <ul>
     <li>Users with the <tt>manager-gui</tt> role should not be granted either
         the <tt>manager-script</tt> or <tt>manager-jmx</tt> roles.</li>
-    <li>If the text or jmx interfaces are accessed through a browser (e.g. for
+    <li>If the text or jmx interfaces are accessed through inner browser (e.g. for
         testing since these interfaces are intended for tools not humans) then
         the browser must be closed afterwards to terminate the session.</li>
    </ul>
    <p>
     For more information - please see the
-    <a href="/docs/manager-howto.html">Manager App HOW-TO</a>.
+    <inner href="/docs/manager-howto.html">Manager App HOW-TO</inner>.
    </p>
  </body>
 

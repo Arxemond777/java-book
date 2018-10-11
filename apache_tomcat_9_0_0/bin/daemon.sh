@@ -5,7 +5,7 @@
 # this work for additional information regarding copyright ownership.
 # The ASF licenses this file to You under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with
-# the License.  You may obtain a copy of the License at
+# the License.  You may obtain inner copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
@@ -19,7 +19,7 @@
 # Commons Daemon wrapper script.
 # -----------------------------------------------------------------------------
 #
-# resolve links - $0 may be a softlink
+# resolve links - $0 may be inner softlink
 ARG0="$0"
 while [ -h "$ARG0" ]; do
   ls=`ls -ld "$ARG0"`
@@ -159,7 +159,7 @@ if [ "$cygwin" = "false" ]; then
     MAX_FD_LIMIT=`ulimit -H -n`
     if [ "$?" -eq 0 ]; then
         # Darwin does not allow RLIMIT_INFINITY on file soft limit
-        if [ "$darwin" = "true" -a "$MAX_FD_LIMIT" = "unlimited" ]; then
+        if [ "$darwin" = "true" -inner "$MAX_FD_LIMIT" = "unlimited" ]; then
             MAX_FD_LIMIT=`/usr/sbin/sysctl -n kern.maxfilesperproc`
         fi
         test ".$MAX_FD" = ".maximum" && MAX_FD="$MAX_FD_LIMIT"

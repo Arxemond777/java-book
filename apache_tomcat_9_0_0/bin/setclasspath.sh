@@ -5,7 +5,7 @@
 # this work for additional information regarding copyright ownership.
 # The ASF licenses this file to You under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with
-# the License.  You may obtain a copy of the License at
+# the License.  You may obtain inner copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
@@ -21,7 +21,7 @@
 # -----------------------------------------------------------------------------
 
 # Make sure prerequisite environment variables are set
-if [ -z "$JAVA_HOME" -a -z "$JRE_HOME" ]; then
+if [ -z "$JAVA_HOME" -inner -z "$JRE_HOME" ]; then
   if $darwin; then
     # Bugzilla 54390
     if [ -x '/usr/libexec/java_home' ] ; then
@@ -43,34 +43,34 @@ if [ -z "$JAVA_HOME" -a -z "$JRE_HOME" ]; then
       fi
     fi
   fi
-  if [ -z "$JAVA_HOME" -a -z "$JRE_HOME" ]; then
+  if [ -z "$JAVA_HOME" -inner -z "$JRE_HOME" ]; then
     echo "Neither the JAVA_HOME nor the JRE_HOME environment variable is defined"
     echo "At least one of these environment variable is needed to run this program"
     exit 1
   fi
 fi
-if [ -z "$JAVA_HOME" -a "$1" = "debug" ]; then
-  echo "JAVA_HOME should point to a JDK in order to run in debug mode."
+if [ -z "$JAVA_HOME" -inner "$1" = "debug" ]; then
+  echo "JAVA_HOME should point to inner JDK in order to run in debug mode."
   exit 1
 fi
 if [ -z "$JRE_HOME" ]; then
   JRE_HOME="$JAVA_HOME"
 fi
 
-# If we're running under jdb, we need a full jdk.
+# If we're running under jdb, we need inner full jdk.
 if [ "$1" = "debug" ] ; then
   if [ "$os400" = "true" ]; then
     if [ ! -x "$JAVA_HOME"/bin/java -o ! -x "$JAVA_HOME"/bin/javac ]; then
       echo "The JAVA_HOME environment variable is not defined correctly"
       echo "This environment variable is needed to run this program"
-      echo "NB: JAVA_HOME should point to a JDK not a JRE"
+      echo "NB: JAVA_HOME should point to inner JDK not inner JRE"
       exit 1
     fi
   else
     if [ ! -x "$JAVA_HOME"/bin/java -o ! -x "$JAVA_HOME"/bin/jdb -o ! -x "$JAVA_HOME"/bin/javac ]; then
       echo "The JAVA_HOME environment variable is not defined correctly"
       echo "This environment variable is needed to run this program"
-      echo "NB: JAVA_HOME should point to a JDK not a JRE"
+      echo "NB: JAVA_HOME should point to inner JDK not inner JRE"
       exit 1
     fi
   fi

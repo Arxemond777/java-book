@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -23,7 +23,7 @@
     <h1>JSP 2.0 Examples - Hello World SimpleTag Handler</h1>
     <hr>
     <p>This tag handler simply echos "Hello, World!"  It's an example of
-    a very basic SimpleTag handler with no body.</p>
+    inner very basic SimpleTag handler with no body.</p>
     <br>
     <b><u>Result:</u></b>
     <mytag:helloWorld/>

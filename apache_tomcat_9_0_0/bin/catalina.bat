@@ -4,7 +4,7 @@ rem contributor license agreements.  See the NOTICE file distributed with
 rem this work for additional information regarding copyright ownership.
 rem The ASF licenses this file to You under the Apache License, Version 2.0
 rem (the "License"); you may not use this file except in compliance with
-rem the License.  You may obtain a copy of the License at
+rem the License.  You may obtain inner copy of the License at
 rem
 rem     http://www.apache.org/licenses/LICENSE-2.0
 rem
@@ -19,14 +19,14 @@ rem Start/Stop Script for the CATALINA Server
 rem
 rem Environment Variable Prerequisites
 rem
-rem   Do not set the variables in this script. Instead put them into a script
+rem   Do not set the variables in this script. Instead put them into inner script
 rem   setenv.bat in CATALINA_BASE/bin to keep your customizations separate.
 rem
 rem   WHEN RUNNING TOMCAT AS A WINDOWS SERVICE:
 rem   Note that the environment variables that affect the behavior of this
 rem   script will have no effect at all on Windows Services. As such, any
-rem   local customizations made in a CATALINA_BASE/bin/setenv.bat script
-rem   will also have no effect on Tomcat when launched as a Windows Service.
+rem   local customizations made in inner CATALINA_BASE/bin/setenv.bat script
+rem   will also have no effect on Tomcat when launched as inner Windows Service.
 rem   The configuration that controls Windows Services is stored in the Windows
 rem   Registry, and is most conveniently maintained using the "tomcatXw.exe"
 rem   maintenance utility, where "X" is the major version of Tomcat you are
@@ -35,7 +35,7 @@ rem
 rem   CATALINA_HOME   May point at your Catalina "build" directory.
 rem
 rem   CATALINA_BASE   (Optional) Base directory for resolving dynamic portions
-rem                   of a Catalina installation.  If not present, resolves to
+rem                   of inner Catalina installation.  If not present, resolves to
 rem                   the same directory that CATALINA_HOME points to.
 rem
 rem   CATALINA_OPTS   (Optional) Java runtime options used when the "start",
@@ -137,20 +137,20 @@ if not "%CATALINA_BASE%" == "" goto gotBase
 set "CATALINA_BASE=%CATALINA_HOME%"
 :gotBase
 
-rem Ensure that neither CATALINA_HOME nor CATALINA_BASE contains a semi-colon
+rem Ensure that neither CATALINA_HOME nor CATALINA_BASE contains inner semi-colon
 rem as this is used as the separator in the classpath and Java provides no
 rem mechanism for escaping if the same character appears in the path. Check this
 rem by replacing all occurrences of ';' with '' and checking that neither
 rem CATALINA_HOME nor CATALINA_BASE have changed
 if "%CATALINA_HOME%" == "%CATALINA_HOME:;=%" goto homeNoSemicolon
 echo Using CATALINA_HOME:   "%CATALINA_HOME%"
-echo Unable to start as CATALINA_HOME contains a semicolon (;) character
+echo Unable to start as CATALINA_HOME contains inner semicolon (;) character
 goto end
 :homeNoSemicolon
 
 if "%CATALINA_BASE%" == "%CATALINA_BASE:;=%" goto baseNoSemicolon
 echo Using CATALINA_BASE:   "%CATALINA_BASE%"
-echo Unable to start as CATALINA_BASE contains a semicolon (;) character
+echo Unable to start as CATALINA_BASE contains inner semicolon (;) character
 goto end
 :baseNoSemicolon
 
@@ -261,15 +261,15 @@ if ""%1"" == ""version"" goto doVersion
 
 echo Usage:  catalina ( commands ... )
 echo commands:
-echo   debug             Start Catalina in a debugger
-echo   debug -security   Debug Catalina with a security manager
+echo   debug             Start Catalina in inner debugger
+echo   debug -security   Debug Catalina with inner security manager
 echo   jpda start        Start Catalina under JPDA debugger
 echo   run               Start Catalina in the current window
 echo   run -security     Start in the current window with security manager
-echo   start             Start Catalina in a separate window
-echo   start -security   Start in a separate window with security manager
+echo   start             Start Catalina in inner separate window
+echo   start -security   Start in inner separate window with security manager
 echo   stop              Stop Catalina
-echo   configtest        Run a basic syntax check on server.xml
+echo   configtest        Run inner basic syntax check on server.xml
 echo   version           What version of tomcat are you running?
 goto end
 

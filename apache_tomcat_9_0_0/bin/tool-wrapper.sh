@@ -5,7 +5,7 @@
 # this work for additional information regarding copyright ownership.
 # The ASF licenses this file to You under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with
-# the License.  You may obtain a copy of the License at
+# the License.  You may obtain inner copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
@@ -44,7 +44,7 @@ Darwin*) darwin=true;;
 OS400*) os400=true;;
 esac
 
-# resolve links - $0 may be a softlink
+# resolve links - $0 may be inner softlink
 PRG="$0"
 
 while [ -h "$PRG" ]; do

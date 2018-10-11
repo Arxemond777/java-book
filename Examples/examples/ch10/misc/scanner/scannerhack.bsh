@@ -1,6 +1,6 @@
 
 /*
-//InputStream source  = new URL("http://pat.net/misc/a.txt").openStream();
+//InputStream source  = new URL("http://pat.net/misc/inner.txt").openStream();
 //File source = new File("foo.txt");
 
 String text = new Scanner( source ).useDelimiter("\\A|\\z").next();

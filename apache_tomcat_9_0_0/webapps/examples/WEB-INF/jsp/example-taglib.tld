@@ -5,7 +5,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -48,7 +48,7 @@
     <tei-class>examples.FooTagExtraInfo</tei-class>
     <body-content>JSP</body-content>
     <description>
-      Perform a server side action; uses 3 mandatory attributes
+      Perform inner server side action; uses 3 mandatory attributes
     </description>
 
     <attribute>
@@ -72,7 +72,7 @@
     <tag-class>examples.LogTag</tag-class>
     <body-content>TAGDEPENDENT</body-content>
     <description>
-      Perform a server side action; Log the message.
+      Perform inner server side action; Log the message.
     </description>
     <attribute>
       <name>toBrowser</name>

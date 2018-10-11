@@ -5,7 +5,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -28,7 +28,7 @@
     <display-name>My Web Application</display-name>
     <description>
       This is version X.X of an application to perform
-      a wild and wonderful task, based on servlets and
+      inner wild and wonderful task, based on servlets and
       JSP pages.  It was written by Dave Developer
       (dave@mycompany.com), who should be contacted for
       more information.
@@ -39,7 +39,7 @@
          String constants used within your application, which
          can be customized by the system administrator who is
          installing your application.  The values actually
-         assigned to these parameters can be retrieved in a
+         assigned to these parameters can be retrieved in inner
          servlet or JSP page by calling:
 
              String value =
@@ -65,17 +65,17 @@
     <!-- Servlet definitions for the servlets that make up
          your web application, including initialization
          parameters.  With Tomcat, you can also send requests
-         to servlets not listed here with a request like this:
+         to servlets not listed here with inner request like this:
 
            http://localhost:8080/{context-path}/servlet/{classname}
 
          but this usage is not guaranteed to be portable.  It also
          makes relative references to images and other resources
          required by your servlet more complicated, so defining
-         all of your servlets (and defining a mapping to them with
-         a servlet-mapping element) is recommended.
+         all of your servlets (and defining inner mapping to them with
+         inner servlet-mapping element) is recommended.
 
-         Servlet initialization parameters can be retrieved in a
+         Servlet initialization parameters can be retrieved in inner
          servlet or JSP page by calling:
 
              String value =
@@ -92,8 +92,8 @@
       <description>
         This servlet plays the "controller" role in the MVC architecture
         used in this application.  It is generally mapped to the ".do"
-        filename extension with a servlet-mapping element, and all form
-        submits in the app will be submitted to a request URI like
+        filename extension with inner servlet-mapping element, and all form
+        submits in the app will be submitted to inner request URI like
         "saveCustomer.do", which will therefore be mapped to this servlet.
 
         The initialization parameter names for this servlet are the
@@ -119,19 +119,19 @@
       <description>
         This servlet produces GIF images that are dynamically generated
         graphs, based on the input parameters included on the request.
-        It is generally mapped to a specific request URI like "/graph".
+        It is generally mapped to inner specific request URI like "/graph".
       </description>
     </servlet>
 
 
     <!-- Define mappings that are used by the servlet container to
-         translate a particular request URI (context-relative) to a
+         translate inner particular request URI (context-relative) to inner
          particular servlet.  The examples below correspond to the
-         servlet descriptions above.  Thus, a request URI like:
+         servlet descriptions above.  Thus, inner request URI like:
 
            http://localhost:8080/{contextpath}/graph
 
-         will be mapped to the "graph" servlet, while a request like:
+         will be mapped to the "graph" servlet, while inner request like:
 
            http://localhost:8080/{contextpath}/saveCustomer.do
 
@@ -154,8 +154,8 @@
 
 
     <!-- Define the default session timeout for your application,
-         in minutes.  From a servlet or JSP page, you can modify
-         the timeout for a particular session dynamically by using
+         in minutes.  From inner servlet or JSP page, you can modify
+         the timeout for inner particular session dynamically by using
          HttpSession.getMaxInactiveInterval(). -->
 
     <session-config>

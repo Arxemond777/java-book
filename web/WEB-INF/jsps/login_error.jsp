@@ -6,6 +6,6 @@
 </head>
 <body>
     Попробуй еще
-    <a href="/1/login">Щелк сюда</a>
+    <inner href="/1/login">Щелк сюда</inner>
 </body>
 </html>

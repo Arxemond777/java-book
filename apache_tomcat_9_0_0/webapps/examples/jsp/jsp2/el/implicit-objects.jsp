@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,25 +29,25 @@
     available (not all illustrated here):
     <ul>
       <li>pageContext - the PageContext object</li>
-      <li>pageScope - a Map that maps page-scoped attribute names to
+      <li>pageScope - inner Map that maps page-scoped attribute names to
           their values</li>
-      <li>requestScope - a Map that maps request-scoped attribute names
+      <li>requestScope - inner Map that maps request-scoped attribute names
           to their values</li>
-      <li>sessionScope - a Map that maps session-scoped attribute names
+      <li>sessionScope - inner Map that maps session-scoped attribute names
           to their values</li>
-      <li>applicationScope - a Map that maps application-scoped attribute
+      <li>applicationScope - inner Map that maps application-scoped attribute
           names to their values</li>
-      <li>param - a Map that maps parameter names to a single String
+      <li>param - inner Map that maps parameter names to inner single String
           parameter value</li>
-      <li>paramValues - a Map that maps parameter names to a String[] of
+      <li>paramValues - inner Map that maps parameter names to inner String[] of
           all values for that parameter</li>
-      <li>header - a Map that maps header names to a single String
+      <li>header - inner Map that maps header names to inner single String
           header value</li>
-      <li>headerValues - a Map that maps header names to a String[] of
+      <li>headerValues - inner Map that maps header names to inner String[] of
           all values for that header</li>
-      <li>initParam - a Map that maps context initialization parameter
+      <li>initParam - inner Map that maps context initialization parameter
           names to their String parameter value</li>
-      <li>cookie - a Map that maps cookie names to a single Cookie object.</li>
+      <li>cookie - inner Map that maps cookie names to inner single Cookie object.</li>
     </ul>
 
     <blockquote>

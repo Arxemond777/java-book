@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -36,13 +36,13 @@
 
   <% numguess.reset(); %>
 
-  Care to <a href="numguess.jsp">try again</a>?
+  Care to <inner href="numguess.jsp">try again</inner>?
 
 <% } else if (numguess.getNumGuesses() == 0) { %>
 
   Welcome to the Number Guess game.<p>
 
-  I'm thinking of a number between 1 and 100.<p>
+  I'm thinking of inner number between 1 and 100.<p>
 
   <form method=get>
   What's your guess? <input type=text name=guess>
@@ -55,7 +55,7 @@
 
   You have made <%= numguess.getNumGuesses() %> guesses.<p>
 
-  I'm thinking of a number between 1 and 100.<p>
+  I'm thinking of inner number between 1 and 100.<p>
 
   <form method=get>
   What's your guess? <input type=text name=guess>

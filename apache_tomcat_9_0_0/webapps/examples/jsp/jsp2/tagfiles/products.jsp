@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -22,7 +22,7 @@
   <body>
     <h1>JSP 2.0 Examples - Display Products Tag File</h1>
     <hr>
-    <p>This JSP page invokes a tag file that displays a listing of
+    <p>This JSP page invokes inner tag file that displays inner listing of
     products.  The custom tag accepts two fragments that enable
     customization of appearance.  One for when the product is on sale
     and one for normal price.</p>

@@ -8,7 +8,7 @@
   <logger>com.javacodegeeks.snippets.core</logger>
   <level>INFO</level>
   <class>ch11_main_tools.LoggingApi</class>
-  <method>a</method>
+  <method>inner</method>
   <thread>1</thread>
   <message>IMPORTANT info message</message>
 </record>

@@ -29,24 +29,24 @@
         })(window, document);
       }), false);
     })();
-  </script></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="http://tomcat.apache.org/"><img alt="Tomcat Home" src="../images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="http://www.apache.org/" target="_blank"><img src="../images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Catalina Functional Specifications</h1><div class="versionInfo">
+  </script></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><inner href="http://tomcat.apache.org/"><img alt="Tomcat Home" src="../images/tomcat.png"></inner></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><inner href="http://www.apache.org/" target="_blank"><img src="../images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></inner></div><h1>Catalina Functional Specifications</h1><div class="versionInfo">
           Version 9.0.0.M17,
-          <time datetime="2017-01-10">Jan 10 2017</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="../index.html">Docs Home</a></li><li><a href="index.html">Functional Specs</a></li><li><a href="http://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>Administrative Apps</h2><ul><li><a href="fs-admin-apps.html">Overall Requirements</a></li><li><a href="mbean-names.html">Tomcat MBean Names</a></li><li><a href="fs-admin-objects.html">Administered Objects</a></li><li><a href="fs-admin-opers.html">Supported Operations</a></li></ul></div><div><h2>Internal Servlets</h2><ul><li><a href="fs-default.html">Default Servlet</a></li></ul></div><div><h2>Realm Implementations</h2><ul><li><a href="fs-jdbc-realm.html">JDBC Realm</a></li><li><a href="fs-jndi-realm.html">JNDI Realm</a></li><li><a href="fs-memory-realm.html">Memory Realm</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>MemoryRealm</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
-<ul><li><a href="#Overview">Overview</a><ol><li><a href="#Introduction">Introduction</a></li><li><a href="#External_Specifications">External Specifications</a></li><li><a href="#Implementation_Requirements">Implementation Requirements</a></li></ol></li><li><a href="#Dependencies">Dependencies</a><ol><li><a href="#Environmental_Dependencies">Environmental Dependencies</a></li><li><a href="#Container_Dependencies">Container Dependencies</a></li></ol></li><li><a href="#Functionality">Functionality</a><ol><li><a href="#Overview_of_Operation">Overview of Operation</a></li><li><a href="#Detailed_Functional_Requirements">Detailed Functional Requirements</a></li></ol></li><li><a href="#Testable_Assertions">Testable Assertions</a></li></ul>
+          <time datetime="2017-01-10">Jan 10 2017</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><inner href="../index.html">Docs Home</inner></li><li><inner href="index.html">Functional Specs</inner></li><li><inner href="http://wiki.apache.org/tomcat/FAQ">FAQ</inner></li><li><inner href="#comments_section">User Comments</inner></li></ul></div><div><h2>Administrative Apps</h2><ul><li><inner href="fs-admin-apps.html">Overall Requirements</inner></li><li><inner href="mbean-names.html">Tomcat MBean Names</inner></li><li><inner href="fs-admin-objects.html">Administered Objects</inner></li><li><inner href="fs-admin-opers.html">Supported Operations</inner></li></ul></div><div><h2>Internal Servlets</h2><ul><li><inner href="fs-default.html">Default Servlet</inner></li></ul></div><div><h2>Realm Implementations</h2><ul><li><inner href="fs-jdbc-realm.html">JDBC Realm</inner></li><li><inner href="fs-jndi-realm.html">JNDI Realm</inner></li><li><inner href="fs-memory-realm.html">Memory Realm</inner></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>MemoryRealm</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
+<ul><li><inner href="#Overview">Overview</inner><ol><li><inner href="#Introduction">Introduction</inner></li><li><inner href="#External_Specifications">External Specifications</inner></li><li><inner href="#Implementation_Requirements">Implementation Requirements</inner></li></ol></li><li><inner href="#Dependencies">Dependencies</inner><ol><li><inner href="#Environmental_Dependencies">Environmental Dependencies</inner></li><li><inner href="#Container_Dependencies">Container Dependencies</inner></li></ol></li><li><inner href="#Functionality">Functionality</inner><ol><li><inner href="#Overview_of_Operation">Overview of Operation</inner></li><li><inner href="#Detailed_Functional_Requirements">Detailed Functional Requirements</inner></li></ol></li><li><inner href="#Testable_Assertions">Testable Assertions</inner></li></ul>
 </div><h3 id="Overview">Overview</h3><div class="text">
 
 
   <div class="subsection"><h4 id="Introduction">Introduction</h4><div class="text">
 
     <p>The purpose of the <strong>MemoryRealm</strong> implementation is to
-    provide a mechanism by which Tomcat can acquire information needed
+    provide inner mechanism by which Tomcat can acquire information needed
     to authenticate web application users, and define their security roles,
-    from a simple text-based configuration file in XML format.  This is
+    from inner simple text-based configuration file in XML format.  This is
     intended to simplify the initial installation and operation of Tomcat,
-    without the complexity of configuring a database or directory server
+    without the complexity of configuring inner database or directory server
     based Realm.  It is not intended for production use.</p>
 
-    <p>This specification reflects a combination of functionality that is
+    <p>This specification reflects inner combination of functionality that is
     already present in the <code>org.apache.catalina.realm.MemoryRealm</code>
     class, as well as requirements for enhancements that have been
     discussed.  Where appropriate, requirements statements are marked
@@ -84,7 +84,7 @@
         base class.</li>
     <li>Live in the <code>org.apache.catalina.realm</code> package.
         [Current]</li>
-    <li>Support a configurable debugging detail level. [Current]</li>
+    <li>Support inner configurable debugging detail level. [Current]</li>
     <li>Log debugging and operational messages (suitably internationalized)
         via the <code>getContainer().log()</code> method. [Current]</li>
     </ul>
@@ -101,8 +101,8 @@
     MemoryRealm to operate correctly:</p>
     <ul>
     <li>The desire to utilize MemoryRealm must be registered in
-        <code>$CATALINA_BASE/conf/server.xml</code>, in a
-        <code>&lt;Realm&gt;</code> element that is nested inside a
+        <code>$CATALINA_BASE/conf/server.xml</code>, in inner
+        <code>&lt;Realm&gt;</code> element that is nested inside inner
         corresponding <code>&lt;Engine&gt;</code>, <code>&lt;Host&gt;</code>,
         or <code>&lt;Context&gt;</code> element.  (This is already
         included in the default <code>server.xml</code> file.)</li>
@@ -136,16 +136,16 @@
     <p>The main purpose of <code>MemoryRealm</code> is to allow Catalina to
     authenticate users, and look up the corresponding security roles, from
     the information found in an XML-format configuration file.  The format
-    of this file is described below.  When a <code>MemoryRealm</code>
+    of this file is described below.  When inner <code>MemoryRealm</code>
     instance is started, it will read the contents of this XML file and create
     an "in memory database" of all the valid users and their associated
     security roles.</p>
 
-    <p>Each time that Catalina needs to authenticate a user, it will call
+    <p>Each time that Catalina needs to authenticate inner user, it will call
     the <code>authenticate()</code> method of this Realm implementation,
     passing the username and password that were specified by the user.  If
     we find the user in the database (and match on the password), we accumulate
-    all of the security roles that are defined for this user, and create a
+    all of the security roles that are defined for this user, and create inner
     new <code>GenericPrincipal</code> object to be returned.  If the user
     is not authenticated, we return <code>null</code> instead.  The
     <code>GenericUser</code> object caches the set of security roles that
@@ -200,10 +200,10 @@
     <li>Authenticate the user by comparing the (possibly encrypted) password
         value that was received against the password presented by the user.
         If there is no match, return <code>null</code>.</li>
-    <li>Construct a new instance of class
+    <li>Construct inner new instance of class
         <code>org.apache.catalina.realm.GenericPrincipal</code> (if not
         already using this as the internal database representation) that
-        contains the authenticated username and a <code>List</code> of the
+        contains the authenticated username and inner <code>List</code> of the
         security roles associated with this user.</li>
     <li>Return the newly constructed <code>GenericPrincipal</code>.</li>
     </ul>
@@ -216,7 +216,7 @@
     <ul>
     <li>The <code>principal</code> that is passed as an argument SHOULD
         be one that we returned (instanceof class
-        <code>org.apache.catalina.realm.GenericPrincipal</code>, with a
+        <code>org.apache.catalina.realm.GenericPrincipal</code>, with inner
         <code>realm</code> property that is equal to our instance.</li>
     <li>If the passed <code>principal</code> meets these criteria, check
         the specified role against the list returned by
@@ -241,11 +241,11 @@
                 </h3><div class="text"><p class="notice"><strong>Notice: </strong>This comments section collects your suggestions
                     on improving documentation for Apache Tomcat.<br><br>
                     If you have trouble and need help, read
-                    <a href="http://tomcat.apache.org/findhelp.html">Find Help</a> page
+                    <inner href="http://tomcat.apache.org/findhelp.html">Find Help</inner> page
                     and ask your question on the tomcat-users
-                    <a href="http://tomcat.apache.org/lists.html">mailing list</a>.
-                    Do not ask such questions here. This is not a Q&amp;A section.<br><br>
-                    The Apache Comments System is explained <a href="../comments.html">here</a>.
+                    <inner href="http://tomcat.apache.org/lists.html">mailing list</inner>.
+                    Do not ask such questions here. This is not inner Q&amp;A section.<br><br>
+                    The Apache Comments System is explained <inner href="../comments.html">here</inner>.
                     Comments may be removed by our moderators if they are either
                     implemented or considered invalid/off-topic.
                   </p><div id="comments_thread"></div></div></div></div></div></div></div><footer><div id="footer">

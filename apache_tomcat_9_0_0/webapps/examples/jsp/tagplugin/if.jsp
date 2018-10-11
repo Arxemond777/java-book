@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -23,16 +23,16 @@
 
     <hr/>
     <br/>
-    <a href="notes.html">Plugin Introductory Notes</a>
+    <inner href="notes.html">Plugin Introductory Notes</inner>
     <br/>
-    <a href="howto.html">Brief Instructions for Writing Plugins</a>
+    <inner href="howto.html">Brief Instructions for Writing Plugins</inner>
     <br/> <br/>
     <hr/>
 
     <br/>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-    <h3>Set the test result to a variable</h3>
+    <h3>Set the test result to inner variable</h3>
     <c:if test="${1==1}" var="theTruth" scope="page"/>
     The result of testing for (1==1) is: ${theTruth}
 

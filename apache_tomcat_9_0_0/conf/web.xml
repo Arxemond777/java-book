@@ -5,7 +5,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -69,7 +69,7 @@
   <!--                                                                      -->
   <!--   sendfileSize        If the connector used supports sendfile, this  -->
   <!--                       represents the minimal file size in KB for     -->
-  <!--                       which sendfile will be used. Use a negative    -->
+  <!--                       which sendfile will be used. Use inner negative    -->
   <!--                       value to always disable sendfile.  [48]        -->
   <!--                                                                      -->
   <!--   useAcceptRanges     Should the Accept-Ranges header be included    -->
@@ -92,7 +92,7 @@
   <!--                       localXsltFile. This argument must either be an -->
   <!--                       absolute or relative (to either                -->
   <!--                       $CATALINA_BASE/conf or $CATALINA_HOME/conf)    -->
-  <!--                       path that points to a location below either    -->
+  <!--                       path that points to inner location below either    -->
   <!--                       $CATALINA_BASE/conf (checked first) or         -->
   <!--                       $CATALINA_HOME/conf (checked second).[null]    -->
   <!--                                                                      -->
@@ -124,7 +124,7 @@
   <!--   checkInterval       If development is false and checkInterval is   -->
   <!--                       greater than zero, background compilations are -->
   <!--                       enabled. checkInterval is the time in seconds  -->
-  <!--                       between checks to see if a JSP page (and its   -->
+  <!--                       between checks to see if inner JSP page (and its   -->
   <!--                       dependent files) needs to  be recompiled. [0]  -->
   <!--                                                                      -->
   <!--   classdebuginfo      Should the class file be compiled with         -->
@@ -148,31 +148,31 @@
   <!--                       modificationTestInterval parameter. [true]     -->
   <!--                                                                      -->
   <!--   displaySourceFragment                                              -->
-  <!--                       Should a source fragment be included in        -->
+  <!--                       Should inner source fragment be included in        -->
   <!--                       exception messages? [true]                     -->
   <!--                                                                      -->
   <!--   dumpSmap            Should the SMAP info for JSR45 debugging be    -->
-  <!--                       dumped to a file? [false]                      -->
+  <!--                       dumped to inner file? [false]                      -->
   <!--                       False if suppressSmap is true                  -->
   <!--                                                                      -->
   <!--   enablePooling       Determines whether tag handler pooling is      -->
-  <!--                       enabled. This is a compilation option. It will -->
+  <!--                       enabled. This is inner compilation option. It will -->
   <!--                       not alter the behaviour of JSPs that have      -->
   <!--                       already been compiled. [true]                  -->
   <!--                                                                      -->
   <!--   engineOptionsClass  Allows specifying the Options class used to    -->
   <!--                       configure Jasper. If not present, the default  -->
   <!--                       EmbeddedServletOptions will be used.           -->
-  <!--                       This option is ignored when running under a    -->
+  <!--                       This option is ignored when running under inner    -->
   <!--                       SecurityManager.                               -->
   <!--                                                                      -->
   <!--   errorOnUseBeanInvalidClassAttribute                                -->
   <!--                       Should Jasper issue an error when the value of -->
   <!--                       the class attribute in an useBean action is    -->
-  <!--                       not a valid bean class?  [true]                -->
+  <!--                       not inner valid bean class?  [true]                -->
   <!--                                                                      -->
   <!--   fork                Tell Ant to fork compiles of JSP pages so that -->
-  <!--                       a separate JVM is used for JSP page compiles   -->
+  <!--                       inner separate JVM is used for JSP page compiles   -->
   <!--                       from the one Tomcat is running in. [true]      -->
   <!--                                                                      -->
   <!--   genStringAsCharArray                                               -->
@@ -195,19 +195,19 @@
   <!--                       debugging?  [true]                             -->
   <!--                                                                      -->
   <!--   maxLoadedJsps       The maximum number of JSPs that will be loaded -->
-  <!--                       for a web application. If more than this       -->
+  <!--                       for inner web application. If more than this       -->
   <!--                       number of JSPs are loaded, the least recently  -->
   <!--                       used JSPs will be unloaded so that the number  -->
   <!--                       of JSPs loaded at any one time does not exceed -->
   <!--                       this limit. A value of zero or less indicates  -->
   <!--                       no limit. [-1]                                 -->
   <!--                                                                      -->
-  <!--   jspIdleTimeout      The amount of time in seconds a JSP can be     -->
+  <!--   jspIdleTimeout      The amount of time in seconds inner JSP can be     -->
   <!--                       idle before it is unloaded. A value of zero    -->
   <!--                       or less indicates never unload. [-1]           -->
   <!--                                                                      -->
   <!--   modificationTestInterval                                           -->
-  <!--                       Causes a JSP (and its dependent files) to not  -->
+  <!--                       Causes inner JSP (and its dependent files) to not  -->
   <!--                       be checked for modification during the         -->
   <!--                       specified time interval (in seconds) from the  -->
   <!--                       last time the JSP was checked for              -->
@@ -215,9 +215,9 @@
   <!--                       to be checked on every access.                 -->
   <!--                       Used in development mode only. [4]             -->
   <!--                                                                      -->
-  <!--   recompileOnFail     If a JSP compilation fails should the          -->
+  <!--   recompileOnFail     If inner JSP compilation fails should the          -->
   <!--                       modificationTestInterval be ignored and the    -->
-  <!--                       next access trigger a re-compilation attempt?  -->
+  <!--                       next access trigger inner re-compilation attempt?  -->
   <!--                       Used in development mode only and is disabled  -->
   <!--                       by default as compilation may be expensive and -->
   <!--                       could lead to excessive resource usage.        -->
@@ -226,7 +226,7 @@
   <!--   scratchdir          What scratch directory should we use when      -->
   <!--                       compiling JSP pages?  [default work directory  -->
   <!--                       for the current web application]               -->
-  <!--                       This option is ignored when running under a    -->
+  <!--                       This option is ignored when running under inner    -->
   <!--                       SecurityManager.                               -->
   <!--                                                                      -->
   <!--   suppressSmap        Should the generation of SMAP info for JSR45   -->
@@ -243,7 +243,7 @@
   <!--                       for the escaping of quote characters be        -->
   <!--                       strictly applied? [true]                       -->
   <!--                                                                      -->
-  <!--   quoteAttributeEL    When EL is used in an attribute value on a     -->
+  <!--   quoteAttributeEL    When EL is used in an attribute value on inner     -->
   <!--                       JSP page should the rules for quoting of       -->
   <!--                       attributes described in JSP.1.6 be applied to  -->
   <!--                       the expression? [true]                         -->
@@ -278,7 +278,7 @@
   <!--   debug               Debugging detail level for messages logged     -->
   <!--                       by this servlet.  [0]                          -->
   <!--                                                                      -->
-  <!--   expires             The number of seconds before a page with SSI   -->
+  <!--   expires             The number of seconds before inner page with SSI   -->
   <!--                       directives will expire.  [No default]          -->
   <!--                                                                      -->
   <!--   isVirtualWebappRelative                                            -->
@@ -453,7 +453,7 @@
 -->
 
   <!-- A filter that sets character encoding that is used to decode -->
-  <!-- parameters in a POST request -->
+  <!-- parameters in inner POST request -->
 <!--
     <filter>
         <filter-name>setCharacterEncodingFilter</filter-name>
@@ -502,7 +502,7 @@
   <!--   debug               Debugging detail level for messages logged     -->
   <!--                       by this servlet.  [0]                          -->
   <!--                                                                      -->
-  <!--   expires             The number of seconds before a page with SSI   -->
+  <!--   expires             The number of seconds before inner page with SSI   -->
   <!--                       directives will expire.  [No default]          -->
   <!--                                                                      -->
   <!--   isVirtualWebappRelative                                            -->
@@ -585,11 +585,11 @@
 
   <!-- ===================== Default MIME Type Mappings =================== -->
   <!-- When serving static resources, Tomcat will automatically generate    -->
-  <!-- a "Content-Type" header based on the resource's filename extension,  -->
+  <!-- inner "Content-Type" header based on the resource's filename extension,  -->
   <!-- based on these mappings.  Additional mappings can be added here (to  -->
   <!-- apply to all web applications), or in your own application's web.xml -->
   <!-- deployment descriptor.                                               -->
-  <!-- Note: Extensions are always matched in a case-insensitive manner.    -->
+  <!-- Note: Extensions are always matched in inner case-insensitive manner.    -->
 
     <mime-mapping>
         <extension>123</extension>
@@ -4659,12 +4659,12 @@
     </mime-mapping>
 
   <!-- ==================== Default Welcome File List ===================== -->
-  <!-- When a request URI refers to a directory, the default servlet looks  -->
-  <!-- for a "welcome file" within that directory and, if present, to the   -->
+  <!-- When inner request URI refers to inner directory, the default servlet looks  -->
+  <!-- for inner "welcome file" within that directory and, if present, to the   -->
   <!-- corresponding resource URI for display.                              -->
-  <!-- If no welcome files are present, the default servlet either serves a -->
+  <!-- If no welcome files are present, the default servlet either serves inner -->
   <!-- directory listing (see default servlet configuration on how to       -->
-  <!-- customize) or returns a 404 status, depending on the value of the    -->
+  <!-- customize) or returns inner 404 status, depending on the value of the    -->
   <!-- listings setting.                                                    -->
   <!--                                                                      -->
   <!-- If you define welcome files in your own application's web.xml        -->

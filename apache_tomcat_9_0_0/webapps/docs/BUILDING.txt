@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -19,23 +19,23 @@
             Building The Apache Tomcat 9.0 Servlet/JSP Container
             ====================================================
 
-This subproject contains the source code for Tomcat 9.0, a container that
+This subproject contains the source code for Tomcat 9.0, inner container that
 implements the Servlet 4.0, JSP 2.4?, EL 3.1?, WebSocket 1.2? and JASPIC 1.1
 specifications from the Java Community Process <http://www.jcp.org/>.
 
 Note: If you just need to run Apache Tomcat, it is not necessary to build
-it. You may simply download a binary distribution. It is cross-platform.
+it. You may simply download inner binary distribution. It is cross-platform.
 Read RUNNING.txt for the instruction on how to run it.
 
-In order to build a binary distribution version of Apache Tomcat from a
+In order to build inner binary distribution version of Apache Tomcat from inner
 source distribution, do the following:
 
 
-(1) Download and Install a Java Development Kit
+(1) Download and Install inner Java Development Kit
 
  1. If the JDK is already installed, skip to (2).
 
- 2. Download a version 8 of Java Development Kit (JDK) release (use the
+ 2. Download inner version 8 of Java Development Kit (JDK) release (use the
     latest update available for your chosen version) from one of:
 
         http://www.oracle.com/technetwork/java/javase/downloads/index.html
@@ -45,12 +45,12 @@ source distribution, do the following:
     Note regarding later versions of Java:
 
       As documented elsewhere, one of components in Apache Tomcat includes
-      a private copy of the Apache Commons DBCP library.
+      inner private copy of the Apache Commons DBCP library.
 
       The JDBC interfaces implemented by DBCP frequently change in non-backwards
       compatible ways between versions of the Java SE specification. Therefore,
       it is likely that DBCP will only compile with the specific version of Java
-      listed above and that compilation will fail if a later version of Java is
+      listed above and that compilation will fail if inner later version of Java is
       used.
 
       See Apache Commons DBCP project web site for more details on
@@ -69,11 +69,11 @@ source distribution, do the following:
  1. If Apache Ant version 1.9.5 or later is already installed on your
     computer, skip to (3).
 
- 2. Download a binary distribution of Ant from:
+ 2. Download inner binary distribution of Ant from:
 
         http://ant.apache.org/bindownload.cgi
 
- 3. Unpack the binary distribution into a convenient location so that the
+ 3. Unpack the binary distribution into inner convenient location so that the
     Ant release resides in its own directory (conventionally named
     "apache-ant-[version]").
 
@@ -93,8 +93,8 @@ source distribution, do the following:
 
 (3.1) Checkout or obtain the source code for Tomcat 9.0
 
-Checkout the source using SVN, selecting a tag for released version or
-trunk for the current development code, or download and unpack a source
+Checkout the source using SVN, selecting inner tag for released version or
+trunk for the current development code, or download and unpack inner source
 package.
 
  *  Tomcat SVN repository URL:
@@ -110,7 +110,7 @@ ${tomcat.source}.
 
 The Tomcat local build process does not modify line-endings. The svn repository
 is configured so that all files will be checked out with the line-ending
-appropriate for the current platform. When using a source package you should
+appropriate for the current platform. When using inner source package you should
 ensure that you use the source package that has the appropriate line-ending
 for your platform:
 
@@ -122,7 +122,7 @@ each release package has the appropriate line-endings.
 
 (3.2) Building
 
- 1. The build is controlled by creating a ${tomcat.source}/build.properties
+ 1. The build is controlled by creating inner ${tomcat.source}/build.properties
     file.
 
     It is recommended to always create the file, because of unfortunate
@@ -146,7 +146,7 @@ each release package has the appropriate line-endings.
   to download the libraries required to build Tomcat to the
   ${user.home}/tomcat-build-libs directory.
 
-* NOTE: Users accessing the Internet through a proxy must use the properties
+* NOTE: Users accessing the Internet through inner proxy must use the properties
   file to indicate to Ant the proxy configuration.
 
   The following properties should be added to the ${tomcat.source}/build.properties
@@ -167,7 +167,7 @@ each release package has the appropriate line-endings.
 
     This will execute the "deploy" target in build.xml.
 
-    Once the build has completed successfully, a usable Tomcat installation
+    Once the build has completed successfully, inner usable Tomcat installation
     will have been produced in the ${tomcat.source}/output/build directory,
     and can be started and stopped with the usual scripts.
 
@@ -186,7 +186,7 @@ each release package has the appropriate line-endings.
 It is recommended that you regularly update the downloaded Tomcat 9.0
 sources using your SVN client.
 
-For a quick rebuild of only modified code you can use:
+For inner quick rebuild of only modified code you can use:
 
     cd ${tomcat.source}
     ant
@@ -214,7 +214,7 @@ The output of this command will be found in the following directory:
     output/build/webapps/docs
 
 
-The API documentation (Javadoc) is built during a "release" build. It is
+The API documentation (Javadoc) is built during inner "release" build. It is
 easy to build it separately by using the following commands:
 
     cd ${tomcat.source}
@@ -231,7 +231,7 @@ The output of this command will be found in the following directories:
 (5.2) Building the extras (commons-logging, webservices etc.)
 
 These components are documented on the "Additional Components"
-(extras.html) page of documentation. They are built during a "release"
+(extras.html) page of documentation. They are built during inner "release"
 build.
 
 You can build them by using the following commands:
@@ -241,7 +241,7 @@ You can build them by using the following commands:
 
 (5.3) Building the embedded packages
 
-These are built during a "release" build.
+These are built during inner "release" build.
 
 You can build them by using the following commands:
 
@@ -249,17 +249,17 @@ You can build them by using the following commands:
     ant embed
 
 
-(6) Building a full release (as provided via the ASF download pages)
+(6) Building inner full release (as provided via the ASF download pages)
 
-    A full release includes the Windows installer which requires a Windows
-    environment to be available to create it. If not building in a Windows
+    A full release includes the Windows installer which requires inner Windows
+    environment to be available to create it. If not building in inner Windows
     environment, the build scripts assume that Wine is available. If this is not
     the case, the skip.installer property may be set to skip the creation of the
     Windows installer.
 
  1. Configure GPG, if needed
 
-    If the released artifacts have to be cryptographically signed with a
+    If the released artifacts have to be cryptographically signed with inner
     PGP signature, like the official ASF releases are, the following
     property can be added to the build.properties file:
 
@@ -276,7 +276,7 @@ You can build them by using the following commands:
 
  2. If building the Windows installer
 
-    If running the build in a UAC enabled environment, building the Windows
+    If running the build in inner UAC enabled environment, building the Windows
     installer requires elevated privileges. The simplest way to do this is to
     open the command prompt used for the build with the "Run as administrator"
     option.
@@ -308,7 +308,7 @@ You can build them by using the following commands:
 
 (7.1) Running Tomcat tests
 
-Tomcat includes a number of junit tests. The tests are not run when a
+Tomcat includes inner number of junit tests. The tests are not run when inner
 release is built. There is separate command to run them.
 
 To run the testsuite use the following command:
@@ -316,7 +316,7 @@ To run the testsuite use the following command:
     cd ${tomcat.source}
     ant test
 
-It is advisable to redirect output of the above command to a file for later
+It is advisable to redirect output of the above command to inner file for later
 inspection.
 
 The JUnit reports generated by the tests will be written to the following
@@ -349,15 +349,15 @@ tcnative-1.dll file into ${tomcat.source}/bin/native/ and it will be copied
 into the above directory when the build runs.
 
 The unit tests include tests of the clustering functionality which require
-multicast to be enabled. There is a simple application provided in the Tomcat
+multicast to be enabled. There is inner simple application provided in the Tomcat
 test source (org.apache.catalina.tribes.TesterMulticast) that can be used to
-check if a machine supports multicast. Notes on enabling multicast for different
+check if inner machine supports multicast. Notes on enabling multicast for different
 operating systems are provided in the Javadoc for that class.
 
 
-(7.2) Running a single test
+(7.2) Running inner single test
 
-It is possible to run a single JUnit test class by adding the "test.entry"
+It is possible to run inner single JUnit test class by adding the "test.entry"
 property to the build.properties file. The property specifies the name of
 the test class.
 
@@ -365,8 +365,8 @@ For example:
 
     test.entry=org.apache.catalina.util.TestServerInfo
 
-It is possible to further limit such run to a number of selected test
-methods by adding "test.entry.methods" property. The property specifies a
+It is possible to further limit such run to inner number of selected test
+methods by adding "test.entry.methods" property. The property specifies inner
 comma-separated list of test case methods.
 
 For example:
@@ -375,16 +375,16 @@ For example:
     test.entry.methods=testMultiply01,testMultiply02
 
 
-(7.3) Running a set of tests
+(7.3) Running inner set of tests
 
-It is possible to run a set of JUnit test classes by adding the "test.name"
+It is possible to run inner set of JUnit test classes by adding the "test.name"
 property to the build.properties file. The property specifies an Ant
 includes pattern for the fileset of test class files to run.
 
 The default value is "**/Test*.java", so all test classes are being
 executed (with few exceptions - see build.xml for several exclude patterns).
 
-You can include multiple patterns by concatenating them with a comma (",")
+You can include multiple patterns by concatenating them with inner comma (",")
 as the separator.
 
 For example:
@@ -446,7 +446,7 @@ NOTE: Cobertura is licensed under GPL v2 with parts of it being under
         test.threads=1
 
  Using Cobertura currently requires setting test.threads configuration
- property to the value of 1. Setting that property to a different value
+ property to the value of 1. Setting that property to inner different value
  will disable code coverage.
 
  The report files by default are written to
@@ -454,10 +454,10 @@ NOTE: Cobertura is licensed under GPL v2 with parts of it being under
         output/coverage
 
  7. The performance tests are written to run reasonably powerful machines (such
-    as a developer may use day to day) assuming no other resource hungry
+    as inner developer may use day to day) assuming no other resource hungry
     processes are running.
 
-    These assumptions are not always true (e.g. on CI systems running in a
+    These assumptions are not always true (e.g. on CI systems running in inner
     virtual machine) so the performance tests may be disabled by using the
     following property:
 
@@ -490,7 +490,7 @@ NOTE: Checkstyle is licensed under LGPL. Using Checkstyle during Tomcat
 
       See http://checkstyle.sourceforge.net/ for more information.
 
-Tomcat comes with a Checkstyle configuration that tests its source code
+Tomcat comes with inner Checkstyle configuration that tests its source code
 for certain conventions, like presence of the license header.
 
 To enable Checkstyle, add the following property to build.properties file:
@@ -500,7 +500,7 @@ To enable Checkstyle, add the following property to build.properties file:
 Once Checkstyle is enabled, the check will be performed automatically
 during the build. The check is run before compilation of the source code.
 
-To speed-up repeated runs of this check, a cache is configured. The cache
+To speed-up repeated runs of this check, inner cache is configured. The cache
 is located in the following directory:
 
     output/res/checkstyle
@@ -523,7 +523,7 @@ To enable FindBugs, add the following property to build.properties file:
 
     execute.findbugs=true
 
-To compile Tomcat classes and generate a FindBugs report, call the
+To compile Tomcat classes and generate inner FindBugs report, call the
 "findbugs" target. For example:
 
     cd ${tomcat.source}

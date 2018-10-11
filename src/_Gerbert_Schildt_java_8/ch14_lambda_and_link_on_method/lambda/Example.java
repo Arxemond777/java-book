@@ -64,7 +64,7 @@ public class Example
     }
 
     static void page514() {
-        GeneralizedInterface<String> generalizedInterface = (s, s1) -> s + " " + s1;
+        GeneralizedInterface<String> generalizedInterface = (s, s1) -> s + " / " + s1;
         String s = generalizedInterface.test("Hello", "world");
         System.out.println(s);
     }
@@ -92,7 +92,7 @@ public class Example
 //        Example.page507(); // Простой пример
 //        Example.page512(); // Проверка строки в подстроке
 //        Example.page513(); // С Exception
-//        Example.page514(); // С обощенным интерфейсом
-        Example.page521(); // Захват переменной
+        Example.page514(); // С обощенным интерфейсом
+//        Example.page521(); // Захват переменной
     }
 }

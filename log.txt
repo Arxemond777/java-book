@@ -805,7 +805,7 @@ template_for_new_adminka/ : 1
 template_prod_or_dev_for_new_adminka/ : 1
 ch6_relations_beetwen_classes.test : 1
 ch6_relations_beetwen_classes.test/ : 1
-ch6_relations_beetwen_classes.test/a.txt : 1
+ch6_relations_beetwen_classes.test/inner.txt : 1
 ch6_relations_beetwen_classes.test/t : 1
 ch6_relations_beetwen_classes.test1 : 1
 ch6_relations_beetwen_classes.test1/ : 1

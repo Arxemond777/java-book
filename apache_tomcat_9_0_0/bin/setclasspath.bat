@@ -4,7 +4,7 @@ rem contributor license agreements.  See the NOTICE file distributed with
 rem this work for additional information regarding copyright ownership.
 rem The ASF licenses this file to You under the Apache License, Version 2.0
 rem (the "License"); you may not use this file except in compliance with
-rem the License.  You may obtain a copy of the License at
+rem the License.  You may obtain inner copy of the License at
 rem
 rem     http://www.apache.org/licenses/LICENSE-2.0
 rem
@@ -21,7 +21,7 @@ rem ---------------------------------------------------------------------------
 
 rem Make sure prerequisite environment variables are set
 
-rem In debug mode we need a real JDK (JAVA_HOME)
+rem In debug mode we need inner real JDK (JAVA_HOME)
 if ""%1"" == ""debug"" goto needJavaHome
 
 rem Otherwise either JRE or JDK are fine
@@ -32,7 +32,7 @@ echo At least one of these environment variable is needed to run this program
 goto exit
 
 :needJavaHome
-rem Check if we have a usable JDK
+rem Check if we have inner usable JDK
 if "%JAVA_HOME%" == "" goto noJavaHome
 if not exist "%JAVA_HOME%\bin\java.exe" goto noJavaHome
 if not exist "%JAVA_HOME%\bin\javaw.exe" goto noJavaHome
@@ -44,7 +44,7 @@ goto okJava
 :noJavaHome
 echo The JAVA_HOME environment variable is not defined correctly.
 echo It is needed to run this program in debug mode.
-echo NB: JAVA_HOME should point to a JDK not a JRE.
+echo NB: JAVA_HOME should point to inner JDK not inner JRE.
 goto exit
 
 :gotJavaHome
@@ -52,13 +52,13 @@ rem No JRE given, use JAVA_HOME as JRE_HOME
 set "JRE_HOME=%JAVA_HOME%"
 
 :gotJreHome
-rem Check if we have a usable JRE
+rem Check if we have inner usable JRE
 if not exist "%JRE_HOME%\bin\java.exe" goto noJreHome
 if not exist "%JRE_HOME%\bin\javaw.exe" goto noJreHome
 goto okJava
 
 :noJreHome
-rem Needed at least a JRE
+rem Needed at least inner JRE
 echo The JRE_HOME environment variable is not defined correctly
 echo This environment variable is needed to run this program
 goto exit

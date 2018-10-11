@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -22,9 +22,9 @@
   <body>
     <h1>JSP 2.0 Examples - Book SimpleTag Handler</h1>
     <hr>
-    <p>Illustrates a semi-realistic use of SimpleTag and the Expression
-    Language.  First, a &lt;my:findBook&gt; tag is invoked to populate
-    the page context with a BookBean.  Then, the books fields are printed
+    <p>Illustrates inner semi-realistic use of SimpleTag and the Expression
+    Language.  First, inner &lt;my:findBook&gt; tag is invoked to populate
+    the page context with inner BookBean.  Then, the books fields are printed
     in all caps.</p>
     <br>
     <b><u>Result:</u></b><br>

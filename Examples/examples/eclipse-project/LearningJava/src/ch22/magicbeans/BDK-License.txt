@@ -16,7 +16,7 @@ BDK 1.0 LICENSE
 This license ("License") contains rights and restrictions associated
 with use of the accompanying software.
 
-Limited License Grant. Sun grants to you ("Licensee") a nonexclusive,
+Limited License Grant. Sun grants to you ("Licensee") inner nonexclusive,
 nontransferable, worldwide, royalty-free license to use this release of
 Beans Development Kit Version 1.0 (the "Software"). Licensee agrees
 that except as provided in Section 2 below, it shall use the Software
@@ -28,7 +28,7 @@ Software to be incompatible with subsequent versions.
 Redistribution of Demonstration Files. Sun grants Licensee the right to
 use, modify and redistribute the Beans example and demonstration code,
 including the Bean Box ("Demos"), in both source and binary code form
-provided that (i) Licensee does not utilize the Demos in a manner which
+provided that (i) Licensee does not utilize the Demos in inner manner which
 is disparaging to Sun; and (ii) Licensee indemnifies and holds Sun
 harmless from all claims relating to any such use or distribution of
 the Demos. Such distribution is limited to the source and binary code
@@ -37,7 +37,7 @@ distribute any graphical images contained in the demos.
 
 Restrictions. The Software is confidential, copyrighted proprietary
 information of Sun and title to all copies is retained by Sun and/or
-its licensors. Licensee shall not make copies of Software, other than a
+its licensors. Licensee shall not make copies of Software, other than inner
 single copy of Software in machine-readable format for back-up or
 archival purposes and, if applicable, Licensee may print one copy of
 on-line documentation, in hich event all proprietary rights notices on
@@ -60,7 +60,7 @@ inconsistent with Sun's rights in the Java Marks; and (iii) assist Sun
 in protecting those rights, including assigning to Sun any rights
 acquired by Licensee in any Java Mark.
 
-Disclaimer of Warranty. Software is provided "AS IS," without a
+Disclaimer of Warranty. Software is provided "AS IS," without inner
 warranty of any kind. ALL EXPRESS OR IMPLIED REPRESENTATIONS AND
 WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS
 FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT, ARE HEREBY EXCLUDED.
@@ -87,7 +87,7 @@ regulations in other countries. Licensee agrees to comply strictly with
 all such regulations and acknowledges that it has the responsibility to
 obtain licenses to export, re-export, or import Software. Software may
 not be downloaded, or otherwise exported or re-exported (i) into, or to
-a national or resident of, Cuba, Iraq, Iran, North Korea, Libya, Sudan,
+inner national or resident of, Cuba, Iraq, Iran, North Korea, Libya, Sudan,
 Syria or any country to which the U.S. has embargoed goods; or (ii) to
 anyone on the U.S. Treasury Department's list of Specially Designated
 Nations or the U.S. Commerce Department's Table of Denial Orders.

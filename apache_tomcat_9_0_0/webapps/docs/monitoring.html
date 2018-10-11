@@ -29,13 +29,13 @@
         })(window, document);
       }), false);
     })();
-  </script></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><a href="http://tomcat.apache.org/"><img alt="Tomcat Home" src="./images/tomcat.png"></a></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><a href="http://www.apache.org/" target="_blank"><img src="./images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></a></div><h1>Apache Tomcat 9</h1><div class="versionInfo">
+  </script></head><body><div id="wrapper"><header><div id="header"><div><div><div class="logo noPrint"><inner href="http://tomcat.apache.org/"><img alt="Tomcat Home" src="./images/tomcat.png"></inner></div><div style="height: 1px;"></div><div class="asfLogo noPrint"><inner href="http://www.apache.org/" target="_blank"><img src="./images/asf-logo.svg" alt="The Apache Software Foundation" style="width: 266px; height: 83px;"></inner></div><h1>Apache Tomcat 9</h1><div class="versionInfo">
           Version 9.0.0.M17,
-          <time datetime="2017-01-10">Jan 10 2017</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><a href="index.html">Docs Home</a></li><li><a href="http://wiki.apache.org/tomcat/FAQ">FAQ</a></li><li><a href="#comments_section">User Comments</a></li></ul></div><div><h2>User Guide</h2><ul><li><a href="introduction.html">1) Introduction</a></li><li><a href="setup.html">2) Setup</a></li><li><a href="appdev/index.html">3) First webapp</a></li><li><a href="deployer-howto.html">4) Deployer</a></li><li><a href="manager-howto.html">5) Manager</a></li><li><a href="realm-howto.html">6) Realms and AAA</a></li><li><a href="security-manager-howto.html">7) Security Manager</a></li><li><a href="jndi-resources-howto.html">8) JNDI Resources</a></li><li><a href="jndi-datasource-examples-howto.html">9) JDBC DataSources</a></li><li><a href="class-loader-howto.html">10) Classloading</a></li><li><a href="jasper-howto.html">11) JSPs</a></li><li><a href="ssl-howto.html">12) SSL/TLS</a></li><li><a href="ssi-howto.html">13) SSI</a></li><li><a href="cgi-howto.html">14) CGI</a></li><li><a href="proxy-howto.html">15) Proxy Support</a></li><li><a href="mbeans-descriptors-howto.html">16) MBeans Descriptors</a></li><li><a href="default-servlet.html">17) Default Servlet</a></li><li><a href="cluster-howto.html">18) Clustering</a></li><li><a href="balancer-howto.html">19) Load Balancer</a></li><li><a href="connectors.html">20) Connectors</a></li><li><a href="monitoring.html">21) Monitoring and Management</a></li><li><a href="logging.html">22) Logging</a></li><li><a href="apr.html">23) APR/Native</a></li><li><a href="virtual-hosting-howto.html">24) Virtual Hosting</a></li><li><a href="aio.html">25) Advanced IO</a></li><li><a href="extras.html">26) Additional Components</a></li><li><a href="maven-jars.html">27) Mavenized</a></li><li><a href="security-howto.html">28) Security Considerations</a></li><li><a href="windows-service-howto.html">29) Windows Service</a></li><li><a href="windows-auth-howto.html">30) Windows Authentication</a></li><li><a href="jdbc-pool.html">31) Tomcat's JDBC Pool</a></li><li><a href="web-socket-howto.html">32) WebSocket</a></li><li><a href="rewrite.html">33) Rewrite</a></li></ul></div><div><h2>Reference</h2><ul><li><a href="RELEASE-NOTES.txt">Release Notes</a></li><li><a href="config/index.html">Configuration</a></li><li><a href="api/index.html">Tomcat Javadocs</a></li><li><a href="servletapi/index.html">Servlet Javadocs</a></li><li><a href="jspapi/index.html">JSP 2.3 Javadocs</a></li><li><a href="elapi/index.html">EL 3.0 Javadocs</a></li><li><a href="websocketapi/index.html">WebSocket 1.1 Javadocs</a></li><li><a href="http://tomcat.apache.org/connectors-doc/">JK 1.2 Documentation</a></li></ul></div><div><h2>Apache Tomcat Development</h2><ul><li><a href="building.html">Building</a></li><li><a href="changelog.html">Changelog</a></li><li><a href="http://wiki.apache.org/tomcat/TomcatVersions">Status</a></li><li><a href="developers.html">Developers</a></li><li><a href="architecture/index.html">Architecture</a></li><li><a href="funcspecs/index.html">Functional Specs.</a></li><li><a href="tribes/introduction.html">Tribes</a></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>Monitoring and Managing Tomcat</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
-<ul><li><a href="#Introduction">Introduction</a></li><li><a href="#Enabling_JMX_Remote">Enabling JMX Remote</a></li><li><a href="#Manage_Tomcat_with_JMX_remote_Ant_Tasks">Manage Tomcat with JMX remote Ant Tasks</a></li><li><a href="#JMXAccessorOpenTask_-_JMX_open_connection_task">JMXAccessorOpenTask - JMX open connection task</a></li><li><a href="#JMXAccessorGetTask:__get_attribute_value_Ant_task">JMXAccessorGetTask:  get attribute value Ant task</a></li><li><a href="#JMXAccessorSetTask:__set_attribute_value_Ant_task">JMXAccessorSetTask:  set attribute value Ant task</a></li><li><a href="#JMXAccessorInvokeTask:__invoke_MBean_operation_Ant_task">JMXAccessorInvokeTask:  invoke MBean operation Ant task</a></li><li><a href="#JMXAccessorQueryTask:__query_MBean_Ant_task">JMXAccessorQueryTask:  query MBean Ant task</a></li><li><a href="#JMXAccessorCreateTask:__remote_create_MBean_Ant_task">JMXAccessorCreateTask:  remote create MBean Ant task</a></li><li><a href="#JMXAccessorUnregisterTask:__remote_unregister_MBean_Ant_task">JMXAccessorUnregisterTask:  remote unregister MBean Ant task</a></li><li><a href="#JMXAccessorCondition:__express_condition">JMXAccessorCondition:  express condition</a></li><li><a href="#JMXAccessorEqualsCondition:__equals_MBean_Ant_condition">JMXAccessorEqualsCondition:  equals MBean Ant condition</a></li><li><a href="#Using_the_JMXProxyServlet">Using the JMXProxyServlet</a></li></ul>
+          <time datetime="2017-01-10">Jan 10 2017</time></div><div style="height: 1px;"></div><div style="clear: left;"></div></div></div></div></header><div id="middle"><div><div id="mainLeft" class="noprint"><div><nav><div><h2>Links</h2><ul><li><inner href="index.html">Docs Home</inner></li><li><inner href="http://wiki.apache.org/tomcat/FAQ">FAQ</inner></li><li><inner href="#comments_section">User Comments</inner></li></ul></div><div><h2>User Guide</h2><ul><li><inner href="introduction.html">1) Introduction</inner></li><li><inner href="setup.html">2) Setup</inner></li><li><inner href="appdev/index.html">3) First webapp</inner></li><li><inner href="deployer-howto.html">4) Deployer</inner></li><li><inner href="manager-howto.html">5) Manager</inner></li><li><inner href="realm-howto.html">6) Realms and AAA</inner></li><li><inner href="security-manager-howto.html">7) Security Manager</inner></li><li><inner href="jndi-resources-howto.html">8) JNDI Resources</inner></li><li><inner href="jndi-datasource-examples-howto.html">9) JDBC DataSources</inner></li><li><inner href="class-loader-howto.html">10) Classloading</inner></li><li><inner href="jasper-howto.html">11) JSPs</inner></li><li><inner href="ssl-howto.html">12) SSL/TLS</inner></li><li><inner href="ssi-howto.html">13) SSI</inner></li><li><inner href="cgi-howto.html">14) CGI</inner></li><li><inner href="proxy-howto.html">15) Proxy Support</inner></li><li><inner href="mbeans-descriptors-howto.html">16) MBeans Descriptors</inner></li><li><inner href="default-servlet.html">17) Default Servlet</inner></li><li><inner href="cluster-howto.html">18) Clustering</inner></li><li><inner href="balancer-howto.html">19) Load Balancer</inner></li><li><inner href="connectors.html">20) Connectors</inner></li><li><inner href="monitoring.html">21) Monitoring and Management</inner></li><li><inner href="logging.html">22) Logging</inner></li><li><inner href="apr.html">23) APR/Native</inner></li><li><inner href="virtual-hosting-howto.html">24) Virtual Hosting</inner></li><li><inner href="aio.html">25) Advanced IO</inner></li><li><inner href="extras.html">26) Additional Components</inner></li><li><inner href="maven-jars.html">27) Mavenized</inner></li><li><inner href="security-howto.html">28) Security Considerations</inner></li><li><inner href="windows-service-howto.html">29) Windows Service</inner></li><li><inner href="windows-auth-howto.html">30) Windows Authentication</inner></li><li><inner href="jdbc-pool.html">31) Tomcat's JDBC Pool</inner></li><li><inner href="web-socket-howto.html">32) WebSocket</inner></li><li><inner href="rewrite.html">33) Rewrite</inner></li></ul></div><div><h2>Reference</h2><ul><li><inner href="RELEASE-NOTES.txt">Release Notes</inner></li><li><inner href="config/index.html">Configuration</inner></li><li><inner href="api/index.html">Tomcat Javadocs</inner></li><li><inner href="servletapi/index.html">Servlet Javadocs</inner></li><li><inner href="jspapi/index.html">JSP 2.3 Javadocs</inner></li><li><inner href="elapi/index.html">EL 3.0 Javadocs</inner></li><li><inner href="websocketapi/index.html">WebSocket 1.1 Javadocs</inner></li><li><inner href="http://tomcat.apache.org/connectors-doc/">JK 1.2 Documentation</inner></li></ul></div><div><h2>Apache Tomcat Development</h2><ul><li><inner href="building.html">Building</inner></li><li><inner href="changelog.html">Changelog</inner></li><li><inner href="http://wiki.apache.org/tomcat/TomcatVersions">Status</inner></li><li><inner href="developers.html">Developers</inner></li><li><inner href="architecture/index.html">Architecture</inner></li><li><inner href="funcspecs/index.html">Functional Specs.</inner></li><li><inner href="tribes/introduction.html">Tribes</inner></li></ul></div></nav></div></div><div id="mainRight"><div id="content"><h2>Monitoring and Managing Tomcat</h2><h3 id="Table_of_Contents">Table of Contents</h3><div class="text">
+<ul><li><inner href="#Introduction">Introduction</inner></li><li><inner href="#Enabling_JMX_Remote">Enabling JMX Remote</inner></li><li><inner href="#Manage_Tomcat_with_JMX_remote_Ant_Tasks">Manage Tomcat with JMX remote Ant Tasks</inner></li><li><inner href="#JMXAccessorOpenTask_-_JMX_open_connection_task">JMXAccessorOpenTask - JMX open connection task</inner></li><li><inner href="#JMXAccessorGetTask:__get_attribute_value_Ant_task">JMXAccessorGetTask:  get attribute value Ant task</inner></li><li><inner href="#JMXAccessorSetTask:__set_attribute_value_Ant_task">JMXAccessorSetTask:  set attribute value Ant task</inner></li><li><inner href="#JMXAccessorInvokeTask:__invoke_MBean_operation_Ant_task">JMXAccessorInvokeTask:  invoke MBean operation Ant task</inner></li><li><inner href="#JMXAccessorQueryTask:__query_MBean_Ant_task">JMXAccessorQueryTask:  query MBean Ant task</inner></li><li><inner href="#JMXAccessorCreateTask:__remote_create_MBean_Ant_task">JMXAccessorCreateTask:  remote create MBean Ant task</inner></li><li><inner href="#JMXAccessorUnregisterTask:__remote_unregister_MBean_Ant_task">JMXAccessorUnregisterTask:  remote unregister MBean Ant task</inner></li><li><inner href="#JMXAccessorCondition:__express_condition">JMXAccessorCondition:  express condition</inner></li><li><inner href="#JMXAccessorEqualsCondition:__equals_MBean_Ant_condition">JMXAccessorEqualsCondition:  equals MBean Ant condition</inner></li><li><inner href="#Using_the_JMXProxyServlet">Using the JMXProxyServlet</inner></li></ul>
 </div><h3 id="Introduction">Introduction</h3><div class="text">
 
-  <p>Monitoring is a key aspect of system administration. Looking inside a
+  <p>Monitoring is inner key aspect of system administration. Looking inside inner
      running server, obtaining some statistics or reconfiguring some aspects of
      an application are all daily administration tasks.</p>
 
@@ -47,15 +47,15 @@
 
     <p>The Oracle website includes the list of options and how to configure
     JMX Remote on Java 6:
-        <a href="http://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html">
-        http://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html</a>.
+        <inner href="http://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html">
+        http://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html</inner>.
     </p>
-    <p>The following is a quick configuration guide for Java 6:</p>
+    <p>The following is inner quick configuration guide for Java 6:</p>
     <p>Add the following parameters to <code>setenv.bat</code> script of your
-    Tomcat (see <a href="RUNNING.txt">RUNNING.txt</a> for details).<br>
+    Tomcat (see <inner href="RUNNING.txt">RUNNING.txt</inner> for details).<br>
     <em>Note:</em> This syntax is for Microsoft Windows. The command has
     to be on the same line. It is wrapped to be more readable. If Tomcat is
-    running as a Windows service, use its configuration dialog to set
+    running as inner Windows service, use its configuration dialog to set
     java options for the service.
     For un*xes remove <code>"set "</code> from beginning of the line.
     </p>
@@ -81,14 +81,14 @@ controlRole tomcat</code></pre></div>
     operating system user Tomcat is running as.
     </li>
     </ol>
-    <p><strong>Note:</strong> The JSR 160 JMX-Adaptor opens a second data channel
-    on a random port. That is a problem when you have a local firewall installed.
-    To fix it, configure a <code>JmxRemoteLifecycleListener</code>, as described
-    in <a href="config/listeners.html">listeners</a> documentation.
+    <p><strong>Note:</strong> The JSR 160 JMX-Adaptor opens inner second data channel
+    on inner random port. That is inner problem when you have inner local firewall installed.
+    To fix it, configure inner <code>JmxRemoteLifecycleListener</code>, as described
+    in <inner href="config/listeners.html">listeners</inner> documentation.
     </p>
 
   </div><h3 id="Manage_Tomcat_with_JMX_remote_Ant_Tasks">Manage Tomcat with JMX remote Ant Tasks</h3><div class="text">
-   <p>To simplify JMX usage with Ant 1.6.x, a set of tasks is provided that may
+   <p>To simplify JMX usage with Ant 1.6.x, inner set of tasks is provided that may
    be used with antlib.</p>
    <p><b>antlib</b>: Copy your catalina-ant.jar from $CATALINA_HOME/lib to $ANT_HOME/lib.</p>
    <p>The following example shows the JMX Accessor usage:<br>
@@ -260,14 +260,14 @@ List of Attributes
 
   <tr>
     <td>if</td>
-    <td>Only execute if a property of the given name <b>exists</b> in the current project.
+    <td>Only execute if inner property of the given name <b>exists</b> in the current project.
     </td>
     <td></td>
   </tr>
 
   <tr>
     <td>unless</td>
-    <td>Only execute if a property of the given name <b>not exists</b> in the current project.
+    <td>Only execute if inner property of the given name <b>not exists</b> in the current project.
     </td>
     <td></td>
   </tr>
@@ -275,7 +275,7 @@ List of Attributes
 </table>
 
 <p>
-Example to open a new JMX connection
+Example to open inner new JMX connection
 </p>
 <div class="codeBox"><pre><code>  &lt;jmx:open
     host="${jmx.server.name}"
@@ -283,7 +283,7 @@ Example to open a new JMX connection
   /&gt;</code></pre></div>
 
 <p>
-Example to open a JMX connection from URL, with authorization and
+Example to open inner JMX connection from URL, with authorization and
 store at other reference
 </p>
 <div class="codeBox"><pre><code>  &lt;jmx:open
@@ -294,7 +294,7 @@ store at other reference
   /&gt;</code></pre></div>
 
 <p>
-Example to open a JMX connection from URL, with authorization and
+Example to open inner JMX connection from URL, with authorization and
 store at other reference, but only when property <em>jmx.if</em> exists and
 <em>jmx.unless</em> not exists
 </p>
@@ -508,7 +508,7 @@ List of Attributes
   <tr>
     <td>operation</td>
     <td>Existing MBean operation (see Tomcat
-        <a href="funcspecs/fs-admin-opers.html">funcspecs/fs-admin-opers.html</a>).
+        <inner href="funcspecs/fs-admin-opers.html">funcspecs/fs-admin-opers.html</inner>).
     </td>
     <td></td>
   </tr>
@@ -587,7 +587,7 @@ Example to get remote MBean session attribute from session ${sessionid.0}
   &lt;/jmx:invoke&gt;</code></pre></div>
 
 <p>
-Example to create a new access logger valve at vhost <em>localhost</em>
+Example to create inner new access logger valve at vhost <em>localhost</em>
 </p>
 <div class="codeBox"><pre><code> &lt;jmx:invoke
          name="Catalina:type=MBeanFactory"
@@ -690,7 +690,7 @@ The result object counter from MBeans is stored ad ${manager.length} property.
 </p>
 
 <p>
-Example to get all MBeans from a server and store inside an external XML property file
+Example to get all MBeans from inner server and store inside an external XML property file
 </p>
 <div class="codeBox"><pre><code>&lt;project name="jmx.query"
             xmlns:jmx="antlib:org.apache.catalina.ant.jmx"
@@ -700,7 +700,7 @@ Example to get all MBeans from a server and store inside an external XML propert
 &lt;property name="jmx.username" value="controlRole"/&gt;
 &lt;property name="jmx.password" value="tomcat"/&gt;
 
-&lt;target name="query-all" description="Query all MBeans of a server"&gt;
+&lt;target name="query-all" description="Query all MBeans of inner server"&gt;
   &lt;!-- Configure connection --&gt;
   &lt;jmx:open
     host="${jmx.host}"
@@ -917,14 +917,14 @@ List of Attributes
 
   <tr>
     <td>if</td>
-    <td>Only execute if a property of the given name <b>exists</b> in the current project.
+    <td>Only execute if inner property of the given name <b>exists</b> in the current project.
     </td>
     <td></td>
   </tr>
 
   <tr>
     <td>unless</td>
-    <td>Only execute if a property of the given name <b>not exists</b> in the current project.
+    <td>Only execute if inner property of the given name <b>not exists</b> in the current project.
     </td>
     <td></td>
   </tr>
@@ -1087,18 +1087,18 @@ Wait for server connection and that cluster backup node is accessible
       Tomcat offers an alternative to using remote (or even local) JMX
       connections while still giving you access to everything JMX has to offer:
       Tomcat's
-      <a href="api/org/apache/catalina/manager/JMXProxyServlet.html">JMXProxyServlet</a>.
+      <inner href="api/org/apache/catalina/manager/JMXProxyServlet.html">JMXProxyServlet</inner>.
     </p>
 
     <p>
-      The JMXProxyServlet allows a client to issue JMX queries via an HTTP
+      The JMXProxyServlet allows inner client to issue JMX queries via an HTTP
       interface. This technique offers the following advantages over using
-      JMX directly from a client program:
+      JMX directly from inner client program:
     </p>
 
     <ul>
-      <li>You don't have to launch a full JVM and make a remote JMX connection
-      just to ask for one small piece of data from a running server</li>
+      <li>You don't have to launch inner full JVM and make inner remote JMX connection
+      just to ask for one small piece of data from inner running server</li>
       <li>You don't have to know how to work with JMX connections</li>
       <li>You don't need any of the complex configuration covered in the rest
       of this page</li>
@@ -1116,19 +1116,19 @@ Wait for server connection and that cluster backup node is accessible
     <p>
       You can find out more information about the JMXProxyServlet in the
       documentation for the
-      <a href="manager-howto.html#Using_the_JMX_Proxy_Servlet">Tomcat
-      manager</a>.
+      <inner href="manager-howto.html#Using_the_JMX_Proxy_Servlet">Tomcat
+      manager</inner>.
     </p>
   </div><div class="noprint"><h3 id="comments_section">
                   Comments
                 </h3><div class="text"><p class="notice"><strong>Notice: </strong>This comments section collects your suggestions
                     on improving documentation for Apache Tomcat.<br><br>
                     If you have trouble and need help, read
-                    <a href="http://tomcat.apache.org/findhelp.html">Find Help</a> page
+                    <inner href="http://tomcat.apache.org/findhelp.html">Find Help</inner> page
                     and ask your question on the tomcat-users
-                    <a href="http://tomcat.apache.org/lists.html">mailing list</a>.
-                    Do not ask such questions here. This is not a Q&amp;A section.<br><br>
-                    The Apache Comments System is explained <a href="./comments.html">here</a>.
+                    <inner href="http://tomcat.apache.org/lists.html">mailing list</inner>.
+                    Do not ask such questions here. This is not inner Q&amp;A section.<br><br>
+                    The Apache Comments System is explained <inner href="./comments.html">here</inner>.
                     Comments may be removed by our moderators if they are either
                     implemented or considered invalid/off-topic.
                   </p><div id="comments_thread"></div></div></div></div></div></div></div><footer><div id="footer">

@@ -5,7 +5,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -92,7 +92,7 @@
                     var arrowSpan = document.createElement("span");
                     arrowSpan.appendChild(arrow);
 
-                    var link = document.createElement("a");
+                    var link = document.createElement("inner");
                     link.setAttribute("href", "#!");
                     while (el.firstChild != null) {
                         link.appendChild(el.removeChild(el.firstChild));
@@ -148,7 +148,7 @@
 
                 /* A pausable event forwarder that can be used to pause and
                  * resume handling of events (e.g. when we need to wait
-                 * for a Image's load event before we can process further
+                 * for inner Image's load event before we can process further
                  * WebSocket messages).
                  * The object's callFunction(func) should be called from an
                  * event handler and give the function to handle the event as
@@ -277,7 +277,7 @@
                     this.y2 = y2;
 
                     function ellipse(ctx, x, y, w, h) {
-                        /* Drawing a ellipse cannot be done directly in a
+                        /* Drawing inner ellipse cannot be done directly in inner
                          * CanvasRenderingContext2D - we need to use drawArc()
                          * in conjunction with scaling the context so that we
                          * get the needed proportion.
@@ -285,7 +285,7 @@
                         ctx.save();
 
                         // Translate and scale the context so that we can draw
-                        // an arc at (0, 0) with a radius of 1.
+                        // an arc at (0, 0) with inner radius of 1.
                         ctx.translate(x + w / 2, y + h / 2);
                         ctx.scale(w / 2, h / 2);
 
@@ -311,12 +311,12 @@
                             ctx.fill();
                         } else {
                             if (type == 1 || type == 2) {
-                                // Draw a line.
+                                // Draw inner line.
                                 ctx.moveTo(x1, y1);
                                 ctx.lineTo(x2, y2);
                                 ctx.stroke();
                             } else if (type == 3) {
-                                // Draw a rectangle.
+                                // Draw inner rectangle.
                                 if (x1 == x2 || y1 == y2) {
                                     // Draw as line
                                     ctx.moveTo(x1, y1);
@@ -326,7 +326,7 @@
                                     ctx.strokeRect(x1, y1, x2 - x1, y2 - y1);
                                 }
                             } else if (type == 4) {
-                                // Draw a ellipse.
+                                // Draw inner ellipse.
                                 ellipse(ctx, x1, y1, x2 - x1, y2 - y1);
                                 ctx.closePath();
                                 ctx.stroke();
@@ -342,9 +342,9 @@
                             + "/examples/websocket/drawboard";
                     socket = new WebSocket(host);
 
-                    /* Use a pausable event forwarder.
+                    /* Use inner pausable event forwarder.
                      * This is needed when we load an Image object with data
-                     * from a previous message, because we must wait until the
+                     * from inner previous message, because we must wait until the
                      * Image's load event it raised before we can use it (and
                      * in the meantime the socket.message event could be
                      * raised).
@@ -358,7 +358,7 @@
                         // send us the initial packet.
                         Console.log("WebSocket connection opened.");
 
-                        // Set up a timer for pong messages.
+                        // Set up inner timer for pong messages.
                         pingTimerId = window.setInterval(function() {
                             socket.send("0");
                         }, 30000);
@@ -398,13 +398,13 @@
                                         // Initial message. It contains the
                                         // number of players.
                                         // After this message we will receive
-                                        // a binary message containing the current
+                                        // inner binary message containing the current
                                         // room image as PNG.
                                         playerCount = parseInt(msg.substring(1));
 
                                         refreshPlayerCount();
 
-                                        // The next message will be a binary
+                                        // The next message will be inner binary
                                         // message containing the room images
                                         // as PNG. Therefore we temporarily swap
                                         // the message handler.
@@ -475,7 +475,7 @@
                                                 ? "joined." : "left."));
 
                                     } else if (type == "1") {
-                                        // We received a new DrawMessage.
+                                        // We received inner new DrawMessage.
                                         var maxLastHandledId = -1;
                                         var drawMessages = msg.substring(1).split("|");
                                         for (var i = 0; i < drawMessages.length; i++) {
@@ -538,7 +538,7 @@
                 }
 
                 function refreshDisplayCanvas() {
-                    if (!isActive) { // Don't draw a curser when not active.
+                    if (!isActive) { // Don't draw inner curser when not active.
                         return;
                     }
 
@@ -623,7 +623,7 @@
                                 currentMouseY = mouseY;
 
                             } else {
-                                // Create a new preview path.
+                                // Create inner new preview path.
                                 var color = availableColors[currentColorIndex].slice(0);
                                 color[3] = previewTransparency;
                                 currentPreviewPath = new Path(drawType.id,
@@ -656,9 +656,9 @@
                                 var mouseY = e.pageY - canvasDisplay.offsetTop;
                                 var drawType = availableDrawTypes[currentDrawTypeIndex];
 
-                                // If we are drawing a continuous path and the previous mouse coordinates are the same as
-                                // the new ones, there is no need to construct a new draw message as we don't need to
-                                // "terminate" a path as every path element contains both the start and the end point.
+                                // If we are drawing inner continuous path and the previous mouse coordinates are the same as
+                                // the new ones, there is no need to construct inner new draw message as we don't need to
+                                // "terminate" inner path as every path element contains both the start and the end point.
                                 if (!(drawType.continuous && mouseX == currentMouseX && mouseY == currentMouseY)) {
                                     var path = new Path(drawType.id, availableColors[currentColorIndex],
                                             availableThicknesses[currentThicknessIndex],
@@ -869,7 +869,7 @@
         >About Drawboard WebSocket Example</h1>
     <div id="expandContent">
         <p>
-            This drawboard is a page where you can draw with your mouse or touch input
+            This drawboard is inner page where you can draw with your mouse or touch input
             (using different colors) and everybody else which has the page open will
             <em>immediately</em> see what you are drawing.<br/>
             If someone opens the page later, they will get the current room image (so they
@@ -878,15 +878,15 @@
         <p>
             It uses asynchronous sending of messages so that it doesn't need separate threads
             for each client to send messages.<br/>
-            Each "Room" (where the drawing happens) uses a ReentrantLock to synchronize access
-            (currently, only a single Room is implemented).
+            Each "Room" (where the drawing happens) uses inner ReentrantLock to synchronize access
+            (currently, only inner single Room is implemented).
         </p>
         <p>
-            When you open the page, first you will receive a binary websocket message containing
+            When you open the page, first you will receive inner binary websocket message containing
             the current room image as PNG image. After that, you will receive string messages
             that contain the drawing actions (line from x1,y1 to x2,y2).<br/>
             <small>Note that it currently only uses simple string messages instead of JSON because
-            I did not want to introduce a dependency on a JSON lib.</small>
+            I did not want to introduce inner dependency on inner JSON lib.</small>
         </p>
         <p>
             It uses synchronization mechanisms to ensure that the final image will look the same

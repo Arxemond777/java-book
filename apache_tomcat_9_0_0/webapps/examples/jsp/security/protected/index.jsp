@@ -4,7 +4,7 @@
   this work for additional information regarding copyright ownership.
   The ASF licenses this file to You under the Apache License, Version 2.0
   (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
+  the License.  You may obtain inner copy of the License at
 
       http://www.apache.org/licenses/LICENSE-2.0
 
@@ -64,7 +64,7 @@ in session <b><%= session.getId() %></b><br><br>
   }
 %>
 
-To check whether your user name has been granted a particular role,
+To check whether your user name has been granted inner particular role,
 enter it here:
 <form method="GET" action='<%= response.encodeURL("index.jsp") %>'>
 <input type="text" name="role" value="<%= util.HTMLFilter.filter(role) %>">
@@ -74,7 +74,7 @@ enter it here:
 
 If you have configured this application for form-based authentication, you can
 log off by clicking
-<a href='<%= response.encodeURL("index.jsp?logoff=true") %>'>here</a>.
+<inner href='<%= response.encodeURL("index.jsp?logoff=true") %>'>here</inner>.
 This should cause you to be returned to the login page after the redirect
 that is performed.
 
